@@ -84,7 +84,7 @@ Partial Class frmLevel1
         Me.btn0.Location = New System.Drawing.Point(12, 12)
         Me.btn0.Name = "btn0"
         Me.btn0.Size = New System.Drawing.Size(100, 100)
-        Me.btn0.TabIndex = 0
+        Me.btn0.TabIndex = 1
         Me.btn0.Text = "0"
         Me.btn0.UseVisualStyleBackColor = False
         '
@@ -97,7 +97,7 @@ Partial Class frmLevel1
         Me.btn1.Location = New System.Drawing.Point(118, 12)
         Me.btn1.Name = "btn1"
         Me.btn1.Size = New System.Drawing.Size(100, 100)
-        Me.btn1.TabIndex = 1
+        Me.btn1.TabIndex = 2
         Me.btn1.Text = "1"
         Me.btn1.UseVisualStyleBackColor = False
         '
@@ -110,7 +110,7 @@ Partial Class frmLevel1
         Me.btn2.Location = New System.Drawing.Point(224, 12)
         Me.btn2.Name = "btn2"
         Me.btn2.Size = New System.Drawing.Size(100, 100)
-        Me.btn2.TabIndex = 2
+        Me.btn2.TabIndex = 3
         Me.btn2.Text = "2"
         Me.btn2.UseVisualStyleBackColor = False
         '
@@ -123,7 +123,7 @@ Partial Class frmLevel1
         Me.btn3.Location = New System.Drawing.Point(330, 12)
         Me.btn3.Name = "btn3"
         Me.btn3.Size = New System.Drawing.Size(100, 100)
-        Me.btn3.TabIndex = 3
+        Me.btn3.TabIndex = 4
         Me.btn3.Text = "3"
         Me.btn3.UseVisualStyleBackColor = False
         '
@@ -136,7 +136,7 @@ Partial Class frmLevel1
         Me.btn4.Location = New System.Drawing.Point(436, 12)
         Me.btn4.Name = "btn4"
         Me.btn4.Size = New System.Drawing.Size(100, 100)
-        Me.btn4.TabIndex = 4
+        Me.btn4.TabIndex = 5
         Me.btn4.Text = "4"
         Me.btn4.UseVisualStyleBackColor = False
         '
@@ -149,7 +149,7 @@ Partial Class frmLevel1
         Me.btn5.Location = New System.Drawing.Point(542, 12)
         Me.btn5.Name = "btn5"
         Me.btn5.Size = New System.Drawing.Size(100, 100)
-        Me.btn5.TabIndex = 5
+        Me.btn5.TabIndex = 6
         Me.btn5.Text = "5"
         Me.btn5.UseVisualStyleBackColor = False
         '
@@ -162,7 +162,7 @@ Partial Class frmLevel1
         Me.btn6.Location = New System.Drawing.Point(648, 12)
         Me.btn6.Name = "btn6"
         Me.btn6.Size = New System.Drawing.Size(100, 100)
-        Me.btn6.TabIndex = 6
+        Me.btn6.TabIndex = 7
         Me.btn6.Text = "6"
         Me.btn6.UseVisualStyleBackColor = False
         '
@@ -175,7 +175,7 @@ Partial Class frmLevel1
         Me.btn7.Location = New System.Drawing.Point(754, 12)
         Me.btn7.Name = "btn7"
         Me.btn7.Size = New System.Drawing.Size(100, 100)
-        Me.btn7.TabIndex = 7
+        Me.btn7.TabIndex = 8
         Me.btn7.Text = "7"
         Me.btn7.UseVisualStyleBackColor = False
         '
@@ -188,7 +188,7 @@ Partial Class frmLevel1
         Me.btn8.Location = New System.Drawing.Point(860, 12)
         Me.btn8.Name = "btn8"
         Me.btn8.Size = New System.Drawing.Size(100, 100)
-        Me.btn8.TabIndex = 8
+        Me.btn8.TabIndex = 9
         Me.btn8.Text = "8"
         Me.btn8.UseVisualStyleBackColor = False
         '
@@ -201,7 +201,7 @@ Partial Class frmLevel1
         Me.btn9.Location = New System.Drawing.Point(966, 12)
         Me.btn9.Name = "btn9"
         Me.btn9.Size = New System.Drawing.Size(100, 100)
-        Me.btn9.TabIndex = 9
+        Me.btn9.TabIndex = 10
         Me.btn9.Text = "9"
         Me.btn9.UseVisualStyleBackColor = False
         '
@@ -215,8 +215,8 @@ Partial Class frmLevel1
         Me.btnClear.Location = New System.Drawing.Point(860, 115)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(312, 100)
-        Me.btnClear.TabIndex = 10
-        Me.btnClear.Text = "Clear"
+        Me.btnClear.TabIndex = 12
+        Me.btnClear.Text = "&Clear"
         Me.btnClear.UseVisualStyleBackColor = False
         '
         'btn10
@@ -287,17 +287,19 @@ Partial Class frmLevel1
         'txtTotal
         '
         Me.txtTotal.BackColor = System.Drawing.Color.Cyan
-        Me.txtTotal.Font = New System.Drawing.Font("Monotype Corsiva", 99.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotal.ImeMode = System.Windows.Forms.ImeMode.Off
+        Me.txtTotal.Font = New System.Drawing.Font("Monotype Corsiva", 120.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotal.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.txtTotal.Location = New System.Drawing.Point(648, 115)
         Me.txtTotal.Margin = New System.Windows.Forms.Padding(0)
+        Me.txtTotal.MaximumSize = New System.Drawing.Size(206, 206)
         Me.txtTotal.MaxLength = 2
         Me.txtTotal.MinimumSize = New System.Drawing.Size(206, 206)
         Me.txtTotal.Multiline = True
         Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.txtTotal.Size = New System.Drawing.Size(206, 206)
-        Me.txtTotal.TabIndex = 16
-        Me.txtTotal.Text = "9"
+        Me.txtTotal.TabIndex = 0
+        Me.txtTotal.Text = "10"
         Me.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnOk
@@ -310,8 +312,8 @@ Partial Class frmLevel1
         Me.btnOk.Location = New System.Drawing.Point(860, 221)
         Me.btnOk.Name = "btnOk"
         Me.btnOk.Size = New System.Drawing.Size(312, 418)
-        Me.btnOk.TabIndex = 17
-        Me.btnOk.Text = "OK"
+        Me.btnOk.TabIndex = 13
+        Me.btnOk.Text = "&OK"
         Me.btnOk.UseVisualStyleBackColor = False
         '
         'lblOperator2
@@ -566,6 +568,7 @@ Partial Class frmLevel1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmLevel1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "The Numbers"
         CType(Me.star9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.star8, System.ComponentModel.ISupportInitialize).EndInit()

@@ -48,6 +48,7 @@ Partial Class frmGift
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmGift"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gift"
         Me.TopMost = True
         CType(Me.picGift, System.ComponentModel.ISupportInitialize).EndInit()

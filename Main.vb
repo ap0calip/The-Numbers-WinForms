@@ -148,6 +148,8 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RdmNum()
+        btnOk.Select()
+
     End Sub
 
     Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
