@@ -10,20 +10,43 @@
         End While
     End Sub
 
+    'Buscar usuario en base de datos
+    Private Sub FindUser()
+        frmMain.inc = 0
+        While frmMain.inc < frmMain.MaxRows
+            If frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(1) = cbUser.Text Then
+                Exit While
+            End If
+            frmMain.inc = frmMain.inc + 1
+        End While
+    End Sub
+
+    'Cambia User en statusbar y direccion de Gift
+    Private Sub PersonalizeMain()
+        frmMain.stbName.Text = "User: " & frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(1)
+        frmMain.strGiftPath = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(22) & "Gift\"
+    End Sub
+
+    'Colocar ID en la base de datos
+    Function FillID() As Integer
+        Dim id As Integer = 0
+        Dim index As Integer = 0
+        While index < frmMain.MaxRows
+            If frmMain.ds.Tables("Users").Rows(index).Item(0) >= id Then
+                id = frmMain.ds.Tables("Users").Rows(index).Item(0) + 1
+            End If
+            index = index + 1
+        End While
+        Return id
+    End Function
+
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If cbUser.Text <> "" Then
             If cbUser.SelectedIndex = -1 And frmMain.MaxRows > 0 Then
-                frmMain.inc = 0
-                While frmMain.inc < frmMain.MaxRows
-                    If frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(1) = cbUser.Text Then
-                        Exit While
-                    End If
-                    frmMain.inc = frmMain.inc + 1
-                End While
+                FindUser()
             End If
             If frmMain.inc > -1 And frmMain.inc < frmMain.MaxRows Then
-                frmMain.stbName.Text = "User: " & frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(1)
-                frmMain.strGiftPath = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(22) & "Gift\"
+                PersonalizeMain()
                 Close()
             Else
                 If MessageBox.Show("User " & cbUser.Text & " not found. Do you like add this user?", "Login", MessageBoxButtons.YesNo) = 6 Then
@@ -34,7 +57,8 @@
                         Dim dsNewRow As DataRow
                         dsNewRow = frmMain.ds.Tables("Users").NewRow()
 
-                        'LLenar el row de informacion
+                        'LLenar el nuevo row de informacion
+                        dsNewRow.Item(0) = FillID()
                         dsNewRow.Item(1) = cbUser.Text
                         dsNewRow.Item(22) = cbGender.Text
                         For i As Integer = 2 To 21
@@ -44,15 +68,8 @@
                         frmMain.ds.Tables("users").Rows.Add(dsNewRow)
                         frmMain.da.Update(frmMain.ds, "Users")
                         frmMain.MaxRows = frmMain.MaxRows + 1
-                        frmMain.inc = 0
-                        While frmMain.inc < frmMain.MaxRows
-                            If frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(1) = cbUser.Text Then
-                                Exit While
-                            End If
-                            frmMain.inc = frmMain.inc + 1
-                        End While
-                        frmMain.stbName.Text = "User: " & frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(1)
-                        frmMain.strGiftPath = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(22) & "Gift\"
+                        FindUser()
+                        PersonalizeMain()
                         Close()
                     End If
                 End If

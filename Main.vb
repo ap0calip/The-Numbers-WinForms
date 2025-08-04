@@ -5,7 +5,7 @@ Public Class frmMain
     'Fecha de comienzo 7 de mayo de 2019
 
     'Declarando variables publicas
-    Public Numero1, Numero2, Gift As Integer
+    Public Numero1, Numero2, Total, Gift As Integer
     Public GoodCount As Integer = 0
     Public strOpt As String = "Addition"
     Public intLevel As Integer = 10
@@ -51,7 +51,7 @@ Public Class frmMain
         picBkTotal.Visible = True
     End Sub
 
-    'Procedimiento para generar numeros
+    'Procedimiento para generar numeros suma
     Public Sub RdmNumA()
         'Inicializar la clase Random  
         Dim rdm As New Random()
@@ -244,7 +244,7 @@ Public Class frmMain
         ds.Tables("Users").Rows(inc).Item(1 + Gift) = ds.Tables("Users").Rows(inc).Item(1 + Gift) + 1
     End Sub
 
-    'Procedimiento para cambiar de operador
+    'Procedimiento para cuando se cambia de operador y nivel
     Public Sub ChangedMenu()
         While GoodCount > 0
             StarDelete()
@@ -293,8 +293,6 @@ Public Class frmMain
         End If
 
         frmLogin.ShowDialog()
-
-
     End Sub
 
     Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
@@ -402,7 +400,6 @@ Public Class frmMain
             Else
                 txtTotal.Clear()
             End If
-
         End If
     End Sub
 
