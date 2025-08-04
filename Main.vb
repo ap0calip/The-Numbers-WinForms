@@ -2,16 +2,12 @@
     'Programa basado en la aplicacion creada en el 2008
     'Fecha de comienzo 7 de mayo de 2019
 
-    'Tareas
-    'Falta alinear texto de txtTotal
-
-
     'Declarando variables publicas
     Public Numero1, Numero2, Gift As Integer
     Public GoodCount As Integer = 0
     Public strOpt As String = "Addition"
     Public intLevel As Integer = 10
-    Public strGift As String = "BoyGift\gift"
+    Public strGift As String = "BoyGift\"
 
     'Procedimiento para actualizar las imagenes
     Public Sub UpdImg()
@@ -490,6 +486,14 @@
         intLevel = 10
         RdmNumD()
         ChangedMenu()
+    End Sub
+
+    Private Sub MasculineToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasculineToolStripMenuItem.Click
+        strGift = "BoyGift\"
+    End Sub
+
+    Private Sub FemeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FemeToolStripMenuItem.Click
+        strGift = "GirlGift\"
     End Sub
 
     Private Sub PicBkTotal_Click(sender As Object, e As EventArgs) Handles picBkTotal.Click

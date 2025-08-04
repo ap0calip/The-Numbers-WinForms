@@ -68,16 +68,19 @@ Partial Class frmLevel1
         Me.mn20Addition = New System.Windows.Forms.ToolStripMenuItem()
         Me.mn100Addition = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnSubtraction = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnMultiplication = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnDivision = New System.Windows.Forms.ToolStripMenuItem()
         Me.mn10Subtraction = New System.Windows.Forms.ToolStripMenuItem()
         Me.mn12Subtraction = New System.Windows.Forms.ToolStripMenuItem()
         Me.mn20Subtraction = New System.Windows.Forms.ToolStripMenuItem()
         Me.mn100Subtraction = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnMultiplication = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToTable10ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToTable12ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnDivision = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpToTable10ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpToTable12ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GenderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasculineToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FemeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.star9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.star8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.star7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -540,7 +543,7 @@ Partial Class frmLevel1
         '
         'Menu
         '
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic})
+        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic, Me.GenderToolStripMenuItem})
         Me.Menu.Location = New System.Drawing.Point(0, 0)
         Me.Menu.Name = "Menu"
         Me.Menu.Size = New System.Drawing.Size(1182, 24)
@@ -557,7 +560,7 @@ Partial Class frmLevel1
         'mnExit
         '
         Me.mnExit.Name = "mnExit"
-        Me.mnExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnExit.Size = New System.Drawing.Size(92, 22)
         Me.mnExit.Text = "Exit"
         '
         'mnArithmetic
@@ -571,101 +574,120 @@ Partial Class frmLevel1
         '
         Me.mnAddition.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mn10Addition, Me.mn12Addition, Me.mn20Addition, Me.mn100Addition})
         Me.mnAddition.Name = "mnAddition"
-        Me.mnAddition.Size = New System.Drawing.Size(180, 22)
+        Me.mnAddition.Size = New System.Drawing.Size(148, 22)
         Me.mnAddition.Text = "Addition"
         '
         'mn10Addition
         '
         Me.mn10Addition.Name = "mn10Addition"
-        Me.mn10Addition.Size = New System.Drawing.Size(180, 22)
+        Me.mn10Addition.Size = New System.Drawing.Size(115, 22)
         Me.mn10Addition.Text = "0 to 10"
         '
         'mn12Addition
         '
         Me.mn12Addition.Name = "mn12Addition"
-        Me.mn12Addition.Size = New System.Drawing.Size(180, 22)
+        Me.mn12Addition.Size = New System.Drawing.Size(115, 22)
         Me.mn12Addition.Text = "0 to 12"
         '
         'mn20Addition
         '
         Me.mn20Addition.Name = "mn20Addition"
-        Me.mn20Addition.Size = New System.Drawing.Size(180, 22)
+        Me.mn20Addition.Size = New System.Drawing.Size(115, 22)
         Me.mn20Addition.Text = "0 to 20"
         '
         'mn100Addition
         '
         Me.mn100Addition.Name = "mn100Addition"
-        Me.mn100Addition.Size = New System.Drawing.Size(180, 22)
+        Me.mn100Addition.Size = New System.Drawing.Size(115, 22)
         Me.mn100Addition.Text = "0 to 100"
         '
         'mnSubtraction
         '
         Me.mnSubtraction.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mn10Subtraction, Me.mn12Subtraction, Me.mn20Subtraction, Me.mn100Subtraction})
         Me.mnSubtraction.Name = "mnSubtraction"
-        Me.mnSubtraction.Size = New System.Drawing.Size(180, 22)
+        Me.mnSubtraction.Size = New System.Drawing.Size(148, 22)
         Me.mnSubtraction.Text = "Subtraction"
-        '
-        'mnMultiplication
-        '
-        Me.mnMultiplication.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToTable10ToolStripMenuItem, Me.ToTable12ToolStripMenuItem})
-        Me.mnMultiplication.Name = "mnMultiplication"
-        Me.mnMultiplication.Size = New System.Drawing.Size(180, 22)
-        Me.mnMultiplication.Text = "Multiplication"
-        '
-        'mnDivision
-        '
-        Me.mnDivision.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UpToTable10ToolStripMenuItem, Me.UpToTable12ToolStripMenuItem})
-        Me.mnDivision.Name = "mnDivision"
-        Me.mnDivision.Size = New System.Drawing.Size(180, 22)
-        Me.mnDivision.Text = "Division"
         '
         'mn10Subtraction
         '
         Me.mn10Subtraction.Name = "mn10Subtraction"
-        Me.mn10Subtraction.Size = New System.Drawing.Size(180, 22)
+        Me.mn10Subtraction.Size = New System.Drawing.Size(115, 22)
         Me.mn10Subtraction.Text = "0 to 10"
         '
         'mn12Subtraction
         '
         Me.mn12Subtraction.Name = "mn12Subtraction"
-        Me.mn12Subtraction.Size = New System.Drawing.Size(180, 22)
+        Me.mn12Subtraction.Size = New System.Drawing.Size(115, 22)
         Me.mn12Subtraction.Text = "0 to 12"
         '
         'mn20Subtraction
         '
         Me.mn20Subtraction.Name = "mn20Subtraction"
-        Me.mn20Subtraction.Size = New System.Drawing.Size(180, 22)
+        Me.mn20Subtraction.Size = New System.Drawing.Size(115, 22)
         Me.mn20Subtraction.Text = "0 to 20"
         '
         'mn100Subtraction
         '
         Me.mn100Subtraction.Name = "mn100Subtraction"
-        Me.mn100Subtraction.Size = New System.Drawing.Size(180, 22)
+        Me.mn100Subtraction.Size = New System.Drawing.Size(115, 22)
         Me.mn100Subtraction.Text = "0 to 100"
+        '
+        'mnMultiplication
+        '
+        Me.mnMultiplication.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToTable10ToolStripMenuItem, Me.ToTable12ToolStripMenuItem})
+        Me.mnMultiplication.Name = "mnMultiplication"
+        Me.mnMultiplication.Size = New System.Drawing.Size(148, 22)
+        Me.mnMultiplication.Text = "Multiplication"
         '
         'ToTable10ToolStripMenuItem
         '
         Me.ToTable10ToolStripMenuItem.Name = "ToTable10ToolStripMenuItem"
-        Me.ToTable10ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ToTable10ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.ToTable10ToolStripMenuItem.Text = "Up to table 10"
         '
         'ToTable12ToolStripMenuItem
         '
         Me.ToTable12ToolStripMenuItem.Name = "ToTable12ToolStripMenuItem"
-        Me.ToTable12ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ToTable12ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.ToTable12ToolStripMenuItem.Text = "Up to table 12"
+        '
+        'mnDivision
+        '
+        Me.mnDivision.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UpToTable10ToolStripMenuItem, Me.UpToTable12ToolStripMenuItem})
+        Me.mnDivision.Name = "mnDivision"
+        Me.mnDivision.Size = New System.Drawing.Size(148, 22)
+        Me.mnDivision.Text = "Division"
         '
         'UpToTable10ToolStripMenuItem
         '
         Me.UpToTable10ToolStripMenuItem.Name = "UpToTable10ToolStripMenuItem"
-        Me.UpToTable10ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UpToTable10ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.UpToTable10ToolStripMenuItem.Text = "Up to table 10"
         '
         'UpToTable12ToolStripMenuItem
         '
         Me.UpToTable12ToolStripMenuItem.Name = "UpToTable12ToolStripMenuItem"
-        Me.UpToTable12ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UpToTable12ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.UpToTable12ToolStripMenuItem.Text = "Up to table 12"
+        '
+        'GenderToolStripMenuItem
+        '
+        Me.GenderToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MasculineToolStripMenuItem, Me.FemeToolStripMenuItem})
+        Me.GenderToolStripMenuItem.Name = "GenderToolStripMenuItem"
+        Me.GenderToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
+        Me.GenderToolStripMenuItem.Text = "Child"
+        '
+        'MasculineToolStripMenuItem
+        '
+        Me.MasculineToolStripMenuItem.Name = "MasculineToolStripMenuItem"
+        Me.MasculineToolStripMenuItem.Size = New System.Drawing.Size(94, 22)
+        Me.MasculineToolStripMenuItem.Text = "Boy"
+        '
+        'FemeToolStripMenuItem
+        '
+        Me.FemeToolStripMenuItem.Name = "FemeToolStripMenuItem"
+        Me.FemeToolStripMenuItem.Size = New System.Drawing.Size(94, 22)
+        Me.FemeToolStripMenuItem.Text = "Girl"
         '
         'frmLevel1
         '
@@ -794,4 +816,7 @@ Partial Class frmLevel1
     Friend WithEvents ToTable12ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UpToTable10ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UpToTable12ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GenderToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MasculineToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FemeToolStripMenuItem As ToolStripMenuItem
 End Class

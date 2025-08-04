@@ -31,9 +31,11 @@ Partial Class frmGift
         '
         Me.picGift.Image = Global.TheNumbers.My.Resources.Resources.block
         Me.picGift.Location = New System.Drawing.Point(12, 12)
+        Me.picGift.MaximumSize = New System.Drawing.Size(500, 500)
+        Me.picGift.MinimumSize = New System.Drawing.Size(500, 500)
         Me.picGift.Name = "picGift"
-        Me.picGift.Size = New System.Drawing.Size(256, 256)
-        Me.picGift.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picGift.Size = New System.Drawing.Size(500, 500)
+        Me.picGift.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picGift.TabIndex = 0
         Me.picGift.TabStop = False
         '
@@ -45,7 +47,7 @@ Partial Class frmGift
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(280, 282)
+        Me.ClientSize = New System.Drawing.Size(528, 523)
         Me.Controls.Add(Me.picGift)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
