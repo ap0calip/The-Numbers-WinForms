@@ -45,6 +45,7 @@ Partial Class frmLevel1
         Me.lbligual2 = New System.Windows.Forms.Label()
         Me.Menu = New System.Windows.Forms.MenuStrip()
         Me.mnFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ShowGiftTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnArithmetic = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnAddition = New System.Windows.Forms.ToolStripMenuItem()
@@ -90,7 +91,6 @@ Partial Class frmLevel1
         Me.picNumber1 = New System.Windows.Forms.PictureBox()
         Me.picNumber2 = New System.Windows.Forms.PictureBox()
         Me.picTotal = New System.Windows.Forms.PictureBox()
-        Me.ShowGiftTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Menu.SuspendLayout()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -384,10 +384,16 @@ Partial Class frmLevel1
         Me.mnFile.Size = New System.Drawing.Size(37, 20)
         Me.mnFile.Text = "File"
         '
+        'ShowGiftTableToolStripMenuItem
+        '
+        Me.ShowGiftTableToolStripMenuItem.Name = "ShowGiftTableToolStripMenuItem"
+        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.ShowGiftTableToolStripMenuItem.Text = "Show Gift Table"
+        '
         'mnExit
         '
         Me.mnExit.Name = "mnExit"
-        Me.mnExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnExit.Size = New System.Drawing.Size(156, 22)
         Me.mnExit.Text = "Exit"
         '
         'mnArithmetic
@@ -767,12 +773,6 @@ Partial Class frmLevel1
         Me.picTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picTotal.TabIndex = 23
         Me.picTotal.TabStop = False
-        '
-        'ShowGiftTableToolStripMenuItem
-        '
-        Me.ShowGiftTableToolStripMenuItem.Name = "ShowGiftTableToolStripMenuItem"
-        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ShowGiftTableToolStripMenuItem.Text = "Show Gift Table"
         '
         'frmLevel1
         '

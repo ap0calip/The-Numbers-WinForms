@@ -341,11 +341,16 @@
         If txtTotal.Text Is "" Then
             picTotal.ImageLocation = "image\0.png"
         Else
-            If txtTotal.Text > 12 Then
-                picTotal.ImageLocation = "image\block.png"
+            If IsNumeric(txtTotal.Text) Then
+                If txtTotal.Text > 12 Then
+                    picTotal.ImageLocation = "image\block.png"
+                Else
+                    picTotal.ImageLocation = "image\" + txtTotal.Text + ".png"
+                End If
             Else
-                picTotal.ImageLocation = "image\" + txtTotal.Text + ".png"
+                txtTotal.Clear()
             End If
+
         End If
     End Sub
 
