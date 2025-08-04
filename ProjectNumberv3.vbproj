@@ -153,6 +153,8 @@
     <None Include="bin\Debug\image\0.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\image\william-liu-03122018megamanx-6 left.jpg" />
+    <None Include="bin\Debug\image\william-liu-03122018megamanx-6 right.jpg" />
     <Content Include="numeros.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

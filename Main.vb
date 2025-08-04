@@ -11,8 +11,17 @@
 
     'Procedimiento para actualizar las imagenes
     Public Sub UpdImg()
-        picNumber1.ImageLocation = "image\" + CStr(lblNumber1.Text) + ".png"
-        picNumber2.ImageLocation = "image\" + CStr(lblNumber2.Text) + ".png"
+        If 0 <= CInt(lblNumber1.Text) And CInt(lblNumber1.Text) <= 12 Then
+            picNumber1.ImageLocation = "image\" + CStr(lblNumber1.Text) + ".png"
+        Else
+            picNumber1.ImageLocation = "image\block.png"
+        End If
+        If -1 < CInt(lblNumber2.Text) And CInt(lblNumber2.Text) < 13 Then
+            picNumber2.ImageLocation = "image\" + CStr(lblNumber2.Text) + ".png"
+        Else
+            picNumber2.ImageLocation = "image\block.png"
+        End If
+
     End Sub
 
     'Procedimiento para colocar bloques
@@ -211,7 +220,7 @@
         End While
         Gift = Value
         frmGift.picGift.ImageLocation = strGiftPath + CStr(Gift) + ".png"
-        frmGift.Visible = True
+        frmGift.ShowDialog()
     End Sub
 
     'Procedimiento para cambiar de operador
@@ -330,7 +339,7 @@
             picTotal.ImageLocation = "image\0.png"
         Else
             If txtTotal.Text > 12 Then
-                picTotal.ImageLocation = "image\0.png"
+                picTotal.ImageLocation = "image\block.png"
             Else
                 picTotal.ImageLocation = "image\" + txtTotal.Text + ".png"
             End If
@@ -349,7 +358,7 @@
                             StarDelete()
                         End If
                         txtTotal.Text = ""
-                        frmWrongNumber.Visible = True
+                        frmWrongNumber.ShowDialog()
                     End If
                 End If
             Case "Subtraction"
@@ -362,7 +371,7 @@
                             StarDelete()
                         End If
                         txtTotal.Text = ""
-                        frmWrongNumber.Visible = True
+                        frmWrongNumber.ShowDialog()
                     End If
                 End If
             Case "Multiplication"
@@ -375,7 +384,7 @@
                             StarDelete()
                         End If
                         txtTotal.Text = ""
-                        frmWrongNumber.Visible = True
+                        frmWrongNumber.ShowDialog()
                     End If
                 End If
             Case "Division"
@@ -388,7 +397,7 @@
                             StarDelete()
                         End If
                         txtTotal.Text = ""
-                        frmWrongNumber.Visible = True
+                        frmWrongNumber.ShowDialog()
                     End If
                 End If
         End Select
@@ -536,6 +545,13 @@
 
     Private Sub PicTotal_Click(sender As Object, e As EventArgs) Handles picTotal.Click
         picBkTotal.Visible = Not (picBkTotal.Visible)
+    End Sub
+
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        MsgBox("The Numbers" & vbNewLine & "Version 0.3.5" & vbNewLine & "2019 forcomputer" &
+               vbNewLine & "All rights reserved" & vbNewLine & "" & vbNewLine & "Coder: Wilbert Martinez" &
+               vbNewLine & "Start date: 05-07-19" & vbNewLine & "" & vbNewLine & "Megaman and Zero" & vbNewLine & "Freelance Artist: William Liu", vbOKOnly, "About")
     End Sub
 
     'Procedimiento para agrandar la forma

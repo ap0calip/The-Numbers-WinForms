@@ -43,21 +43,6 @@ Partial Class frmLevel1
         Me.btnOk = New System.Windows.Forms.Button()
         Me.lblOperator2 = New System.Windows.Forms.Label()
         Me.lbligual2 = New System.Windows.Forms.Label()
-        Me.star9 = New System.Windows.Forms.PictureBox()
-        Me.star8 = New System.Windows.Forms.PictureBox()
-        Me.star7 = New System.Windows.Forms.PictureBox()
-        Me.star6 = New System.Windows.Forms.PictureBox()
-        Me.star5 = New System.Windows.Forms.PictureBox()
-        Me.star4 = New System.Windows.Forms.PictureBox()
-        Me.star3 = New System.Windows.Forms.PictureBox()
-        Me.star2 = New System.Windows.Forms.PictureBox()
-        Me.star1 = New System.Windows.Forms.PictureBox()
-        Me.picBkTotal = New System.Windows.Forms.PictureBox()
-        Me.picBk2 = New System.Windows.Forms.PictureBox()
-        Me.picBk1 = New System.Windows.Forms.PictureBox()
-        Me.picNumber1 = New System.Windows.Forms.PictureBox()
-        Me.picNumber2 = New System.Windows.Forms.PictureBox()
-        Me.picTotal = New System.Windows.Forms.PictureBox()
         Me.Menu = New System.Windows.Forms.MenuStrip()
         Me.mnFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnExit = New System.Windows.Forms.ToolStripMenuItem()
@@ -81,10 +66,35 @@ Partial Class frmLevel1
         Me.GenderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MasculineToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FemeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.stbBar = New System.Windows.Forms.StatusBar()
         Me.stbArithmetic = New System.Windows.Forms.StatusBarPanel()
         Me.stbLevel = New System.Windows.Forms.StatusBarPanel()
         Me.stbChild = New System.Windows.Forms.StatusBarPanel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.star9 = New System.Windows.Forms.PictureBox()
+        Me.star8 = New System.Windows.Forms.PictureBox()
+        Me.star7 = New System.Windows.Forms.PictureBox()
+        Me.star6 = New System.Windows.Forms.PictureBox()
+        Me.star5 = New System.Windows.Forms.PictureBox()
+        Me.star4 = New System.Windows.Forms.PictureBox()
+        Me.star3 = New System.Windows.Forms.PictureBox()
+        Me.star2 = New System.Windows.Forms.PictureBox()
+        Me.star1 = New System.Windows.Forms.PictureBox()
+        Me.picBkTotal = New System.Windows.Forms.PictureBox()
+        Me.picBk2 = New System.Windows.Forms.PictureBox()
+        Me.picBk1 = New System.Windows.Forms.PictureBox()
+        Me.picNumber1 = New System.Windows.Forms.PictureBox()
+        Me.picNumber2 = New System.Windows.Forms.PictureBox()
+        Me.picTotal = New System.Windows.Forms.PictureBox()
+        Me.Menu.SuspendLayout()
+        CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.stbChild, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.star9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.star8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.star7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -100,10 +110,6 @@ Partial Class frmLevel1
         CType(Me.picNumber1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picNumber2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTotal, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu.SuspendLayout()
-        CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.stbChild, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn0
@@ -112,7 +118,7 @@ Partial Class frmLevel1
         Me.btn0.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn0.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn0.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn0.Location = New System.Drawing.Point(78, 31)
+        Me.btn0.Location = New System.Drawing.Point(84, 31)
         Me.btn0.Name = "btn0"
         Me.btn0.Size = New System.Drawing.Size(100, 100)
         Me.btn0.TabIndex = 1
@@ -125,7 +131,7 @@ Partial Class frmLevel1
         Me.btn1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn1.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn1.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn1.Location = New System.Drawing.Point(184, 31)
+        Me.btn1.Location = New System.Drawing.Point(190, 31)
         Me.btn1.Name = "btn1"
         Me.btn1.Size = New System.Drawing.Size(100, 100)
         Me.btn1.TabIndex = 2
@@ -138,7 +144,7 @@ Partial Class frmLevel1
         Me.btn2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn2.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn2.Location = New System.Drawing.Point(290, 31)
+        Me.btn2.Location = New System.Drawing.Point(296, 31)
         Me.btn2.Name = "btn2"
         Me.btn2.Size = New System.Drawing.Size(100, 100)
         Me.btn2.TabIndex = 3
@@ -151,7 +157,7 @@ Partial Class frmLevel1
         Me.btn3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn3.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn3.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn3.Location = New System.Drawing.Point(396, 31)
+        Me.btn3.Location = New System.Drawing.Point(402, 31)
         Me.btn3.Name = "btn3"
         Me.btn3.Size = New System.Drawing.Size(100, 100)
         Me.btn3.TabIndex = 4
@@ -164,7 +170,7 @@ Partial Class frmLevel1
         Me.btn4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn4.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn4.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn4.Location = New System.Drawing.Point(502, 31)
+        Me.btn4.Location = New System.Drawing.Point(508, 31)
         Me.btn4.Name = "btn4"
         Me.btn4.Size = New System.Drawing.Size(100, 100)
         Me.btn4.TabIndex = 5
@@ -177,7 +183,7 @@ Partial Class frmLevel1
         Me.btn5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn5.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn5.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn5.Location = New System.Drawing.Point(608, 31)
+        Me.btn5.Location = New System.Drawing.Point(614, 31)
         Me.btn5.Name = "btn5"
         Me.btn5.Size = New System.Drawing.Size(100, 100)
         Me.btn5.TabIndex = 6
@@ -190,7 +196,7 @@ Partial Class frmLevel1
         Me.btn6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn6.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn6.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn6.Location = New System.Drawing.Point(714, 31)
+        Me.btn6.Location = New System.Drawing.Point(720, 31)
         Me.btn6.Name = "btn6"
         Me.btn6.Size = New System.Drawing.Size(100, 100)
         Me.btn6.TabIndex = 7
@@ -203,7 +209,7 @@ Partial Class frmLevel1
         Me.btn7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn7.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn7.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn7.Location = New System.Drawing.Point(820, 31)
+        Me.btn7.Location = New System.Drawing.Point(826, 31)
         Me.btn7.Name = "btn7"
         Me.btn7.Size = New System.Drawing.Size(100, 100)
         Me.btn7.TabIndex = 8
@@ -216,7 +222,7 @@ Partial Class frmLevel1
         Me.btn8.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn8.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn8.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn8.Location = New System.Drawing.Point(926, 31)
+        Me.btn8.Location = New System.Drawing.Point(932, 31)
         Me.btn8.Name = "btn8"
         Me.btn8.Size = New System.Drawing.Size(100, 100)
         Me.btn8.TabIndex = 9
@@ -229,7 +235,7 @@ Partial Class frmLevel1
         Me.btn9.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn9.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn9.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn9.Location = New System.Drawing.Point(1032, 31)
+        Me.btn9.Location = New System.Drawing.Point(1038, 31)
         Me.btn9.Name = "btn9"
         Me.btn9.Size = New System.Drawing.Size(100, 100)
         Me.btn9.TabIndex = 10
@@ -243,7 +249,7 @@ Partial Class frmLevel1
         Me.btnClear.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btnClear.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btnClear.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(926, 134)
+        Me.btnClear.Location = New System.Drawing.Point(932, 134)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(312, 114)
         Me.btnClear.TabIndex = 12
@@ -256,7 +262,7 @@ Partial Class frmLevel1
         Me.btn10.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btn10.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btn10.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn10.Location = New System.Drawing.Point(1138, 31)
+        Me.btn10.Location = New System.Drawing.Point(1144, 31)
         Me.btn10.Name = "btn10"
         Me.btn10.Size = New System.Drawing.Size(100, 100)
         Me.btn10.TabIndex = 11
@@ -267,7 +273,7 @@ Partial Class frmLevel1
         '
         Me.lblNumber1.BackColor = System.Drawing.Color.Cyan
         Me.lblNumber1.Font = New System.Drawing.Font("Monotype Corsiva", 72.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNumber1.Location = New System.Drawing.Point(78, 134)
+        Me.lblNumber1.Location = New System.Drawing.Point(84, 134)
         Me.lblNumber1.Name = "lblNumber1"
         Me.lblNumber1.Size = New System.Drawing.Size(206, 115)
         Me.lblNumber1.TabIndex = 14
@@ -278,7 +284,7 @@ Partial Class frmLevel1
         '
         Me.lblOperator1.BackColor = System.Drawing.Color.Transparent
         Me.lblOperator1.Font = New System.Drawing.Font("Monotype Corsiva", 99.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOperator1.Location = New System.Drawing.Point(263, 115)
+        Me.lblOperator1.Location = New System.Drawing.Point(269, 115)
         Me.lblOperator1.Name = "lblOperator1"
         Me.lblOperator1.Size = New System.Drawing.Size(138, 162)
         Me.lblOperator1.TabIndex = 15
@@ -289,7 +295,7 @@ Partial Class frmLevel1
         '
         Me.lblNumber2.BackColor = System.Drawing.Color.Cyan
         Me.lblNumber2.Font = New System.Drawing.Font("Monotype Corsiva", 72.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNumber2.Location = New System.Drawing.Point(396, 134)
+        Me.lblNumber2.Location = New System.Drawing.Point(402, 134)
         Me.lblNumber2.Name = "lblNumber2"
         Me.lblNumber2.Size = New System.Drawing.Size(206, 115)
         Me.lblNumber2.TabIndex = 16
@@ -300,7 +306,7 @@ Partial Class frmLevel1
         '
         Me.lbligual1.BackColor = System.Drawing.Color.Transparent
         Me.lbligual1.Font = New System.Drawing.Font("Monotype Corsiva", 99.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbligual1.Location = New System.Drawing.Point(581, 115)
+        Me.lbligual1.Location = New System.Drawing.Point(587, 115)
         Me.lbligual1.Name = "lbligual1"
         Me.lbligual1.Size = New System.Drawing.Size(138, 162)
         Me.lbligual1.TabIndex = 17
@@ -312,12 +318,13 @@ Partial Class frmLevel1
         Me.txtTotal.BackColor = System.Drawing.Color.Cyan
         Me.txtTotal.Font = New System.Drawing.Font("Monotype Corsiva", 72.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTotal.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.txtTotal.Location = New System.Drawing.Point(714, 134)
+        Me.txtTotal.Location = New System.Drawing.Point(720, 134)
         Me.txtTotal.Margin = New System.Windows.Forms.Padding(0, 30, 0, 30)
         Me.txtTotal.MaxLength = 3
+        Me.txtTotal.Multiline = True
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txtTotal.Size = New System.Drawing.Size(206, 115)
+        Me.txtTotal.Size = New System.Drawing.Size(206, 114)
         Me.txtTotal.TabIndex = 0
         Me.txtTotal.Text = "144"
         Me.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -330,7 +337,7 @@ Partial Class frmLevel1
         Me.btnOk.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
         Me.btnOk.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ScrollBar
         Me.btnOk.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOk.Location = New System.Drawing.Point(926, 254)
+        Me.btnOk.Location = New System.Drawing.Point(932, 254)
         Me.btnOk.Name = "btnOk"
         Me.btnOk.Size = New System.Drawing.Size(312, 309)
         Me.btnOk.TabIndex = 13
@@ -341,7 +348,7 @@ Partial Class frmLevel1
         '
         Me.lblOperator2.BackColor = System.Drawing.Color.Transparent
         Me.lblOperator2.Font = New System.Drawing.Font("Monotype Corsiva", 99.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOperator2.Location = New System.Drawing.Point(263, 325)
+        Me.lblOperator2.Location = New System.Drawing.Point(269, 325)
         Me.lblOperator2.Name = "lblOperator2"
         Me.lblOperator2.Size = New System.Drawing.Size(138, 162)
         Me.lblOperator2.TabIndex = 18
@@ -352,198 +359,16 @@ Partial Class frmLevel1
         '
         Me.lbligual2.BackColor = System.Drawing.Color.Transparent
         Me.lbligual2.Font = New System.Drawing.Font("Monotype Corsiva", 99.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbligual2.Location = New System.Drawing.Point(581, 325)
+        Me.lbligual2.Location = New System.Drawing.Point(587, 325)
         Me.lbligual2.Name = "lbligual2"
         Me.lbligual2.Size = New System.Drawing.Size(138, 162)
         Me.lbligual2.TabIndex = 19
         Me.lbligual2.Text = "="
         Me.lbligual2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'star9
-        '
-        Me.star9.Image = CType(resources.GetObject("star9.Image"), System.Drawing.Image)
-        Me.star9.InitialImage = CType(resources.GetObject("star9.InitialImage"), System.Drawing.Image)
-        Me.star9.Location = New System.Drawing.Point(1110, 569)
-        Me.star9.Name = "star9"
-        Me.star9.Size = New System.Drawing.Size(123, 123)
-        Me.star9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.star9.TabIndex = 38
-        Me.star9.TabStop = False
-        Me.star9.Visible = False
-        '
-        'star8
-        '
-        Me.star8.Image = CType(resources.GetObject("star8.Image"), System.Drawing.Image)
-        Me.star8.InitialImage = CType(resources.GetObject("star8.InitialImage"), System.Drawing.Image)
-        Me.star8.Location = New System.Drawing.Point(981, 569)
-        Me.star8.Name = "star8"
-        Me.star8.Size = New System.Drawing.Size(123, 123)
-        Me.star8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.star8.TabIndex = 37
-        Me.star8.TabStop = False
-        Me.star8.Visible = False
-        '
-        'star7
-        '
-        Me.star7.Image = CType(resources.GetObject("star7.Image"), System.Drawing.Image)
-        Me.star7.InitialImage = CType(resources.GetObject("star7.InitialImage"), System.Drawing.Image)
-        Me.star7.Location = New System.Drawing.Point(852, 569)
-        Me.star7.Name = "star7"
-        Me.star7.Size = New System.Drawing.Size(123, 123)
-        Me.star7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.star7.TabIndex = 36
-        Me.star7.TabStop = False
-        Me.star7.Visible = False
-        '
-        'star6
-        '
-        Me.star6.Image = CType(resources.GetObject("star6.Image"), System.Drawing.Image)
-        Me.star6.InitialImage = CType(resources.GetObject("star6.InitialImage"), System.Drawing.Image)
-        Me.star6.Location = New System.Drawing.Point(723, 569)
-        Me.star6.Name = "star6"
-        Me.star6.Size = New System.Drawing.Size(123, 123)
-        Me.star6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.star6.TabIndex = 35
-        Me.star6.TabStop = False
-        Me.star6.Visible = False
-        '
-        'star5
-        '
-        Me.star5.Image = CType(resources.GetObject("star5.Image"), System.Drawing.Image)
-        Me.star5.InitialImage = CType(resources.GetObject("star5.InitialImage"), System.Drawing.Image)
-        Me.star5.Location = New System.Drawing.Point(594, 569)
-        Me.star5.Name = "star5"
-        Me.star5.Size = New System.Drawing.Size(123, 123)
-        Me.star5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.star5.TabIndex = 34
-        Me.star5.TabStop = False
-        Me.star5.Visible = False
-        '
-        'star4
-        '
-        Me.star4.Image = CType(resources.GetObject("star4.Image"), System.Drawing.Image)
-        Me.star4.InitialImage = CType(resources.GetObject("star4.InitialImage"), System.Drawing.Image)
-        Me.star4.Location = New System.Drawing.Point(465, 569)
-        Me.star4.Name = "star4"
-        Me.star4.Size = New System.Drawing.Size(123, 123)
-        Me.star4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.star4.TabIndex = 33
-        Me.star4.TabStop = False
-        Me.star4.Visible = False
-        '
-        'star3
-        '
-        Me.star3.Image = CType(resources.GetObject("star3.Image"), System.Drawing.Image)
-        Me.star3.InitialImage = CType(resources.GetObject("star3.InitialImage"), System.Drawing.Image)
-        Me.star3.Location = New System.Drawing.Point(336, 569)
-        Me.star3.Name = "star3"
-        Me.star3.Size = New System.Drawing.Size(123, 123)
-        Me.star3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.star3.TabIndex = 32
-        Me.star3.TabStop = False
-        Me.star3.Visible = False
-        '
-        'star2
-        '
-        Me.star2.Image = CType(resources.GetObject("star2.Image"), System.Drawing.Image)
-        Me.star2.InitialImage = CType(resources.GetObject("star2.InitialImage"), System.Drawing.Image)
-        Me.star2.Location = New System.Drawing.Point(207, 569)
-        Me.star2.Name = "star2"
-        Me.star2.Size = New System.Drawing.Size(123, 123)
-        Me.star2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.star2.TabIndex = 31
-        Me.star2.TabStop = False
-        Me.star2.Visible = False
-        '
-        'star1
-        '
-        Me.star1.Image = CType(resources.GetObject("star1.Image"), System.Drawing.Image)
-        Me.star1.InitialImage = CType(resources.GetObject("star1.InitialImage"), System.Drawing.Image)
-        Me.star1.Location = New System.Drawing.Point(78, 569)
-        Me.star1.Name = "star1"
-        Me.star1.Size = New System.Drawing.Size(123, 123)
-        Me.star1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.star1.TabIndex = 30
-        Me.star1.TabStop = False
-        Me.star1.Visible = False
-        '
-        'picBkTotal
-        '
-        Me.picBkTotal.BackColor = System.Drawing.Color.Cyan
-        Me.picBkTotal.ErrorImage = CType(resources.GetObject("picBkTotal.ErrorImage"), System.Drawing.Image)
-        Me.picBkTotal.Image = CType(resources.GetObject("picBkTotal.Image"), System.Drawing.Image)
-        Me.picBkTotal.InitialImage = CType(resources.GetObject("picBkTotal.InitialImage"), System.Drawing.Image)
-        Me.picBkTotal.Location = New System.Drawing.Point(714, 254)
-        Me.picBkTotal.Name = "picBkTotal"
-        Me.picBkTotal.Size = New System.Drawing.Size(206, 309)
-        Me.picBkTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBkTotal.TabIndex = 28
-        Me.picBkTotal.TabStop = False
-        '
-        'picBk2
-        '
-        Me.picBk2.BackColor = System.Drawing.Color.Cyan
-        Me.picBk2.ErrorImage = CType(resources.GetObject("picBk2.ErrorImage"), System.Drawing.Image)
-        Me.picBk2.Image = Global.TheNumbers.My.Resources.Resources.block
-        Me.picBk2.InitialImage = CType(resources.GetObject("picBk2.InitialImage"), System.Drawing.Image)
-        Me.picBk2.Location = New System.Drawing.Point(396, 254)
-        Me.picBk2.Name = "picBk2"
-        Me.picBk2.Size = New System.Drawing.Size(206, 309)
-        Me.picBk2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBk2.TabIndex = 27
-        Me.picBk2.TabStop = False
-        '
-        'picBk1
-        '
-        Me.picBk1.BackColor = System.Drawing.Color.Cyan
-        Me.picBk1.Image = CType(resources.GetObject("picBk1.Image"), System.Drawing.Image)
-        Me.picBk1.InitialImage = CType(resources.GetObject("picBk1.InitialImage"), System.Drawing.Image)
-        Me.picBk1.Location = New System.Drawing.Point(78, 254)
-        Me.picBk1.Name = "picBk1"
-        Me.picBk1.Size = New System.Drawing.Size(206, 309)
-        Me.picBk1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBk1.TabIndex = 26
-        Me.picBk1.TabStop = False
-        '
-        'picNumber1
-        '
-        Me.picNumber1.BackColor = System.Drawing.Color.Cyan
-        Me.picNumber1.Image = CType(resources.GetObject("picNumber1.Image"), System.Drawing.Image)
-        Me.picNumber1.InitialImage = CType(resources.GetObject("picNumber1.InitialImage"), System.Drawing.Image)
-        Me.picNumber1.Location = New System.Drawing.Point(78, 254)
-        Me.picNumber1.Name = "picNumber1"
-        Me.picNumber1.Size = New System.Drawing.Size(206, 309)
-        Me.picNumber1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picNumber1.TabIndex = 25
-        Me.picNumber1.TabStop = False
-        '
-        'picNumber2
-        '
-        Me.picNumber2.BackColor = System.Drawing.Color.Cyan
-        Me.picNumber2.Image = CType(resources.GetObject("picNumber2.Image"), System.Drawing.Image)
-        Me.picNumber2.InitialImage = CType(resources.GetObject("picNumber2.InitialImage"), System.Drawing.Image)
-        Me.picNumber2.Location = New System.Drawing.Point(396, 254)
-        Me.picNumber2.Name = "picNumber2"
-        Me.picNumber2.Size = New System.Drawing.Size(206, 309)
-        Me.picNumber2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picNumber2.TabIndex = 24
-        Me.picNumber2.TabStop = False
-        '
-        'picTotal
-        '
-        Me.picTotal.BackColor = System.Drawing.Color.Cyan
-        Me.picTotal.Image = CType(resources.GetObject("picTotal.Image"), System.Drawing.Image)
-        Me.picTotal.InitialImage = CType(resources.GetObject("picTotal.InitialImage"), System.Drawing.Image)
-        Me.picTotal.Location = New System.Drawing.Point(714, 254)
-        Me.picTotal.Name = "picTotal"
-        Me.picTotal.Size = New System.Drawing.Size(206, 309)
-        Me.picTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picTotal.TabIndex = 23
-        Me.picTotal.TabStop = False
-        '
         'Menu
         '
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic, Me.GenderToolStripMenuItem})
+        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic, Me.GenderToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.Menu.Location = New System.Drawing.Point(0, 0)
         Me.Menu.Name = "Menu"
         Me.Menu.Size = New System.Drawing.Size(1331, 24)
@@ -689,6 +514,19 @@ Partial Class frmLevel1
         Me.FemeToolStripMenuItem.Size = New System.Drawing.Size(94, 22)
         Me.FemeToolStripMenuItem.Text = "Girl"
         '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.AboutToolStripMenuItem.Text = "About The Numbers"
+        '
         'stbBar
         '
         Me.stbBar.Location = New System.Drawing.Point(0, 695)
@@ -701,24 +539,226 @@ Partial Class frmLevel1
         '
         'stbArithmetic
         '
-        Me.stbArithmetic.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents
+        Me.stbArithmetic.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
         Me.stbArithmetic.Name = "stbArithmetic"
         Me.stbArithmetic.Text = "Arithmetic: Addition"
-        Me.stbArithmetic.Width = 112
+        Me.stbArithmetic.Width = 438
         '
         'stbLevel
         '
-        Me.stbLevel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents
+        Me.stbLevel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
         Me.stbLevel.Name = "stbLevel"
         Me.stbLevel.Text = "Level: 10"
-        Me.stbLevel.Width = 60
+        Me.stbLevel.Width = 438
         '
         'stbChild
         '
-        Me.stbChild.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents
+        Me.stbChild.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
         Me.stbChild.Name = "stbChild"
         Me.stbChild.Text = "Child: Boy"
-        Me.stbChild.Width = 66
+        Me.stbChild.Width = 438
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.TheNumbers.My.Resources.Resources.william_liu_03122018megamanx_6_left
+        Me.PictureBox2.Location = New System.Drawing.Point(3, 31)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(78, 658)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 42
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.TheNumbers.My.Resources.Resources.william_liu_03122018megamanx_6_right
+        Me.PictureBox1.Location = New System.Drawing.Point(1246, 31)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(78, 658)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 41
+        Me.PictureBox1.TabStop = False
+        '
+        'star9
+        '
+        Me.star9.Image = CType(resources.GetObject("star9.Image"), System.Drawing.Image)
+        Me.star9.InitialImage = CType(resources.GetObject("star9.InitialImage"), System.Drawing.Image)
+        Me.star9.Location = New System.Drawing.Point(1116, 569)
+        Me.star9.Name = "star9"
+        Me.star9.Size = New System.Drawing.Size(123, 123)
+        Me.star9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.star9.TabIndex = 38
+        Me.star9.TabStop = False
+        Me.star9.Visible = False
+        '
+        'star8
+        '
+        Me.star8.Image = CType(resources.GetObject("star8.Image"), System.Drawing.Image)
+        Me.star8.InitialImage = CType(resources.GetObject("star8.InitialImage"), System.Drawing.Image)
+        Me.star8.Location = New System.Drawing.Point(987, 569)
+        Me.star8.Name = "star8"
+        Me.star8.Size = New System.Drawing.Size(123, 123)
+        Me.star8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.star8.TabIndex = 37
+        Me.star8.TabStop = False
+        Me.star8.Visible = False
+        '
+        'star7
+        '
+        Me.star7.Image = CType(resources.GetObject("star7.Image"), System.Drawing.Image)
+        Me.star7.InitialImage = CType(resources.GetObject("star7.InitialImage"), System.Drawing.Image)
+        Me.star7.Location = New System.Drawing.Point(858, 569)
+        Me.star7.Name = "star7"
+        Me.star7.Size = New System.Drawing.Size(123, 123)
+        Me.star7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.star7.TabIndex = 36
+        Me.star7.TabStop = False
+        Me.star7.Visible = False
+        '
+        'star6
+        '
+        Me.star6.Image = CType(resources.GetObject("star6.Image"), System.Drawing.Image)
+        Me.star6.InitialImage = CType(resources.GetObject("star6.InitialImage"), System.Drawing.Image)
+        Me.star6.Location = New System.Drawing.Point(729, 569)
+        Me.star6.Name = "star6"
+        Me.star6.Size = New System.Drawing.Size(123, 123)
+        Me.star6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.star6.TabIndex = 35
+        Me.star6.TabStop = False
+        Me.star6.Visible = False
+        '
+        'star5
+        '
+        Me.star5.Image = CType(resources.GetObject("star5.Image"), System.Drawing.Image)
+        Me.star5.InitialImage = CType(resources.GetObject("star5.InitialImage"), System.Drawing.Image)
+        Me.star5.Location = New System.Drawing.Point(600, 569)
+        Me.star5.Name = "star5"
+        Me.star5.Size = New System.Drawing.Size(123, 123)
+        Me.star5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.star5.TabIndex = 34
+        Me.star5.TabStop = False
+        Me.star5.Visible = False
+        '
+        'star4
+        '
+        Me.star4.Image = CType(resources.GetObject("star4.Image"), System.Drawing.Image)
+        Me.star4.InitialImage = CType(resources.GetObject("star4.InitialImage"), System.Drawing.Image)
+        Me.star4.Location = New System.Drawing.Point(471, 569)
+        Me.star4.Name = "star4"
+        Me.star4.Size = New System.Drawing.Size(123, 123)
+        Me.star4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.star4.TabIndex = 33
+        Me.star4.TabStop = False
+        Me.star4.Visible = False
+        '
+        'star3
+        '
+        Me.star3.Image = CType(resources.GetObject("star3.Image"), System.Drawing.Image)
+        Me.star3.InitialImage = CType(resources.GetObject("star3.InitialImage"), System.Drawing.Image)
+        Me.star3.Location = New System.Drawing.Point(342, 569)
+        Me.star3.Name = "star3"
+        Me.star3.Size = New System.Drawing.Size(123, 123)
+        Me.star3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.star3.TabIndex = 32
+        Me.star3.TabStop = False
+        Me.star3.Visible = False
+        '
+        'star2
+        '
+        Me.star2.Image = CType(resources.GetObject("star2.Image"), System.Drawing.Image)
+        Me.star2.InitialImage = CType(resources.GetObject("star2.InitialImage"), System.Drawing.Image)
+        Me.star2.Location = New System.Drawing.Point(213, 569)
+        Me.star2.Name = "star2"
+        Me.star2.Size = New System.Drawing.Size(123, 123)
+        Me.star2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.star2.TabIndex = 31
+        Me.star2.TabStop = False
+        Me.star2.Visible = False
+        '
+        'star1
+        '
+        Me.star1.Image = CType(resources.GetObject("star1.Image"), System.Drawing.Image)
+        Me.star1.InitialImage = CType(resources.GetObject("star1.InitialImage"), System.Drawing.Image)
+        Me.star1.Location = New System.Drawing.Point(84, 569)
+        Me.star1.Name = "star1"
+        Me.star1.Size = New System.Drawing.Size(123, 123)
+        Me.star1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.star1.TabIndex = 30
+        Me.star1.TabStop = False
+        Me.star1.Visible = False
+        '
+        'picBkTotal
+        '
+        Me.picBkTotal.BackColor = System.Drawing.Color.Cyan
+        Me.picBkTotal.ErrorImage = CType(resources.GetObject("picBkTotal.ErrorImage"), System.Drawing.Image)
+        Me.picBkTotal.Image = CType(resources.GetObject("picBkTotal.Image"), System.Drawing.Image)
+        Me.picBkTotal.InitialImage = CType(resources.GetObject("picBkTotal.InitialImage"), System.Drawing.Image)
+        Me.picBkTotal.Location = New System.Drawing.Point(720, 254)
+        Me.picBkTotal.Name = "picBkTotal"
+        Me.picBkTotal.Size = New System.Drawing.Size(206, 309)
+        Me.picBkTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBkTotal.TabIndex = 28
+        Me.picBkTotal.TabStop = False
+        '
+        'picBk2
+        '
+        Me.picBk2.BackColor = System.Drawing.Color.Cyan
+        Me.picBk2.ErrorImage = CType(resources.GetObject("picBk2.ErrorImage"), System.Drawing.Image)
+        Me.picBk2.Image = Global.TheNumbers.My.Resources.Resources.block
+        Me.picBk2.InitialImage = CType(resources.GetObject("picBk2.InitialImage"), System.Drawing.Image)
+        Me.picBk2.Location = New System.Drawing.Point(402, 254)
+        Me.picBk2.Name = "picBk2"
+        Me.picBk2.Size = New System.Drawing.Size(206, 309)
+        Me.picBk2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBk2.TabIndex = 27
+        Me.picBk2.TabStop = False
+        '
+        'picBk1
+        '
+        Me.picBk1.BackColor = System.Drawing.Color.Cyan
+        Me.picBk1.Image = CType(resources.GetObject("picBk1.Image"), System.Drawing.Image)
+        Me.picBk1.InitialImage = CType(resources.GetObject("picBk1.InitialImage"), System.Drawing.Image)
+        Me.picBk1.Location = New System.Drawing.Point(84, 254)
+        Me.picBk1.Name = "picBk1"
+        Me.picBk1.Size = New System.Drawing.Size(206, 309)
+        Me.picBk1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBk1.TabIndex = 26
+        Me.picBk1.TabStop = False
+        '
+        'picNumber1
+        '
+        Me.picNumber1.BackColor = System.Drawing.Color.Cyan
+        Me.picNumber1.Image = CType(resources.GetObject("picNumber1.Image"), System.Drawing.Image)
+        Me.picNumber1.InitialImage = CType(resources.GetObject("picNumber1.InitialImage"), System.Drawing.Image)
+        Me.picNumber1.Location = New System.Drawing.Point(84, 254)
+        Me.picNumber1.Name = "picNumber1"
+        Me.picNumber1.Size = New System.Drawing.Size(206, 309)
+        Me.picNumber1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picNumber1.TabIndex = 25
+        Me.picNumber1.TabStop = False
+        '
+        'picNumber2
+        '
+        Me.picNumber2.BackColor = System.Drawing.Color.Cyan
+        Me.picNumber2.Image = CType(resources.GetObject("picNumber2.Image"), System.Drawing.Image)
+        Me.picNumber2.InitialImage = CType(resources.GetObject("picNumber2.InitialImage"), System.Drawing.Image)
+        Me.picNumber2.Location = New System.Drawing.Point(402, 254)
+        Me.picNumber2.Name = "picNumber2"
+        Me.picNumber2.Size = New System.Drawing.Size(206, 309)
+        Me.picNumber2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picNumber2.TabIndex = 24
+        Me.picNumber2.TabStop = False
+        '
+        'picTotal
+        '
+        Me.picTotal.BackColor = System.Drawing.Color.Cyan
+        Me.picTotal.Image = CType(resources.GetObject("picTotal.Image"), System.Drawing.Image)
+        Me.picTotal.InitialImage = CType(resources.GetObject("picTotal.InitialImage"), System.Drawing.Image)
+        Me.picTotal.Location = New System.Drawing.Point(720, 254)
+        Me.picTotal.Name = "picTotal"
+        Me.picTotal.Size = New System.Drawing.Size(206, 309)
+        Me.picTotal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picTotal.TabIndex = 23
+        Me.picTotal.TabStop = False
         '
         'frmLevel1
         '
@@ -728,6 +768,8 @@ Partial Class frmLevel1
         Me.BackColor = System.Drawing.Color.DarkOrange
         Me.CancelButton = Me.btnClear
         Me.ClientSize = New System.Drawing.Size(1331, 717)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.stbBar)
         Me.Controls.Add(Me.star9)
         Me.Controls.Add(Me.star8)
@@ -771,6 +813,13 @@ Partial Class frmLevel1
         Me.Name = "frmLevel1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "The Numbers"
+        Me.Menu.ResumeLayout(False)
+        Me.Menu.PerformLayout()
+        CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.stbChild, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.star9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.star8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.star7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -786,11 +835,6 @@ Partial Class frmLevel1
         CType(Me.picNumber1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picNumber2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTotal, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu.ResumeLayout(False)
-        Me.Menu.PerformLayout()
-        CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.stbChild, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -858,4 +902,8 @@ Partial Class frmLevel1
     Friend WithEvents stbArithmetic As StatusBarPanel
     Friend WithEvents stbLevel As StatusBarPanel
     Friend WithEvents stbChild As StatusBarPanel
+    Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
