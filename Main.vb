@@ -4,13 +4,14 @@
 
     'Tareas
     'Falta alinear texto de txtTotal
-    'Default txtTotal
-    'Mensaje de malo
 
 
     'Declarando variables publicas
     Public Numero1, Numero2, Gift As Integer
     Public GoodCount As Integer = 0
+    Public strOpt As String = "Addition"
+    Public intLevel As Integer = 10
+    Public strGift As String = "BoyGift\gift"
 
     'Procedimiento para actualizar las imagenes
     Public Sub UpdImg()
@@ -20,36 +21,31 @@
 
     'Procedimiento para colocar bloques
     Public Sub BlockNumber()
-        picBk1.ImageLocation = "image\block.png"
-        picBk2.ImageLocation = "image\block.png"
-        picBkTotal.ImageLocation = "image\block.png"
-
         picBk1.Visible = True
         picBk2.Visible = True
         picBkTotal.Visible = True
-
     End Sub
 
     'Procedimiento para generar numeros
-    Public Sub RdmNum()
+    Public Sub RdmNumA()
         'Inicializar la clase Random  
         Dim rdm As New Random()
 
         'Inicializar los enteros
         Dim Diferencia As Integer
 
-        ' generar un random entre 0 y 10  
-        Numero1 = rdm.Next(0, 11)
+        ' generar un random entre 0 y intLevel
+        Numero1 = rdm.Next(0, intLevel + 1)
 
         'Verificar que el Numero1 no se repita
         While Numero1 = lblNumber1.Text
-            Numero1 = rdm.Next(0, 11)
+            Numero1 = rdm.Next(0, intLevel + 1)
         End While
 
-        Diferencia = 10 - Numero1
+        Diferencia = intLevel - Numero1
 
-        'Generar Numero2 pero que la suma no de mas de 10
-        If Numero1 = 10 Then
+        'Generar Numero2 pero que la suma no de mas de intLevel
+        If Numero1 = intLevel Then
             Numero2 = 0
         Else
             While Numero2 = lblNumber2.Text
@@ -63,7 +59,83 @@
         txtTotal.Text = ""
         BlockNumber()
         UpdImg()
+    End Sub
 
+    'Generar numero para resta
+    Public Sub RdmNumS()
+        'Inicializar la clase Random  
+        Dim rdm As New Random()
+
+        ' generar un random entre 0 y intLevel
+        Numero1 = rdm.Next(0, intLevel + 1)
+
+        'Verificar que el Numero1 no se repita
+        While Numero1 = lblNumber1.Text
+            Numero1 = rdm.Next(0, intLevel + 1)
+        End While
+
+        'Generar Numero2 pero que sea menor a numero1
+        If Numero1 = 0 Then
+            Numero2 = 0
+        Else
+            While Numero2 = lblNumber2.Text
+                Numero2 = rdm.Next(0, Numero1 + 1)
+            End While
+        End If
+
+        'Asiagnar numeros a los label
+        lblNumber1.Text = Numero1
+        lblNumber2.Text = Numero2
+        txtTotal.Text = ""
+        BlockNumber()
+        UpdImg()
+    End Sub
+
+    'Generar numero de multiplicacion
+    Public Sub RdmNumM()
+        'Inicializar la clase Random  
+        Dim rdm As New Random()
+
+        'Asegura que el Numero1 no se repita
+        While Numero1 = lblNumber1.Text
+            Numero1 = rdm.Next(0, intLevel + 1)
+        End While
+
+        'Asegura que el Numero2 no se repita
+        While Numero2 = lblNumber2.Text
+            Numero2 = rdm.Next(0, intLevel + 1)
+        End While
+
+        'Asiagnar numeros a los label
+        lblNumber1.Text = Numero1
+        lblNumber2.Text = Numero2
+        txtTotal.Text = ""
+        BlockNumber()
+        UpdImg()
+    End Sub
+
+    'Generar numero de divicion
+    Public Sub RdmNumD()
+        'Inicializar la clase Random  
+        Dim rdm As New Random()
+
+        Dim intTotal As Integer
+
+        intTotal = rdm.Next(0, intLevel + 1)
+
+        'Asegura que el Numero2 no se repita
+        While Numero2 = lblNumber2.Text
+            Numero2 = rdm.Next(1, intLevel + 1)
+        End While
+
+        Numero1 = intTotal * Numero2
+
+        'Asiagnar numeros a los label
+        lblNumber1.Text = Numero1
+        lblNumber2.Text = Numero2
+        txtTotal.Text = ""
+        BlockNumber()
+        UpdImg()
     End Sub
 
     'Procedimiento para mostar las estrellas
@@ -142,14 +214,29 @@
             Value = CInt(Int((20 * Rnd()) + 1))
         End While
         Gift = Value
-        frmGift.picGift.ImageLocation = "gift\gift" + CStr(Gift) + ".png"
+        frmGift.picGift.ImageLocation = strGift + CStr(Gift) + ".png"
         frmGift.Visible = True
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        RdmNum()
-        btnOk.Select()
+    'Procedimiento para cambiar de operador
+    Public Sub ChangedMenu()
+        While GoodCount > 0
+            StarDelete()
+        End While
+        Select Case strOpt
+            Case "Addition"
+                'MsgBox("Addition")
+            Case "Subtraction"
+                'MsgBox("Subtraction")
+            Case "Multiplication"
+                'MsgBox("Multiplication")
+            Case "Division"
+                'MsgBox("Division")
+        End Select
+    End Sub
 
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        RdmNumA()
     End Sub
 
     Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
@@ -159,7 +246,6 @@
 
     Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
         txtTotal.Text = 1
-
         picTotal.ImageLocation = "image\1.png"
     End Sub
 
@@ -216,7 +302,7 @@
         If txtTotal.Text Is "" Then
             picTotal.ImageLocation = "image\0.png"
         Else
-            If txtTotal.Text > 10 Then
+            If txtTotal.Text > 12 Then
                 picTotal.ImageLocation = "image\0.png"
             Else
                 picTotal.ImageLocation = "image\" + txtTotal.Text + ".png"
@@ -225,21 +311,61 @@
     End Sub
 
     Private Sub BtnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
-        If txtTotal.Text IsNot "" Then
-            If Numero1 + Numero2 = txtTotal.Text Then
-                RdmNum()
-                ShowStar()
-            Else
-                If GoodCount > 0 Then
-                    StarDelete()
+        Select Case strOpt
+            Case "Addition"
+                If txtTotal.Text IsNot "" Then
+                    If Numero1 + Numero2 = txtTotal.Text Then
+                        RdmNumA()
+                        ShowStar()
+                    Else
+                        If GoodCount > 0 Then
+                            StarDelete()
+                        End If
+                        txtTotal.Text = ""
+                        frmWrongNumber.Visible = True
+                    End If
                 End If
-                txtTotal.Text = ""
-                picBk1.Visible = False
-                picBk2.Visible = False
-                picBkTotal.Visible = False
-                frmWrongNumber.Visible = True
-            End If
-        End If
+            Case "Subtraction"
+                If txtTotal.Text IsNot "" Then
+                    If Numero1 - Numero2 = txtTotal.Text Then
+                        RdmNumS()
+                        ShowStar()
+                    Else
+                        If GoodCount > 0 Then
+                            StarDelete()
+                        End If
+                        txtTotal.Text = ""
+                        frmWrongNumber.Visible = True
+                    End If
+                End If
+            Case "Multiplication"
+                If txtTotal.Text IsNot "" Then
+                    If Numero1 * Numero2 = txtTotal.Text Then
+                        RdmNumM()
+                        ShowStar()
+                    Else
+                        If GoodCount > 0 Then
+                            StarDelete()
+                        End If
+                        txtTotal.Text = ""
+                        frmWrongNumber.Visible = True
+                    End If
+                End If
+            Case "Division"
+                If txtTotal.Text IsNot "" Then
+                    If Numero1 / Numero2 = txtTotal.Text Then
+                        RdmNumD()
+                        ShowStar()
+                    Else
+                        If GoodCount > 0 Then
+                            StarDelete()
+                        End If
+                        txtTotal.Text = ""
+                        frmWrongNumber.Visible = True
+                    End If
+                End If
+        End Select
+
     End Sub
 
     Private Sub PicBk1_Click(sender As Object, e As EventArgs) Handles picBk1.Click
@@ -256,6 +382,114 @@
 
     Private Sub PicNumber2_Click(sender As Object, e As EventArgs) Handles picNumber2.Click
         picBk2.Visible = Not (picBk2.Visible)
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles mnExit.Click
+        Close()
+    End Sub
+
+    Private Sub To10ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles mn10Addition.Click
+        strOpt = "Addition"
+        intLevel = 10
+        RdmNumA()
+        ChangedMenu()
+    End Sub
+
+    Private Sub To12ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles mn12Addition.Click
+        strOpt = "Addition"
+        intLevel = 12
+        RdmNumA()
+        ChangedMenu()
+    End Sub
+
+    Private Sub To20ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles mn20Addition.Click
+        strOpt = "Addition"
+        intLevel = 20
+        RdmNumA()
+        ChangedMenu()
+    End Sub
+
+    Private Sub To100ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles mn100Addition.Click
+        strOpt = "Addition"
+        intLevel = 100
+        RdmNumA()
+        ChangedMenu()
+    End Sub
+
+    Private Sub To10ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles mn10Subtraction.Click
+        strOpt = "Subtraction"
+        intLevel = 10
+        RdmNumS()
+        ChangedMenu()
+    End Sub
+
+    Private Sub To12ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles mn12Subtraction.Click
+        strOpt = "Subtraction"
+        intLevel = 12
+        RdmNumS()
+        ChangedMenu()
+    End Sub
+
+    Private Sub To20ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles mn20Subtraction.Click
+        strOpt = "Subtraction"
+        intLevel = 20
+        RdmNumS()
+        ChangedMenu()
+    End Sub
+
+    Private Sub To100ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles mn100Subtraction.Click
+        strOpt = "Subtraction"
+        intLevel = 100
+        RdmNumS()
+        ChangedMenu()
+    End Sub
+
+    Private Sub MnAddition_DropDownItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles mnAddition.DropDownItemClicked
+        lblOperator1.Text = "+"
+        lblOperator2.Text = "+"
+    End Sub
+
+    Private Sub MnSubtraction_DropDownItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles mnSubtraction.DropDownItemClicked
+        lblOperator1.Text = "-"
+        lblOperator2.Text = "-"
+    End Sub
+
+    Private Sub MnMultiplication_DropDownItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles mnMultiplication.DropDownItemClicked
+        lblOperator1.Text = "x"
+        lblOperator2.Text = "x"
+    End Sub
+
+    Private Sub MnDivision_DropDownItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles mnDivision.DropDownItemClicked
+        lblOperator1.Text = "÷"
+        lblOperator2.Text = "÷"
+    End Sub
+
+    Private Sub ToTable10ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ToTable10ToolStripMenuItem.Click
+        strOpt = "Multiplication"
+        intLevel = 10
+        RdmNumM()
+        ChangedMenu()
+    End Sub
+
+    Private Sub ToTable12ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ToTable12ToolStripMenuItem.Click
+        strOpt = "Multiplication"
+        intLevel = 12
+        RdmNumM()
+        ChangedMenu()
+    End Sub
+
+    Private Sub UpToTable10ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UpToTable10ToolStripMenuItem.Click
+        strOpt = "Division"
+        intLevel = 10
+        RdmNumD()
+        ChangedMenu()
+    End Sub
+
+    Private Sub UpToTable12ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UpToTable12ToolStripMenuItem.Click
+        strOpt = "Division"
+        intLevel = 10
+        RdmNumD()
+        ChangedMenu()
     End Sub
 
     Private Sub PicBkTotal_Click(sender As Object, e As EventArgs) Handles picBkTotal.Click
