@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="The Numbers.exe" version="1.0.0.15" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="The Numbers.exe" version="1.0.0.16" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="numeros.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="The Numbers.exe" size="7207896">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="The Numbers.exe" size="7208920">
       <assemblyIdentity name="The Numbers" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4DIZkdv2916ZvOM2MGFYRiTeVvzDd2N47TNhdCxy8Nc=</dsig:DigestValue>
+        <dsig:DigestValue>6uu2KrrQdqEgzorqasugMRGqVpsfiYusksB/ypJNFE4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -169,60 +169,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>/K9DfE1jBWl0OULdNOuMPWO2LExFXVHuD6Zs8ERUvhg=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="BoyGift\21.png" size="978967">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Fz5cmxNyZLsTFrhm4GwtXN4XbEnM8l2U/fKGfeor1dA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="BoyGift\22.png" size="1162076">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ZiQ8L/9fldXWBzIYSuKmIv9OyqYc+dr7Gxl4dTTdYmE=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="BoyGift\23.png" size="1398861">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>JW97SoFgEA1WLPsg1g141gy6kYeNjf13ZQ3xc+eCHzA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="BoyGift\24.png" size="746539">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>AG8G095bz0Xz4lyu55E2Zs/Ei49eEbeOohUAKexoBDc=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="BoyGift\25.png" size="1651049">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>hErxeGN5irZcu6LS90zoctRJg+B3D/3Hbp4gPvajFY0=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="BoyGift\26.png" size="1730719">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Wij3OpbjNcN4QCUJ/k4QmeqNkfXRQIrKf/Z9fcv47j4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="BoyGift\3.png" size="2092667">

@@ -385,19 +385,19 @@ Partial Class frmMain
         'LoginToolStripMenuItem
         '
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.LoginToolStripMenuItem.Text = "Login"
         '
         'ShowGiftTableToolStripMenuItem
         '
         Me.ShowGiftTableToolStripMenuItem.Name = "ShowGiftTableToolStripMenuItem"
-        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.ShowGiftTableToolStripMenuItem.Text = "Show Gift Table"
         '
         'mnExit
         '
         Me.mnExit.Name = "mnExit"
-        Me.mnExit.Size = New System.Drawing.Size(156, 22)
+        Me.mnExit.Size = New System.Drawing.Size(155, 22)
         Me.mnExit.Text = "Exit"
         '
         'mnArithmetic
