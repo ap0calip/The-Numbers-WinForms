@@ -6,4 +6,8 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Close()
     End Sub
+
+    Private Sub frmWrongNumber_Click(sender As Object, e As EventArgs) Handles Me.Click
+        Close()
+    End Sub
 End Class

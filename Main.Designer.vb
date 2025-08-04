@@ -68,6 +68,7 @@ Partial Class frmLevel1
         Me.FemeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DedicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.stbBar = New System.Windows.Forms.StatusBar()
         Me.stbArithmetic = New System.Windows.Forms.StatusBarPanel()
         Me.stbLevel = New System.Windows.Forms.StatusBarPanel()
@@ -89,6 +90,7 @@ Partial Class frmLevel1
         Me.picNumber1 = New System.Windows.Forms.PictureBox()
         Me.picNumber2 = New System.Windows.Forms.PictureBox()
         Me.picTotal = New System.Windows.Forms.PictureBox()
+        Me.ShowGiftTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Menu.SuspendLayout()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -377,7 +379,7 @@ Partial Class frmLevel1
         '
         'mnFile
         '
-        Me.mnFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnExit})
+        Me.mnFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowGiftTableToolStripMenuItem, Me.mnExit})
         Me.mnFile.Name = "mnFile"
         Me.mnFile.Size = New System.Drawing.Size(37, 20)
         Me.mnFile.Text = "File"
@@ -385,7 +387,7 @@ Partial Class frmLevel1
         'mnExit
         '
         Me.mnExit.Name = "mnExit"
-        Me.mnExit.Size = New System.Drawing.Size(92, 22)
+        Me.mnExit.Size = New System.Drawing.Size(180, 22)
         Me.mnExit.Text = "Exit"
         '
         'mnArithmetic
@@ -516,7 +518,7 @@ Partial Class frmLevel1
         '
         'HelpToolStripMenuItem
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem, Me.DedicationToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
@@ -524,8 +526,14 @@ Partial Class frmLevel1
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
-        Me.AboutToolStripMenuItem.Text = "About The Numbers"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'DedicationToolStripMenuItem
+        '
+        Me.DedicationToolStripMenuItem.Name = "DedicationToolStripMenuItem"
+        Me.DedicationToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.DedicationToolStripMenuItem.Text = "Dedication"
         '
         'stbBar
         '
@@ -760,6 +768,12 @@ Partial Class frmLevel1
         Me.picTotal.TabIndex = 23
         Me.picTotal.TabStop = False
         '
+        'ShowGiftTableToolStripMenuItem
+        '
+        Me.ShowGiftTableToolStripMenuItem.Name = "ShowGiftTableToolStripMenuItem"
+        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ShowGiftTableToolStripMenuItem.Text = "Show Gift Table"
+        '
         'frmLevel1
         '
         Me.AcceptButton = Me.btnOk
@@ -906,4 +920,6 @@ Partial Class frmLevel1
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents DedicationToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ShowGiftTableToolStripMenuItem As ToolStripMenuItem
 End Class

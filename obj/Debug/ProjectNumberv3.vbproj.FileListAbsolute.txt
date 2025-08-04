@@ -25,3 +25,4 @@ C:\Users\louryfor\Documents\Number v3.1\obj\Debug\The Numbers.exe
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\The Numbers.xml
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\The Numbers.pdb
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmwrongnumber.resources
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmGiftTable.resources

@@ -24,12 +24,12 @@ Partial Class frmGift
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGift))
         Me.picGift = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.picGift, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picGift
         '
-        Me.picGift.Image = Global.TheNumbers.My.Resources.Resources.block
         Me.picGift.Location = New System.Drawing.Point(12, 12)
         Me.picGift.MaximumSize = New System.Drawing.Size(500, 500)
         Me.picGift.MinimumSize = New System.Drawing.Size(500, 500)
@@ -39,6 +39,16 @@ Partial Class frmGift
         Me.picGift.TabIndex = 0
         Me.picGift.TabStop = False
         '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 72.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(518, 12)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(645, 500)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Congratulation!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You get 10 stars" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "this gift is yours."
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'frmGift
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -47,10 +57,13 @@ Partial Class frmGift
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(528, 523)
+        Me.ClientSize = New System.Drawing.Size(1159, 523)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picGift)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmGift"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gift"
@@ -61,4 +74,5 @@ Partial Class frmGift
     End Sub
 
     Friend WithEvents picGift As PictureBox
+    Friend WithEvents Label1 As Label
 End Class

@@ -76,6 +76,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GiftTable.Designer.vb">
+      <DependentUpon>GiftTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GiftTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Wrong.Designer.vb">
       <DependentUpon>Wrong.vb</DependentUpon>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GiftTable.resx">
+      <DependentUpon>GiftTable.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wrong.resx">
       <DependentUpon>Wrong.vb</DependentUpon>
     </EmbeddedResource>

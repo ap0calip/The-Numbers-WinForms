@@ -8,6 +8,9 @@
     Public strOpt As String = "Addition"
     Public intLevel As Integer = 10
     Public strGiftPath As String = "BoyGift\"
+    'Variables para agrandar componentes segun tamaño de la ventana
+    Dim CuRHeight As Integer = Me.Height
+    Dim CuRWidth As Integer = Me.Width
 
     'Procedimiento para actualizar las imagenes
     Public Sub UpdImg()
@@ -554,10 +557,16 @@
                vbNewLine & "Start date: 05-07-19" & vbNewLine & "" & vbNewLine & "Megaman and Zero" & vbNewLine & "Freelance Artist: William Liu", vbOKOnly, "About")
     End Sub
 
-    'Procedimiento para agrandar la forma
-    Dim CuRWidth As Integer = Me.Width
-    Dim CuRHeight As Integer = Me.Height
+    Private Sub ShowGiftTableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowGiftTableToolStripMenuItem.Click
+        frmGiftTable.ShowDialog()
+    End Sub
 
+    Private Sub DedicationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DedicationToolStripMenuItem.Click
+        MsgBox("Este programa es basado en Los Números creado por mi en el 2008 para ayudar a mi hijo a aprender a sumar del 1 al 10." &
+            vbNewLine & "Dedico este programa a: Bryan Jayson", vbOKOnly, "Dedication")
+    End Sub
+
+    'Procedimiento para agrandar los componentes segun tamaño de ventana
     Private Sub frmLevel1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         Dim RatioHeight As Double = (Me.Height - CuRHeight) / CuRHeight
         Dim RatioWidth As Double = (Me.Width - CuRWidth) / CuRWidth
