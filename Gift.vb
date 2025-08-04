@@ -7,7 +7,7 @@
         Close()
     End Sub
 
-    Private Sub frmGift_Click(sender As Object, e As EventArgs) Handles Me.Click
+    Private Sub FrmGift_Click(sender As Object, e As EventArgs) Handles Me.Click
         Close()
     End Sub
 End Class

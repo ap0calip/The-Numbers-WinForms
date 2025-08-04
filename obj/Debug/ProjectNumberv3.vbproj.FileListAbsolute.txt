@@ -40,3 +40,8 @@ C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\ProjectNumberv3.vbproj.CoreCom
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.exe
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.xml
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.pdb
+C:\Users\ap0ca\source\repos\The Numbers\bin\Debug\The Numbers.exe.manifest
+C:\Users\ap0ca\source\repos\The Numbers\bin\Debug\The Numbers.application
+C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.TrustInfo.xml
+C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.exe.manifest
+C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.application

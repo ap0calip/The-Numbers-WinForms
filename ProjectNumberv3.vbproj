@@ -14,6 +14,25 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en-US</TargetCulture>
+    <ProductName>The Numbers</ProductName>
+    <PublisherName>forcomputer</PublisherName>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,6 +69,24 @@
   <PropertyGroup>
     <ApplicationIcon>numeros.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B8E6D55773278003CC4948AD9B8B0B20173957E3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ProjectNumberv3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -76,6 +113,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Wrong.Designer.vb">
       <DependentUpon>Wrong.vb</DependentUpon>
     </Compile>
@@ -100,11 +142,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -123,12 +160,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -139,23 +177,82 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="ProjectNumberv3_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\image\block.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\image\star.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\image\x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\image\0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\image\william-liu-03122018megamanx-6 left.jpg" />
-    <None Include="bin\Debug\image\william-liu-03122018megamanx-6 right.jpg" />
+    <None Include="Resources\13.png" />
+    <None Include="Resources\girl20.png" />
+    <None Include="Resources\girl19.png" />
+    <None Include="Resources\girl18.png" />
+    <None Include="Resources\girl17.png" />
+    <None Include="Resources\girl16.png" />
+    <None Include="Resources\girl15.png" />
+    <None Include="Resources\girl14.png" />
+    <None Include="Resources\girl13.png" />
+    <None Include="Resources\girl12.png" />
+    <None Include="Resources\girl11.png" />
+    <None Include="Resources\girl10.png" />
+    <None Include="Resources\girl9.png" />
+    <None Include="Resources\girl8.png" />
+    <None Include="Resources\girl7.png" />
+    <None Include="Resources\girl6.png" />
+    <None Include="Resources\girl5.png" />
+    <None Include="Resources\girl4.png" />
+    <None Include="Resources\girl3.png" />
+    <None Include="Resources\girl2.png" />
+    <None Include="Resources\girl1.png" />
+    <None Include="Resources\boy20.png" />
+    <None Include="Resources\boy19.png" />
+    <None Include="Resources\boy18.png" />
+    <None Include="Resources\boy17.png" />
+    <None Include="Resources\boy16.png" />
+    <None Include="Resources\boy15.png" />
+    <None Include="Resources\boy14.png" />
+    <None Include="Resources\boy13.png" />
+    <None Include="Resources\boy12.png" />
+    <None Include="Resources\boy11.png" />
+    <None Include="Resources\boy10.png" />
+    <None Include="Resources\boy9.png" />
+    <None Include="Resources\boy8.png" />
+    <None Include="Resources\boy7.png" />
+    <None Include="Resources\boy6.png" />
+    <None Include="Resources\boy5.png" />
+    <None Include="Resources\boy4.png" />
+    <None Include="Resources\boy3.png" />
+    <None Include="Resources\boy2.png" />
+    <None Include="Resources\boy1.png" />
+    <None Include="Resources\block.png" />
+    <None Include="Resources\william-liu-03122018megamanx-6 right.jpg" />
+    <None Include="Resources\william-liu-03122018megamanx-6 left.jpg" />
+    <None Include="Resources\x.png" />
+    <None Include="Resources\star.png" />
+    <None Include="Resources\0.png" />
+    <None Include="Resources\12.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\10.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
     <Content Include="numeros.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

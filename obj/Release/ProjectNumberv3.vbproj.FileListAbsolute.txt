@@ -1,0 +1,19 @@
+C:\Users\ap0ca\source\repos\The Numbers\bin\Release\The Numbers.exe.config
+C:\Users\ap0ca\source\repos\The Numbers\bin\Release\The Numbers.exe.manifest
+C:\Users\ap0ca\source\repos\The Numbers\bin\Release\The Numbers.application
+C:\Users\ap0ca\source\repos\The Numbers\bin\Release\The Numbers.exe
+C:\Users\ap0ca\source\repos\The Numbers\bin\Release\The Numbers.pdb
+C:\Users\ap0ca\source\repos\The Numbers\bin\Release\The Numbers.xml
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\ProjectNumberv3.vbprojAssemblyReference.cache
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\TheNumbers.FrmWrongNumber.resources
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\TheNumbers.frmLevel1.resources
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\TheNumbers.frmGift.resources
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\TheNumbers.Resources.resources
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\ProjectNumberv3.vbproj.GenerateResource.cache
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\ProjectNumberv3.vbproj.CoreCompileInputs.cache
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.TrustInfo.xml
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.exe.manifest
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.application
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.exe
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.xml
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.pdb

@@ -10,5 +10,14 @@ Version 0.6.0
 -Colocar invisible los Bloques para que se vean los numeros si hay una constestacion mala
 -Arreglar Name Rule Violation
 
+Version 0.6.1
+-Agregar WAPP
+-Actualizar Properties
+-Agregar Folder y Items en GirlGift, BoyGift e Image
+-Borrar RdmNumD() cuando se cambia de genero
+-Cambiar texto de frmWrongNumber
+-Cambiar UpdImg() ImageLocation -> Image y referenciar a un recurso
+-Crear picture para mas de 13
 
 
+***

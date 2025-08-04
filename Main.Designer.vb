@@ -58,11 +58,11 @@ Partial Class frmLevel1
         Me.mn20Subtraction = New System.Windows.Forms.ToolStripMenuItem()
         Me.mn100Subtraction = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnMultiplication = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToTable10ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToTable12ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Up10M = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Up12M = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnDivision = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UpToTable10ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UpToTable12ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Up10D = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Up12D = New System.Windows.Forms.ToolStripMenuItem()
         Me.GenderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MasculineToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FemeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -386,7 +386,7 @@ Partial Class frmLevel1
         'mnExit
         '
         Me.mnExit.Name = "mnExit"
-        Me.mnExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnExit.Size = New System.Drawing.Size(93, 22)
         Me.mnExit.Text = "Exit"
         '
         'mnArithmetic
@@ -460,41 +460,41 @@ Partial Class frmLevel1
         '
         'mnMultiplication
         '
-        Me.mnMultiplication.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToTable10ToolStripMenuItem, Me.ToTable12ToolStripMenuItem})
+        Me.mnMultiplication.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Up10M, Me.Up12M})
         Me.mnMultiplication.Name = "mnMultiplication"
         Me.mnMultiplication.Size = New System.Drawing.Size(148, 22)
         Me.mnMultiplication.Text = "Multiplication"
         '
-        'ToTable10ToolStripMenuItem
+        'Up10M
         '
-        Me.ToTable10ToolStripMenuItem.Name = "ToTable10ToolStripMenuItem"
-        Me.ToTable10ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
-        Me.ToTable10ToolStripMenuItem.Text = "Up to table 10"
+        Me.Up10M.Name = "Up10M"
+        Me.Up10M.Size = New System.Drawing.Size(147, 22)
+        Me.Up10M.Text = "Up to table 10"
         '
-        'ToTable12ToolStripMenuItem
+        'Up12M
         '
-        Me.ToTable12ToolStripMenuItem.Name = "ToTable12ToolStripMenuItem"
-        Me.ToTable12ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
-        Me.ToTable12ToolStripMenuItem.Text = "Up to table 12"
+        Me.Up12M.Name = "Up12M"
+        Me.Up12M.Size = New System.Drawing.Size(147, 22)
+        Me.Up12M.Text = "Up to table 12"
         '
         'mnDivision
         '
-        Me.mnDivision.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UpToTable10ToolStripMenuItem, Me.UpToTable12ToolStripMenuItem})
+        Me.mnDivision.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Up10D, Me.Up12D})
         Me.mnDivision.Name = "mnDivision"
         Me.mnDivision.Size = New System.Drawing.Size(148, 22)
         Me.mnDivision.Text = "Division"
         '
-        'UpToTable10ToolStripMenuItem
+        'Up10D
         '
-        Me.UpToTable10ToolStripMenuItem.Name = "UpToTable10ToolStripMenuItem"
-        Me.UpToTable10ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
-        Me.UpToTable10ToolStripMenuItem.Text = "Up to table 10"
+        Me.Up10D.Name = "Up10D"
+        Me.Up10D.Size = New System.Drawing.Size(147, 22)
+        Me.Up10D.Text = "Up to table 10"
         '
-        'UpToTable12ToolStripMenuItem
+        'Up12D
         '
-        Me.UpToTable12ToolStripMenuItem.Name = "UpToTable12ToolStripMenuItem"
-        Me.UpToTable12ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
-        Me.UpToTable12ToolStripMenuItem.Text = "Up to table 12"
+        Me.Up12D.Name = "Up12D"
+        Me.Up12D.Size = New System.Drawing.Size(147, 22)
+        Me.Up12D.Text = "Up to table 12"
         '
         'GenderToolStripMenuItem
         '
@@ -506,13 +506,13 @@ Partial Class frmLevel1
         'MasculineToolStripMenuItem
         '
         Me.MasculineToolStripMenuItem.Name = "MasculineToolStripMenuItem"
-        Me.MasculineToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MasculineToolStripMenuItem.Size = New System.Drawing.Size(94, 22)
         Me.MasculineToolStripMenuItem.Text = "Boy"
         '
         'FemeToolStripMenuItem
         '
         Me.FemeToolStripMenuItem.Name = "FemeToolStripMenuItem"
-        Me.FemeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FemeToolStripMenuItem.Size = New System.Drawing.Size(94, 22)
         Me.FemeToolStripMenuItem.Text = "Girl"
         '
         'HelpToolStripMenuItem
@@ -525,13 +525,13 @@ Partial Class frmLevel1
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'DedicationToolStripMenuItem
         '
         Me.DedicationToolStripMenuItem.Name = "DedicationToolStripMenuItem"
-        Me.DedicationToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DedicationToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.DedicationToolStripMenuItem.Text = "Dedication"
         '
         'stbBar
@@ -567,7 +567,7 @@ Partial Class frmLevel1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.TheNumbers.My.Resources.Resources.william_liu_03122018megamanx_6_left
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(3, 31)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(78, 658)
@@ -577,7 +577,7 @@ Partial Class frmLevel1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.TheNumbers.My.Resources.Resources.william_liu_03122018megamanx_6_right
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(1246, 31)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(78, 658)
@@ -697,7 +697,7 @@ Partial Class frmLevel1
         '
         Me.picBkTotal.BackColor = System.Drawing.Color.Cyan
         Me.picBkTotal.ErrorImage = CType(resources.GetObject("picBkTotal.ErrorImage"), System.Drawing.Image)
-        Me.picBkTotal.Image = CType(resources.GetObject("picBkTotal.Image"), System.Drawing.Image)
+        Me.picBkTotal.Image = Global.TheNumbers.My.Resources.Resources.block
         Me.picBkTotal.InitialImage = CType(resources.GetObject("picBkTotal.InitialImage"), System.Drawing.Image)
         Me.picBkTotal.Location = New System.Drawing.Point(720, 254)
         Me.picBkTotal.Name = "picBkTotal"
@@ -897,10 +897,10 @@ Partial Class frmLevel1
     Friend WithEvents mn12Subtraction As ToolStripMenuItem
     Friend WithEvents mn20Subtraction As ToolStripMenuItem
     Friend WithEvents mn100Subtraction As ToolStripMenuItem
-    Friend WithEvents ToTable10ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToTable12ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UpToTable10ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UpToTable12ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Up10M As ToolStripMenuItem
+    Friend WithEvents Up12M As ToolStripMenuItem
+    Friend WithEvents Up10D As ToolStripMenuItem
+    Friend WithEvents Up12D As ToolStripMenuItem
     Friend WithEvents GenderToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MasculineToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FemeToolStripMenuItem As ToolStripMenuItem
