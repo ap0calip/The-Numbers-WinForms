@@ -27,109 +27,14 @@ The Numbers
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:TheNumbers.My.Resources.Resources._1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._10">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._11">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._12">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._2">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._3">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._4">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._5">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._6">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._7">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._8">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources._9">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:TheNumbers.My.Resources.Resources.block">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:TheNumbers.My.Resources.Resources.fondo">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.Gift">
-<summary>
-  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.kavel_smyloo">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.numeros">
-<summary>
-  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-</summary>
-</member>
 <member name="P:TheNumbers.My.Resources.Resources.star">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.Star1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.Stop_2">
-<summary>
-  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.UserDataBase">
-<summary>
-  Looks up a localized resource of type System.Byte[].
 </summary>
 </member>
 <member name="P:TheNumbers.My.Resources.Resources.william_liu_03122018megamanx_6_left">

@@ -1,0 +1,14 @@
+Version 0.6.0
+-Tomar original version 0.4.2
+-Cambiar GirlGift por los nuevos del 0.5.2
+-Cambiar BoyGift 26 por el 7 y borrar del 21 al 26
+-Actualizar Dedication y About del 0.5.2
+-Actualizar formula de RdmNumA() y dmNumS() del 0.5.2
+-Agregar variable Total
+-Inicializar variables Numero1, Numero2, Total, Gift a 0
+-Borrar File->Show Gift Table y GiFtTable
+-Colocar invisible los Bloques para que se vean los numeros si hay una constestacion mala
+-Arreglar Name Rule Violation
+
+
+

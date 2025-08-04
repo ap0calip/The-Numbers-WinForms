@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmMain
+Partial Class frmLevel1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLevel1))
         Me.btn0 = New System.Windows.Forms.Button()
         Me.btn1 = New System.Windows.Forms.Button()
         Me.btn2 = New System.Windows.Forms.Button()
@@ -43,10 +43,8 @@ Partial Class frmMain
         Me.btnOk = New System.Windows.Forms.Button()
         Me.lblOperator2 = New System.Windows.Forms.Label()
         Me.lbligual2 = New System.Windows.Forms.Label()
-        Me.stpMenu = New System.Windows.Forms.MenuStrip()
+        Me.StpMenu = New System.Windows.Forms.MenuStrip()
         Me.mnFile = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ShowGiftTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnArithmetic = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnAddition = New System.Windows.Forms.ToolStripMenuItem()
@@ -65,13 +63,16 @@ Partial Class frmMain
         Me.mnDivision = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpToTable10ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpToTable12ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GenderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasculineToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FemeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DedicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.stbBar = New System.Windows.Forms.StatusBar()
-        Me.stbName = New System.Windows.Forms.StatusBarPanel()
         Me.stbArithmetic = New System.Windows.Forms.StatusBarPanel()
         Me.stbLevel = New System.Windows.Forms.StatusBarPanel()
+        Me.stbChild = New System.Windows.Forms.StatusBarPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.star9 = New System.Windows.Forms.PictureBox()
@@ -89,10 +90,10 @@ Partial Class frmMain
         Me.picNumber1 = New System.Windows.Forms.PictureBox()
         Me.picNumber2 = New System.Windows.Forms.PictureBox()
         Me.picTotal = New System.Windows.Forms.PictureBox()
-        Me.stpMenu.SuspendLayout()
-        CType(Me.stbName, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StpMenu.SuspendLayout()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.stbChild, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.star9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -366,38 +367,26 @@ Partial Class frmMain
         Me.lbligual2.Text = "="
         Me.lbligual2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'stpMenu
+        'StpMenu
         '
-        Me.stpMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic, Me.HelpToolStripMenuItem})
-        Me.stpMenu.Location = New System.Drawing.Point(0, 0)
-        Me.stpMenu.Name = "stpMenu"
-        Me.stpMenu.Size = New System.Drawing.Size(1331, 24)
-        Me.stpMenu.TabIndex = 39
-        Me.stpMenu.Text = "MenuStrip1"
+        Me.StpMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic, Me.GenderToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.StpMenu.Location = New System.Drawing.Point(0, 0)
+        Me.StpMenu.Name = "StpMenu"
+        Me.StpMenu.Size = New System.Drawing.Size(1331, 24)
+        Me.StpMenu.TabIndex = 39
+        Me.StpMenu.Text = "MenuStrip1"
         '
         'mnFile
         '
-        Me.mnFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoginToolStripMenuItem, Me.ShowGiftTableToolStripMenuItem, Me.mnExit})
+        Me.mnFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnExit})
         Me.mnFile.Name = "mnFile"
         Me.mnFile.Size = New System.Drawing.Size(37, 20)
         Me.mnFile.Text = "File"
         '
-        'LoginToolStripMenuItem
-        '
-        Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
-        Me.LoginToolStripMenuItem.Text = "Login"
-        '
-        'ShowGiftTableToolStripMenuItem
-        '
-        Me.ShowGiftTableToolStripMenuItem.Name = "ShowGiftTableToolStripMenuItem"
-        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
-        Me.ShowGiftTableToolStripMenuItem.Text = "Show Gift Table"
-        '
         'mnExit
         '
         Me.mnExit.Name = "mnExit"
-        Me.mnExit.Size = New System.Drawing.Size(155, 22)
+        Me.mnExit.Size = New System.Drawing.Size(180, 22)
         Me.mnExit.Text = "Exit"
         '
         'mnArithmetic
@@ -507,6 +496,25 @@ Partial Class frmMain
         Me.UpToTable12ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.UpToTable12ToolStripMenuItem.Text = "Up to table 12"
         '
+        'GenderToolStripMenuItem
+        '
+        Me.GenderToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MasculineToolStripMenuItem, Me.FemeToolStripMenuItem})
+        Me.GenderToolStripMenuItem.Name = "GenderToolStripMenuItem"
+        Me.GenderToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
+        Me.GenderToolStripMenuItem.Text = "Child"
+        '
+        'MasculineToolStripMenuItem
+        '
+        Me.MasculineToolStripMenuItem.Name = "MasculineToolStripMenuItem"
+        Me.MasculineToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MasculineToolStripMenuItem.Text = "Boy"
+        '
+        'FemeToolStripMenuItem
+        '
+        Me.FemeToolStripMenuItem.Name = "FemeToolStripMenuItem"
+        Me.FemeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FemeToolStripMenuItem.Text = "Girl"
+        '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem, Me.DedicationToolStripMenuItem})
@@ -517,31 +525,24 @@ Partial Class frmMain
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'DedicationToolStripMenuItem
         '
         Me.DedicationToolStripMenuItem.Name = "DedicationToolStripMenuItem"
-        Me.DedicationToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.DedicationToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DedicationToolStripMenuItem.Text = "Dedication"
         '
         'stbBar
         '
         Me.stbBar.Location = New System.Drawing.Point(0, 695)
         Me.stbBar.Name = "stbBar"
-        Me.stbBar.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.stbName, Me.stbArithmetic, Me.stbLevel})
+        Me.stbBar.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.stbArithmetic, Me.stbLevel, Me.stbChild})
         Me.stbBar.ShowPanels = True
         Me.stbBar.Size = New System.Drawing.Size(1331, 22)
         Me.stbBar.TabIndex = 40
         Me.stbBar.Text = "StatusBar1"
-        '
-        'stbName
-        '
-        Me.stbName.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
-        Me.stbName.Name = "stbName"
-        Me.stbName.Text = "User:"
-        Me.stbName.Width = 438
         '
         'stbArithmetic
         '
@@ -556,6 +557,13 @@ Partial Class frmMain
         Me.stbLevel.Name = "stbLevel"
         Me.stbLevel.Text = "Level: 10"
         Me.stbLevel.Width = 438
+        '
+        'stbChild
+        '
+        Me.stbChild.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
+        Me.stbChild.Name = "stbChild"
+        Me.stbChild.Text = "Child: Boy"
+        Me.stbChild.Width = 438
         '
         'PictureBox2
         '
@@ -759,7 +767,7 @@ Partial Class frmMain
         Me.picTotal.TabIndex = 23
         Me.picTotal.TabStop = False
         '
-        'frmMain
+        'frmLevel1
         '
         Me.AcceptButton = Me.btnOk
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -801,23 +809,22 @@ Partial Class frmMain
         Me.Controls.Add(Me.btn2)
         Me.Controls.Add(Me.btn1)
         Me.Controls.Add(Me.btn0)
-        Me.Controls.Add(Me.stpMenu)
+        Me.Controls.Add(Me.StpMenu)
         Me.Controls.Add(Me.lbligual2)
         Me.Controls.Add(Me.lblOperator2)
         Me.Controls.Add(Me.lbligual1)
         Me.Controls.Add(Me.lblOperator1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.stpMenu
-        Me.Name = "frmMain"
+        Me.MainMenuStrip = Me.StpMenu
+        Me.Name = "frmLevel1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "The Numbers"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.stpMenu.ResumeLayout(False)
-        Me.stpMenu.PerformLayout()
-        CType(Me.stbName, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StpMenu.ResumeLayout(False)
+        Me.StpMenu.PerformLayout()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.stbChild, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.star9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -874,7 +881,7 @@ Partial Class frmMain
     Friend WithEvents star7 As PictureBox
     Friend WithEvents star8 As PictureBox
     Friend WithEvents star9 As PictureBox
-    Friend WithEvents stpMenu As MenuStrip
+    Friend WithEvents StpMenu As MenuStrip
     Friend WithEvents mnArithmetic As ToolStripMenuItem
     Friend WithEvents mnAddition As ToolStripMenuItem
     Friend WithEvents mnSubtraction As ToolStripMenuItem
@@ -894,16 +901,17 @@ Partial Class frmMain
     Friend WithEvents ToTable12ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UpToTable10ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UpToTable12ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GenderToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MasculineToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FemeToolStripMenuItem As ToolStripMenuItem
     Public WithEvents txtTotal As TextBox
     Friend WithEvents stbBar As StatusBar
     Friend WithEvents stbArithmetic As StatusBarPanel
     Friend WithEvents stbLevel As StatusBarPanel
+    Friend WithEvents stbChild As StatusBarPanel
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents DedicationToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ShowGiftTableToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LoginToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents stbName As StatusBarPanel
 End Class

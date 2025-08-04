@@ -1,6 +1,4 @@
-﻿Imports System.ComponentModel
-
-Public Class frmMain
+﻿Public Class frmLevel1
     'Programa basado en la aplicacion creada en el 2008
     'Fecha de comienzo 7 de mayo de 2019
 
@@ -16,21 +14,6 @@ Public Class frmMain
     'Variables para agrandar componentes segun tamaño de la ventana
     Dim CuRHeight As Integer = Me.Height
     Dim CuRWidth As Integer = Me.Width
-
-    'Base de datos
-    Public MaxRows As Integer                  'HOLDS MAXIMUM QUANTITY OF ROWS
-    Public inc As Integer                      'HOLDS CURRENT ROW
-    Dim con As New OleDb.OleDbConnection    'THE CONNECTION OBJECT
-    Dim dbProvider As String                'HOLDS THE PROVIDER
-    Dim dbSource As String                  'HOLDS THE DATA SOURCE
-    Dim MyDocumentFolder As String          'HOLDS THEDOCUMENTS FOLDER
-    Dim TheDatabase As String               'HOLDS DATABASE NAME
-    Dim FullDatabasePath As String          'HOLDS THEDOCUMENTS PATH
-
-
-    Public ds As New DataSet                   'HOLDS A DataSet OBJECT
-    Public da As OleDb.OleDbDataAdapter        'HOLDS A DataAdapter OBJECT
-    Dim sql As String                       'HOLDS A SQL STRING
 
     'Procedimiento para actualizar las imagenes
     Public Sub UpdImg()
@@ -54,8 +37,9 @@ Public Class frmMain
         picBkTotal.Visible = True
     End Sub
 
-    'Procedimiento para generar numeros suma
+    'Procedimiento para generar numeros
     Public Sub RdmNumA()
+        'Inicializar la clase Random  
         Dim Entero As Integer
 
         'Inicializar la clase Random  
@@ -80,41 +64,6 @@ Public Class frmMain
         End If
 
         Numero2 = Total - Numero1
-
-        'Asignar numeros a los label
-        lblNumber1.Text = Numero1
-        lblNumber2.Text = Numero2
-        txtTotal.Text = ""
-        BlockNumber()
-        UpdImg()
-    End Sub
-
-    'Procedimiento para generar numeros suma empezando con Numero1
-    Public Sub RdmNumOld()
-        'Inicializar la clase Random  
-        Dim rdm As New Random()
-
-        'Inicializar los enteros
-        Dim Diferencia As Integer
-
-        ' generar un random entre 0 y intLevel
-        Numero1 = rdm.Next(0, intLevel + 1)
-
-        'Verificar que el Numero1 no se repita
-        While Numero1 = lblNumber1.Text
-            Numero1 = rdm.Next(0, intLevel + 1)
-        End While
-
-        Diferencia = intLevel - Numero1
-
-        'Generar Numero2 pero que la suma no de mas de intLevel
-        If Numero1 = intLevel Then
-            Numero2 = 0
-        Else
-            While Numero2 = lblNumber2.Text
-                Numero2 = rdm.Next(0, Diferencia + 1)
-            End While
-        End If
 
         'Asignar numeros a los label
         lblNumber1.Text = Numero1
@@ -267,7 +216,7 @@ Public Class frmMain
             Case 9
                 star9.Visible = False
         End Select
-        GoodCount = GoodCount - 1
+        GoodCount -= 1 'GoodCount = GoodCount - 1
     End Sub
 
     'Procedimiento para mostrar el regalo
@@ -285,58 +234,25 @@ Public Class frmMain
         Gift = Value
         frmGift.picGift.ImageLocation = strGiftPath + CStr(Gift) + ".png"
         frmGift.ShowDialog()
-        ds.Tables("Users").Rows(inc).Item(1 + Gift) = ds.Tables("Users").Rows(inc).Item(1 + Gift) + 1
     End Sub
 
-    'Procedimiento para cuando se cambia de operador y nivel
+    'Procedimiento para cambiar de operador
     Public Sub ChangedMenu()
         While GoodCount > 0
             StarDelete()
         End While
         stbArithmetic.Text = "Arithmetic: " + strOpt
         stbLevel.Text = "Level: " + CStr(intLevel)
-    End Sub
-
-    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        RdmNumA()
-        'SET UP THE PROVIDER
-        dbProvider = "PROVIDER=Microsoft.Jet.OLEDB.4.0;"
-
-        'SET WHERE DATABASE IS
-        FullDatabasePath = ".\image\UserDataBase.mdb"
-
-        'SET THE PATH OF SOURCE
-        dbSource = "Data Source = " & FullDatabasePath
-
-        'SET THE CONNECTION STRING
-        con.ConnectionString = dbProvider & dbSource
-
-        'OPEN THE DATABASE
-        con.Open()
-
-        'STORE THE SQL STRING
-        sql = "SELECT * FROM UserTable"
-
-        'PASS THE SQL STRING AND CONNECTION OBJECT TO THE DATA_ADAPTER
-        da = New OleDb.OleDbDataAdapter(sql, con)
-
-        'FILL THE DATASET WITH RECORDS FROM THE DATABASE TABLE
-        da.Fill(ds, "Users")
-
-        'CLOSE THE DATABASE
-        con.Close()
-
-        'GET HOW MANY ROWS IS IN THE DATABASE TABLE
-        MaxRows = ds.Tables("Users").Rows.Count
-
-        'SET THE VALUE FOR THE INC VARIABLE
-        If MaxRows > 0 Then
-            inc = 0
+        If strGiftPath = "BoyGift\" Then
+            stbChild.Text = "Child: Boy"
         Else
-            inc = -1
+            stbChild.Text = "Child: Girl"
         End If
 
-        frmLogin.ShowDialog()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        RdmNumA()
     End Sub
 
     Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
@@ -444,6 +360,7 @@ Public Class frmMain
             Else
                 txtTotal.Clear()
             End If
+
         End If
     End Sub
 
@@ -459,7 +376,7 @@ Public Class frmMain
                             StarDelete()
                         End If
                         txtTotal.Text = ""
-                        frmWrongNumber.ShowDialog()
+                        FrmWrongNumber.ShowDialog()
                     End If
                 End If
             Case "Subtraction"
@@ -472,7 +389,7 @@ Public Class frmMain
                             StarDelete()
                         End If
                         txtTotal.Text = ""
-                        frmWrongNumber.ShowDialog()
+                        FrmWrongNumber.ShowDialog()
                     End If
                 End If
             Case "Multiplication"
@@ -485,7 +402,7 @@ Public Class frmMain
                             StarDelete()
                         End If
                         txtTotal.Text = ""
-                        frmWrongNumber.ShowDialog()
+                        FrmWrongNumber.ShowDialog()
                     End If
                 End If
             Case "Division"
@@ -498,7 +415,7 @@ Public Class frmMain
                             StarDelete()
                         End If
                         txtTotal.Text = ""
-                        frmWrongNumber.ShowDialog()
+                        FrmWrongNumber.ShowDialog()
                     End If
                 End If
         End Select
@@ -628,13 +545,13 @@ Public Class frmMain
         ChangedMenu()
     End Sub
 
-    Private Sub MasculineToolStripMenuItem_Click(sender As Object, e As EventArgs)
+    Private Sub MasculineToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasculineToolStripMenuItem.Click
         strGiftPath = "BoyGift\"
         RdmNumD()
         ChangedMenu()
     End Sub
 
-    Private Sub FemeToolStripMenuItem_Click(sender As Object, e As EventArgs)
+    Private Sub FemeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FemeToolStripMenuItem.Click
         strGiftPath = "GirlGift\"
         RdmNumD()
         ChangedMenu()
@@ -657,21 +574,13 @@ Public Class frmMain
                vbNewLine & "https://www.tutorialspoint.com/vb.net/index.htm", vbOKOnly, "About")
     End Sub
 
-    Private Sub ShowGiftTableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowGiftTableToolStripMenuItem.Click
-        frmGiftTable.ShowDialog()
-    End Sub
-
-    Private Sub LoginToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginToolStripMenuItem.Click
-        frmLogin.ShowDialog()
-    End Sub
-
     Private Sub DedicationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DedicationToolStripMenuItem.Click
         MsgBox("Dedicado a mi hijo: Bryan Jayson" & vbNewLine &
                "En el 2008 creé la primera versión llamada Los Números, para ayudar a mi hijo a aprender a sumar del 1 al 10.", vbOKOnly, "Dedication")
     End Sub
 
     'Procedimiento para agrandar los componentes segun tamaño de ventana
-    Private Sub frmMain_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+    Private Sub FrmLevel1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         Dim RatioHeight As Double = (Me.Height - CuRHeight) / CuRHeight
         Dim RatioWidth As Double = (Me.Width - CuRWidth) / CuRWidth
 
@@ -684,18 +593,4 @@ Public Class frmMain
         CuRHeight = Me.Height
         CuRWidth = Me.Width
     End Sub
-
-
-    Private Sub frmMain_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        If inc > -1 Then
-            'ADD COMMAND BUILDER
-            Dim cb As New OleDb.OleDbCommandBuilder(da)
-
-            'UPDATE DATABASE
-            da.Update(ds, "Users")
-        End If
-
-    End Sub
-
-
 End Class

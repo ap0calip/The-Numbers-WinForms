@@ -1,5 +1,4 @@
-﻿Imports System.Resources
-Imports System
+﻿Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -9,14 +8,14 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("The Numbers")>
-<Assembly: AssemblyDescription("This application is created so that children can practice addition, subtraction, multiplication and division in a more interesting way. Esta aplicacion es creada para que los niños puedan practicar suma, resta, multiplicación y division de una manera más interesante.")>
-<Assembly: AssemblyCompany("forcomputer")>
-<Assembly: AssemblyProduct("The Numbers")>
+<Assembly: AssemblyTitle("ProjectTest2")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("ProjectTest2")>
 <Assembly: AssemblyCopyright("Copyright ©  2019")>
 <Assembly: AssemblyTrademark("")>
 
-<Assembly: ComVisible(True)>
+<Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("88805656-da86-4da7-a344-1844f09a7ba1")>
@@ -34,4 +33,3 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.0.0.0")>
 <Assembly: AssemblyFileVersion("1.0.0.0")>
-<Assembly: NeutralResourcesLanguage("en")>

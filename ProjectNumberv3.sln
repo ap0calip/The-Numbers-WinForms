@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
+# Blend for Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "The Numbers", "The Numbers.vbproj", "{D35A36B7-6A2F-4B6F-9040-FCD38205BE70}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProjectNumberv3", "ProjectNumberv3.vbproj", "{D35A36B7-6A2F-4B6F-9040-FCD38205BE70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
