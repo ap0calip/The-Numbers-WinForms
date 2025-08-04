@@ -1,0 +1,13 @@
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\ProjectTest2.vbprojAssemblyReference.cache
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\ProjectTest2.vbproj.GenerateResource.cache
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\ProjectTest2.vbproj.CoreCompileInputs.cache
+C:\Users\louryfor\source\repos\ProjectTest2\bin\Debug\The Numbers.exe.config
+C:\Users\louryfor\source\repos\ProjectTest2\bin\Debug\The Numbers.exe
+C:\Users\louryfor\source\repos\ProjectTest2\bin\Debug\The Numbers.pdb
+C:\Users\louryfor\source\repos\ProjectTest2\bin\Debug\The Numbers.xml
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\TheNumbers.frmLevel1.resources
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\TheNumbers.Resources.resources
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\The Numbers.exe
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\The Numbers.xml
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\The Numbers.pdb
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\TheNumbers.frmGift.resources

@@ -1,0 +1,27 @@
+C:\Users\louryfor\source\repos\ProjectTest2\bin\Debug\The Numbers.exe.config
+C:\Users\louryfor\source\repos\ProjectTest2\bin\Debug\The Numbers.exe
+C:\Users\louryfor\source\repos\ProjectTest2\bin\Debug\The Numbers.pdb
+C:\Users\louryfor\source\repos\ProjectTest2\bin\Debug\The Numbers.xml
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\ProjectNumberv3.vbprojAssemblyReference.cache
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\TheNumbers.frmLevel1.resources
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\TheNumbers.frmGift.resources
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\TheNumbers.Resources.resources
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\ProjectNumberv3.vbproj.GenerateResource.cache
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\ProjectNumberv3.vbproj.CoreCompileInputs.cache
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\The Numbers.exe
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\The Numbers.xml
+C:\Users\louryfor\source\repos\ProjectTest2\obj\Debug\The Numbers.pdb
+C:\Users\louryfor\Documents\Number v3.1\bin\Debug\The Numbers.exe.config
+C:\Users\louryfor\Documents\Number v3.1\bin\Debug\The Numbers.exe
+C:\Users\louryfor\Documents\Number v3.1\bin\Debug\The Numbers.pdb
+C:\Users\louryfor\Documents\Number v3.1\bin\Debug\The Numbers.xml
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\ProjectNumberv3.vbprojAssemblyReference.cache
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmLevel1.resources
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmGift.resources
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.Resources.resources
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\ProjectNumberv3.vbproj.GenerateResource.cache
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\ProjectNumberv3.vbproj.CoreCompileInputs.cache
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\The Numbers.exe
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\The Numbers.xml
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\The Numbers.pdb
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmWrongNumber.resources
