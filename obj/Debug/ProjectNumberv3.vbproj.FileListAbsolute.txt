@@ -16,7 +16,6 @@ C:\Users\louryfor\Documents\Number v3.1\bin\Debug\The Numbers.exe
 C:\Users\louryfor\Documents\Number v3.1\bin\Debug\The Numbers.pdb
 C:\Users\louryfor\Documents\Number v3.1\bin\Debug\The Numbers.xml
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\ProjectNumberv3.vbprojAssemblyReference.cache
-C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmLevel1.resources
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmGift.resources
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.Resources.resources
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\ProjectNumberv3.vbproj.GenerateResource.cache
@@ -26,3 +25,5 @@ C:\Users\louryfor\Documents\Number v3.1\obj\Debug\The Numbers.xml
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\The Numbers.pdb
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmwrongnumber.resources
 C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmGiftTable.resources
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmLogin.resources
+C:\Users\louryfor\Documents\Number v3.1\obj\Debug\TheNumbers.frmMain.resources

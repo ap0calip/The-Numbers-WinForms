@@ -1,4 +1,6 @@
-﻿Public Class frmLevel1
+﻿Imports System.ComponentModel
+
+Public Class frmMain
     'Programa basado en la aplicacion creada en el 2008
     'Fecha de comienzo 7 de mayo de 2019
 
@@ -11,6 +13,21 @@
     'Variables para agrandar componentes segun tamaño de la ventana
     Dim CuRHeight As Integer = Me.Height
     Dim CuRWidth As Integer = Me.Width
+
+    'Base de datos
+    Public MaxRows As Integer                  'HOLDS MAXIMUM QUANTITY OF ROWS
+    Public inc As Integer                      'HOLDS CURRENT ROW
+    Dim con As New OleDb.OleDbConnection    'THE CONNECTION OBJECT
+    Dim dbProvider As String                'HOLDS THE PROVIDER
+    Dim dbSource As String                  'HOLDS THE DATA SOURCE
+    Dim MyDocumentFolder As String          'HOLDS THEDOCUMENTS FOLDER
+    Dim TheDatabase As String               'HOLDS DATABASE NAME
+    Dim FullDatabasePath As String          'HOLDS THEDOCUMENTS PATH
+
+
+    Public ds As New DataSet                   'HOLDS A DataSet OBJECT
+    Public da As OleDb.OleDbDataAdapter        'HOLDS A DataAdapter OBJECT
+    Dim sql As String                       'HOLDS A SQL STRING
 
     'Procedimiento para actualizar las imagenes
     Public Sub UpdImg()
@@ -224,6 +241,7 @@
         Gift = Value
         frmGift.picGift.ImageLocation = strGiftPath + CStr(Gift) + ".png"
         frmGift.ShowDialog()
+        ds.Tables("Users").Rows(inc).Item(1 + Gift) = ds.Tables("Users").Rows(inc).Item(1 + Gift) + 1
     End Sub
 
     'Procedimiento para cambiar de operador
@@ -233,16 +251,50 @@
         End While
         stbArithmetic.Text = "Arithmetic: " + strOpt
         stbLevel.Text = "Level: " + CStr(intLevel)
-        If strGiftPath = "BoyGift\" Then
-            stbChild.Text = "Child: Boy"
-        Else
-            stbChild.Text = "Child: Girl"
-        End If
-
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RdmNumA()
+        'SET UP THE PROVIDER
+        dbProvider = "PROVIDER=Microsoft.Jet.OLEDB.4.0;"
+
+        'SET WHERE DATABASE IS
+        FullDatabasePath = ".\image\UserDataBase.mdb"
+
+        'SET THE PATH OF SOURCE
+        dbSource = "Data Source = " & FullDatabasePath
+
+        'SET THE CONNECTION STRING
+        con.ConnectionString = dbProvider & dbSource
+
+        'OPEN THE DATABASE
+        con.Open()
+
+        'STORE THE SQL STRING
+        sql = "SELECT * FROM UserTable"
+
+        'PASS THE SQL STRING AND CONNECTION OBJECT TO THE DATA_ADAPTER
+        da = New OleDb.OleDbDataAdapter(sql, con)
+
+        'FILL THE DATASET WITH RECORDS FROM THE DATABASE TABLE
+        da.Fill(ds, "Users")
+
+        'CLOSE THE DATABASE
+        con.Close()
+
+        'GET HOW MANY ROWS IS IN THE DATABASE TABLE
+        MaxRows = ds.Tables("Users").Rows.Count
+
+        'SET THE VALUE FOR THE INC VARIABLE
+        If MaxRows > 0 Then
+            inc = 0
+        Else
+            inc = -1
+        End If
+
+        frmLogin.ShowDialog()
+
+
     End Sub
 
     Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
@@ -535,13 +587,13 @@
         ChangedMenu()
     End Sub
 
-    Private Sub MasculineToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasculineToolStripMenuItem.Click
+    Private Sub MasculineToolStripMenuItem_Click(sender As Object, e As EventArgs)
         strGiftPath = "BoyGift\"
         RdmNumD()
         ChangedMenu()
     End Sub
 
-    Private Sub FemeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FemeToolStripMenuItem.Click
+    Private Sub FemeToolStripMenuItem_Click(sender As Object, e As EventArgs)
         strGiftPath = "GirlGift\"
         RdmNumD()
         ChangedMenu()
@@ -557,13 +609,17 @@
 
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("The Numbers" & vbNewLine & "Version 0.3.5" & vbNewLine & "2019 forcomputer" &
+        MsgBox("The Numbers" & vbNewLine & "Version 0.4.3" & vbNewLine & "2019 forcomputer" &
                vbNewLine & "All rights reserved" & vbNewLine & "" & vbNewLine & "Coder: Wilbert Martinez" &
                vbNewLine & "Start date: 05-07-19" & vbNewLine & "" & vbNewLine & "Megaman and Zero" & vbNewLine & "Freelance Artist: William Liu", vbOKOnly, "About")
     End Sub
 
     Private Sub ShowGiftTableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowGiftTableToolStripMenuItem.Click
         frmGiftTable.ShowDialog()
+    End Sub
+
+    Private Sub LoginToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginToolStripMenuItem.Click
+        frmLogin.ShowDialog()
     End Sub
 
     Private Sub DedicationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DedicationToolStripMenuItem.Click
@@ -584,5 +640,17 @@
         Next
         CuRHeight = Me.Height
         CuRWidth = Me.Width
+    End Sub
+
+
+    Private Sub frmMain_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        If inc > -1 Then
+            'ADD COMMAND BUILDER
+            Dim cb As New OleDb.OleDbCommandBuilder(da)
+
+            'UPDATE DATABASE
+            da.Update(ds, "Users")
+        End If
+
     End Sub
 End Class
