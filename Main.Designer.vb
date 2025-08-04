@@ -43,7 +43,7 @@ Partial Class frmMain
         Me.btnOk = New System.Windows.Forms.Button()
         Me.lblOperator2 = New System.Windows.Forms.Label()
         Me.lbligual2 = New System.Windows.Forms.Label()
-        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.stpMenu = New System.Windows.Forms.MenuStrip()
         Me.mnFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowGiftTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -89,7 +89,7 @@ Partial Class frmMain
         Me.picNumber1 = New System.Windows.Forms.PictureBox()
         Me.picNumber2 = New System.Windows.Forms.PictureBox()
         Me.picTotal = New System.Windows.Forms.PictureBox()
-        Me.Menu.SuspendLayout()
+        Me.stpMenu.SuspendLayout()
         CType(Me.stbName, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -366,14 +366,14 @@ Partial Class frmMain
         Me.lbligual2.Text = "="
         Me.lbligual2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Menu
+        'stpMenu
         '
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic, Me.HelpToolStripMenuItem})
-        Me.Menu.Location = New System.Drawing.Point(0, 0)
-        Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(1331, 24)
-        Me.Menu.TabIndex = 39
-        Me.Menu.Text = "MenuStrip1"
+        Me.stpMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic, Me.HelpToolStripMenuItem})
+        Me.stpMenu.Location = New System.Drawing.Point(0, 0)
+        Me.stpMenu.Name = "stpMenu"
+        Me.stpMenu.Size = New System.Drawing.Size(1331, 24)
+        Me.stpMenu.TabIndex = 39
+        Me.stpMenu.Text = "MenuStrip1"
         '
         'mnFile
         '
@@ -801,20 +801,20 @@ Partial Class frmMain
         Me.Controls.Add(Me.btn2)
         Me.Controls.Add(Me.btn1)
         Me.Controls.Add(Me.btn0)
-        Me.Controls.Add(Me.Menu)
+        Me.Controls.Add(Me.stpMenu)
         Me.Controls.Add(Me.lbligual2)
         Me.Controls.Add(Me.lblOperator2)
         Me.Controls.Add(Me.lbligual1)
         Me.Controls.Add(Me.lblOperator1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.Menu
+        Me.MainMenuStrip = Me.stpMenu
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "The Numbers"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Menu.ResumeLayout(False)
-        Me.Menu.PerformLayout()
+        Me.stpMenu.ResumeLayout(False)
+        Me.stpMenu.PerformLayout()
         CType(Me.stbName, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).EndInit()
@@ -874,7 +874,7 @@ Partial Class frmMain
     Friend WithEvents star7 As PictureBox
     Friend WithEvents star8 As PictureBox
     Friend WithEvents star9 As PictureBox
-    Friend WithEvents Menu As MenuStrip
+    Friend WithEvents stpMenu As MenuStrip
     Friend WithEvents mnArithmetic As ToolStripMenuItem
     Friend WithEvents mnAddition As ToolStripMenuItem
     Friend WithEvents mnSubtraction As ToolStripMenuItem
