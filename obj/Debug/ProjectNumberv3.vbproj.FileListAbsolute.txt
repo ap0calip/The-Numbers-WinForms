@@ -45,3 +45,6 @@ C:\Users\ap0ca\source\repos\The Numbers\bin\Debug\The Numbers.application
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.TrustInfo.xml
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.exe.manifest
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.application
+C:\Users\ap0ca\source\repos\The Numbers\bin\Debug\UserDataBase.mdb
+C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\TheNumbers.frmGiftTable.resources
+C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\TheNumbers.FrmLogin.resources

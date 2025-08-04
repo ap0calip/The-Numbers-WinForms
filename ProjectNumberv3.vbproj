@@ -28,8 +28,8 @@
     <TargetCulture>en-US</TargetCulture>
     <ProductName>The Numbers</ProductName>
     <PublisherName>forcomputer</PublisherName>
-    <ApplicationRevision>4</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -70,10 +70,11 @@
     <ApplicationIcon>numeros.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>B8E6D55773278003CC4948AD9B8B0B20173957E3</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>5C41B70D15CBF7E970E6B3A6C5C06FFD92AFB3F9</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ProjectNumberv3_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -113,10 +114,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="GiftTable.designer.vb">
+      <DependentUpon>GiftTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GiftTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDataBaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDataBaseDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Wrong.Designer.vb">
       <DependentUpon>Wrong.vb</DependentUpon>
@@ -149,6 +168,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GiftTable.resx">
+      <DependentUpon>GiftTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wrong.resx">
       <DependentUpon>Wrong.vb</DependentUpon>
     </EmbeddedResource>
@@ -178,8 +203,22 @@
     </None>
     <None Include="App.config" />
     <None Include="ProjectNumberv3_TemporaryKey.pfx" />
+    <None Include="UserDataBaseDataSet.xsc">
+      <DependentUpon>UserDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDataBaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserDataBaseDataSet.xss">
+      <DependentUpon>UserDataBaseDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="UserDataBase.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\13.png" />
     <None Include="Resources\girl20.png" />
     <None Include="Resources\girl19.png" />

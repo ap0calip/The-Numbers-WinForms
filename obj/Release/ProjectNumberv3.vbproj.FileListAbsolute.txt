@@ -17,3 +17,6 @@ C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.application
 C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.exe
 C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.xml
 C:\Users\ap0ca\source\repos\The Numbers\obj\Release\The Numbers.pdb
+C:\Users\ap0ca\source\repos\The Numbers\bin\Release\UserDataBase.mdb
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\TheNumbers.frmGiftTable.resources
+C:\Users\ap0ca\source\repos\The Numbers\obj\Release\TheNumbers.FrmLogin.resources

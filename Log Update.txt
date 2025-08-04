@@ -19,5 +19,9 @@ Version 0.6.1
 -Cambiar UpdImg() ImageLocation -> Image y referenciar a un recurso
 -Crear picture para mas de 13
 
-
-***
+Version 0.6.2
+-Añadir base de datos
+-Añadir frmShowTable y frmLogin
+-Cambiar que la pantalla principal y Gift Table inicie Maximizada
+-Implementar base de datos
+-Default text in Gender = Boy

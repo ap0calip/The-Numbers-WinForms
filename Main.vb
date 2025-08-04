@@ -11,6 +11,7 @@
     Public strOpt As String = "Addition"
     Public intLevel As Integer = 10
     Public strGender As String = "Boy"
+    Public strName As String
     'Variables para agrandar componentes segun tamaño de la ventana
     Dim CuRHeight As Integer = Me.Height
     Dim CuRWidth As Integer = Me.Width
@@ -303,6 +304,7 @@
 
     'Procedimiento para mostrar el regalo
     Public Sub ShowGift()
+        Me.UserTableTableAdapter.Fill(Me.UserDataBaseDataSet.UserTable)
 
         ' Initialize the random-number generator.
         Randomize()
@@ -402,6 +404,8 @@
                     frmGift.picGift.Image = TheNumbers.My.Resources.girl20
             End Select
         End If
+        UserDataBaseDataSet.Tables(0).Rows(FrmLogin.inc).Item(Gift + 1) += 1
+        UpdateDataBase()
         frmGift.ShowDialog()
     End Sub
 
@@ -412,10 +416,14 @@
         End While
         stbArithmetic.Text = "Arithmetic: " + strOpt
         stbLevel.Text = "Level: " + CStr(intLevel)
-        stbChild.Text = "Child: " & strGender
+        stbGender.Text = "Child: " & strGender
+        stbUser.Text = "User: " & strName
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'UserDataBaseDataSet.UserTable' table. You can move, or remove it, as needed.
+        Me.UserTableTableAdapter.Fill(Me.UserDataBaseDataSet.UserTable)
+        FrmLogin.ShowDialog()
         RdmNumA()
     End Sub
 
@@ -704,16 +712,6 @@
         ChangedMenu()
     End Sub
 
-    Private Sub MasculineToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasculineToolStripMenuItem.Click
-        strGender = "Boy"
-        ChangedMenu()
-    End Sub
-
-    Private Sub FemeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FemeToolStripMenuItem.Click
-        strGender = "Girl"
-        ChangedMenu()
-    End Sub
-
     Private Sub PicBkTotal_Click(sender As Object, e As EventArgs) Handles picBkTotal.Click
         picBkTotal.Visible = Not (picBkTotal.Visible)
     End Sub
@@ -749,5 +747,18 @@
         Next
         CuRHeight = Me.Height
         CuRWidth = Me.Width
+    End Sub
+
+    Private Sub ShowGiftTableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowGiftTableToolStripMenuItem.Click
+        frmGiftTable.ShowDialog()
+    End Sub
+
+    Private Sub LoginToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginToolStripMenuItem.Click
+        FrmLogin.ShowDialog()
+    End Sub
+
+    Private Sub UpdateDataBase()
+        UserTableBindingSource.EndEdit()
+        TableAdapterManager.UpdateAll(UserDataBaseDataSet)
     End Sub
 End Class
