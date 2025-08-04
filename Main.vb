@@ -5,7 +5,10 @@ Public Class frmMain
     'Fecha de comienzo 7 de mayo de 2019
 
     'Declarando variables publicas
-    Public Numero1, Numero2, Total, Gift As Integer
+    Public Numero1 As Integer = 0
+    Public Numero2 As Integer = 0
+    Public Total As Integer = 0
+    Public Gift As Integer = 0
     Public GoodCount As Integer = 0
     Public strOpt As String = "Addition"
     Public intLevel As Integer = 10
@@ -53,6 +56,41 @@ Public Class frmMain
 
     'Procedimiento para generar numeros suma
     Public Sub RdmNumA()
+        Dim Entero As Integer
+
+        'Inicializar la clase Random  
+        Dim rdm As New Random()
+
+        'Generar un random entre 0 y intLevel que no se repita
+        Entero = rdm.Next(0, intLevel + 1)
+        While Total = Entero
+            Entero = rdm.Next(0, intLevel + 1)
+        End While
+        Total = Entero
+
+        'Generar Numero1 pero que no se repita
+        If Total <> 0 Then
+            Entero = rdm.Next(0, Total + 1)
+            While Numero1 = Entero
+                Entero = rdm.Next(0, Total + 1)
+            End While
+            Numero1 = Entero
+        Else
+            Numero1 = 0
+        End If
+
+        Numero2 = Total - Numero1
+
+        'Asignar numeros a los label
+        lblNumber1.Text = Numero1
+        lblNumber2.Text = Numero2
+        txtTotal.Text = ""
+        BlockNumber()
+        UpdImg()
+    End Sub
+
+    'Procedimiento para generar numeros suma empezando con Numero1
+    Public Sub RdmNumOld()
         'Inicializar la clase Random  
         Dim rdm As New Random()
 
@@ -78,7 +116,7 @@ Public Class frmMain
             End While
         End If
 
-        'Asiagnar numeros a los label
+        'Asignar numeros a los label
         lblNumber1.Text = Numero1
         lblNumber2.Text = Numero2
         txtTotal.Text = ""
@@ -88,25 +126,31 @@ Public Class frmMain
 
     'Generar numero para resta
     Public Sub RdmNumS()
+        Dim Entero As Integer
         'Inicializar la clase Random  
         Dim rdm As New Random()
 
         ' generar un random entre 0 y intLevel
-        Numero1 = rdm.Next(0, intLevel + 1)
+        Entero = rdm.Next(0, intLevel + 1)
 
         'Verificar que el Numero1 no se repita
-        While Numero1 = lblNumber1.Text
-            Numero1 = rdm.Next(0, intLevel + 1)
+        While Numero1 = Entero
+            Entero = rdm.Next(0, intLevel + 1)
         End While
+        Numero1 = Entero
 
         'Generar Numero2 pero que sea menor a numero1
         If Numero1 = 0 Then
-            Numero2 = 0
+            Entero = 0
         Else
-            While Numero2 = lblNumber2.Text
-                Numero2 = rdm.Next(0, Numero1 + 1)
+            Entero = rdm.Next(0, Numero1 + 1)
+            While Numero2 = Entero
+                Entero = rdm.Next(0, Numero1 + 1)
             End While
         End If
+        Numero2 = Entero
+
+        Total = Numero1 - Numero2
 
         'Asiagnar numeros a los label
         lblNumber1.Text = Numero1
@@ -606,7 +650,7 @@ Public Class frmMain
 
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("The Numbers" & vbNewLine & "Version 0.4.4" & vbNewLine & "2019 forcomputer" &
+        MsgBox("The Numbers" & vbNewLine & "Version 0.5.0" & vbNewLine & "2019 forcomputer" &
                vbNewLine & "All rights reserved" & vbNewLine & "" & vbNewLine & "Coder: Wilbert Martinez" & vbNewLine & "Start date: 05-07-19" & vbNewLine & "" &
                vbNewLine & "Images:" & vbNewLine & "Megaman and Zero: William Liu (Freelance Artist)" & vbNewLine & "http://pngimg.com/" & vbNewLine & "https://imgbin.com/" &
                vbNewLine & "References:" & vbNewLine & "http://www.recursosvisualbasic.com.ar/" & vbNewLine & "https://www.homeandlearn.co.uk/NET/vbNet.html" &
