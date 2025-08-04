@@ -7,7 +7,7 @@
     Public GoodCount As Integer = 0
     Public strOpt As String = "Addition"
     Public intLevel As Integer = 10
-    Public strGift As String = "BoyGift\"
+    Public strGiftPath As String = "BoyGift\"
 
     'Procedimiento para actualizar las imagenes
     Public Sub UpdImg()
@@ -210,7 +210,7 @@
             Value = CInt(Int((20 * Rnd()) + 1))
         End While
         Gift = Value
-        frmGift.picGift.ImageLocation = strGift + CStr(Gift) + ".png"
+        frmGift.picGift.ImageLocation = strGiftPath + CStr(Gift) + ".png"
         frmGift.Visible = True
     End Sub
 
@@ -219,16 +219,14 @@
         While GoodCount > 0
             StarDelete()
         End While
-        Select Case strOpt
-            Case "Addition"
-                'MsgBox("Addition")
-            Case "Subtraction"
-                'MsgBox("Subtraction")
-            Case "Multiplication"
-                'MsgBox("Multiplication")
-            Case "Division"
-                'MsgBox("Division")
-        End Select
+        stbArithmetic.Text = "Arithmetic: " + strOpt
+        stbLevel.Text = "Level: " + CStr(intLevel)
+        If strGiftPath = "BoyGift\" Then
+            stbChild.Text = "Child: Boy"
+        Else
+            stbChild.Text = "Child: Girl"
+        End If
+
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -236,58 +234,91 @@
     End Sub
 
     Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
-        txtTotal.Text = 0
-        picTotal.ImageLocation = "image\0.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 0
+        Else
+            txtTotal.Text = txtTotal.Text + "0"
+        End If
     End Sub
 
     Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
-        txtTotal.Text = 1
-        picTotal.ImageLocation = "image\1.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 1
+        Else
+            txtTotal.Text = txtTotal.Text + "1"
+        End If
     End Sub
 
     Private Sub Btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
-        txtTotal.Text = 2
-        picTotal.ImageLocation = "image\2.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 2
+        Else
+            txtTotal.Text = txtTotal.Text + "2"
+        End If
     End Sub
 
     Private Sub Btn3_Click(sender As Object, e As EventArgs) Handles btn3.Click
-        txtTotal.Text = 3
-        picTotal.ImageLocation = "image\3.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 3
+        Else
+            txtTotal.Text = txtTotal.Text + "3"
+        End If
     End Sub
 
     Private Sub Btn4_Click(sender As Object, e As EventArgs) Handles btn4.Click
-        txtTotal.Text = 4
-        picTotal.ImageLocation = "image\4.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 4
+        Else
+            txtTotal.Text = txtTotal.Text + "4"
+        End If
     End Sub
 
     Private Sub Btn5_Click(sender As Object, e As EventArgs) Handles btn5.Click
-        txtTotal.Text = 5
-        picTotal.ImageLocation = "image\5.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 5
+        Else
+            txtTotal.Text = txtTotal.Text + "5"
+        End If
     End Sub
 
     Private Sub Btn6_Click(sender As Object, e As EventArgs) Handles btn6.Click
-        txtTotal.Text = 6
-        picTotal.ImageLocation = "image\6.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 6
+        Else
+            txtTotal.Text = txtTotal.Text + "6"
+        End If
     End Sub
 
     Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles btn7.Click
-        txtTotal.Text = 7
-        picTotal.ImageLocation = "image\7.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 7
+        Else
+            txtTotal.Text = txtTotal.Text + "7"
+        End If
     End Sub
 
     Private Sub Btn8_Click(sender As Object, e As EventArgs) Handles btn8.Click
-        txtTotal.Text = 8
-        picTotal.ImageLocation = "image\8.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 8
+        Else
+            txtTotal.Text = txtTotal.Text + "8"
+        End If
     End Sub
 
     Private Sub Btn9_Click(sender As Object, e As EventArgs) Handles btn9.Click
-        txtTotal.Text = 9
-        picTotal.ImageLocation = "image\9.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 9
+        Else
+            txtTotal.Text = txtTotal.Text + "9"
+        End If
     End Sub
 
     Private Sub Btn10_Click(sender As Object, e As EventArgs) Handles btn10.Click
-        txtTotal.Text = 10
-        picTotal.ImageLocation = "image\10.png"
+        If intLevel = 10 And (strOpt = "Addition" Or strOpt = "Subtraction") Then
+            txtTotal.Text = 10
+        Else
+            txtTotal.Text = txtTotal.Text + "10"
+        End If
     End Sub
 
     Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
@@ -361,7 +392,6 @@
                     End If
                 End If
         End Select
-
     End Sub
 
     Private Sub PicBk1_Click(sender As Object, e As EventArgs) Handles picBk1.Click
@@ -483,17 +513,21 @@
 
     Private Sub UpToTable12ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UpToTable12ToolStripMenuItem.Click
         strOpt = "Division"
-        intLevel = 10
+        intLevel = 12
         RdmNumD()
         ChangedMenu()
     End Sub
 
     Private Sub MasculineToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MasculineToolStripMenuItem.Click
-        strGift = "BoyGift\"
+        strGiftPath = "BoyGift\"
+        RdmNumD()
+        ChangedMenu()
     End Sub
 
     Private Sub FemeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FemeToolStripMenuItem.Click
-        strGift = "GirlGift\"
+        strGiftPath = "GirlGift\"
+        RdmNumD()
+        ChangedMenu()
     End Sub
 
     Private Sub PicBkTotal_Click(sender As Object, e As EventArgs) Handles picBkTotal.Click
@@ -504,4 +538,21 @@
         picBkTotal.Visible = Not (picBkTotal.Visible)
     End Sub
 
+    'Procedimiento para agrandar la forma
+    Dim CuRWidth As Integer = Me.Width
+    Dim CuRHeight As Integer = Me.Height
+
+    Private Sub frmLevel1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        Dim RatioHeight As Double = (Me.Height - CuRHeight) / CuRHeight
+        Dim RatioWidth As Double = (Me.Width - CuRWidth) / CuRWidth
+
+        For Each ctrl As Control In Controls
+            ctrl.Width += ctrl.Width * RatioWidth
+            ctrl.Height += ctrl.Height * RatioHeight
+            ctrl.Left += ctrl.Left * RatioWidth
+            ctrl.Top += ctrl.Top * RatioHeight
+        Next
+        CuRHeight = Me.Height
+        CuRWidth = Me.Width
+    End Sub
 End Class
