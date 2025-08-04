@@ -509,6 +509,7 @@ Partial Class frmGiftTable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1424, 771)
         Me.Controls.Add(Me.Label20)
@@ -558,6 +559,7 @@ Partial Class frmGiftTable
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gift Table"
         Me.TopMost = True
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.imgBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -582,8 +584,6 @@ Partial Class frmGiftTable
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents imgBox1 As PictureBox
     Friend WithEvents imgBox2 As PictureBox
     Friend WithEvents imgBox3 As PictureBox
     Friend WithEvents imgBox4 As PictureBox
@@ -623,4 +623,5 @@ Partial Class frmGiftTable
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
+    Friend WithEvents imgBox1 As PictureBox
 End Class

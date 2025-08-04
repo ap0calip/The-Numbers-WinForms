@@ -1,4 +1,7 @@
 ﻿Public Class frmGiftTable
+    Dim CuRWidth As Integer = Me.Width
+    Dim CuRHeight As Integer = Me.Height
+
     Private Sub FrmGiftTable_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label1.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(2)
         Label2.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(3)
@@ -120,5 +123,19 @@
         Else
             imgBox20.ImageLocation = "image\block.png"
         End If
+    End Sub
+
+    Private Sub frmGiftTable_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        Dim RatioHeight As Double = (Me.Height - CuRHeight) / CuRHeight
+        Dim RatioWidth As Double = (Me.Width - CuRWidth) / CuRWidth
+
+        For Each ctrl As Control In Controls
+            ctrl.Width += ctrl.Width * RatioWidth
+            ctrl.Height += ctrl.Height * RatioHeight
+            ctrl.Left += ctrl.Left * RatioWidth
+            ctrl.Top += ctrl.Top * RatioHeight
+        Next
+        CuRHeight = Me.Height
+        CuRWidth = Me.Width
     End Sub
 End Class

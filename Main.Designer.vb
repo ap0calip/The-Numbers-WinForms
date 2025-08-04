@@ -45,6 +45,7 @@ Partial Class frmMain
         Me.lbligual2 = New System.Windows.Forms.Label()
         Me.Menu = New System.Windows.Forms.MenuStrip()
         Me.mnFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowGiftTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnArithmetic = New System.Windows.Forms.ToolStripMenuItem()
@@ -68,6 +69,7 @@ Partial Class frmMain
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DedicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.stbBar = New System.Windows.Forms.StatusBar()
+        Me.stbName = New System.Windows.Forms.StatusBarPanel()
         Me.stbArithmetic = New System.Windows.Forms.StatusBarPanel()
         Me.stbLevel = New System.Windows.Forms.StatusBarPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -87,9 +89,8 @@ Partial Class frmMain
         Me.picNumber1 = New System.Windows.Forms.PictureBox()
         Me.picNumber2 = New System.Windows.Forms.PictureBox()
         Me.picTotal = New System.Windows.Forms.PictureBox()
-        Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.stbName = New System.Windows.Forms.StatusBarPanel()
         Me.Menu.SuspendLayout()
+        CType(Me.stbName, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,7 +110,6 @@ Partial Class frmMain
         CType(Me.picNumber1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picNumber2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTotal, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.stbName, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn0
@@ -382,16 +382,22 @@ Partial Class frmMain
         Me.mnFile.Size = New System.Drawing.Size(37, 20)
         Me.mnFile.Text = "File"
         '
+        'LoginToolStripMenuItem
+        '
+        Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
+        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.LoginToolStripMenuItem.Text = "Login"
+        '
         'ShowGiftTableToolStripMenuItem
         '
         Me.ShowGiftTableToolStripMenuItem.Name = "ShowGiftTableToolStripMenuItem"
-        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
         Me.ShowGiftTableToolStripMenuItem.Text = "Show Gift Table"
         '
         'mnExit
         '
         Me.mnExit.Name = "mnExit"
-        Me.mnExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnExit.Size = New System.Drawing.Size(156, 22)
         Me.mnExit.Text = "Exit"
         '
         'mnArithmetic
@@ -511,13 +517,13 @@ Partial Class frmMain
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'DedicationToolStripMenuItem
         '
         Me.DedicationToolStripMenuItem.Name = "DedicationToolStripMenuItem"
-        Me.DedicationToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DedicationToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.DedicationToolStripMenuItem.Text = "Dedication"
         '
         'stbBar
@@ -529,6 +535,13 @@ Partial Class frmMain
         Me.stbBar.Size = New System.Drawing.Size(1331, 22)
         Me.stbBar.TabIndex = 40
         Me.stbBar.Text = "StatusBar1"
+        '
+        'stbName
+        '
+        Me.stbName.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
+        Me.stbName.Name = "stbName"
+        Me.stbName.Text = "User:"
+        Me.stbName.Width = 438
         '
         'stbArithmetic
         '
@@ -746,19 +759,6 @@ Partial Class frmMain
         Me.picTotal.TabIndex = 23
         Me.picTotal.TabStop = False
         '
-        'LoginToolStripMenuItem
-        '
-        Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.LoginToolStripMenuItem.Text = "Login"
-        '
-        'stbName
-        '
-        Me.stbName.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
-        Me.stbName.Name = "stbName"
-        Me.stbName.Text = "User:"
-        Me.stbName.Width = 438
-        '
         'frmMain
         '
         Me.AcceptButton = Me.btnOk
@@ -812,8 +812,10 @@ Partial Class frmMain
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "The Numbers"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
+        CType(Me.stbName, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -833,7 +835,6 @@ Partial Class frmMain
         CType(Me.picNumber1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picNumber2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTotal, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.stbName, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

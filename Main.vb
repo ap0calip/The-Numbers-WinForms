@@ -609,9 +609,11 @@ Public Class frmMain
 
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MsgBox("The Numbers" & vbNewLine & "Version 0.4.3" & vbNewLine & "2019 forcomputer" &
-               vbNewLine & "All rights reserved" & vbNewLine & "" & vbNewLine & "Coder: Wilbert Martinez" &
-               vbNewLine & "Start date: 05-07-19" & vbNewLine & "" & vbNewLine & "Megaman and Zero" & vbNewLine & "Freelance Artist: William Liu", vbOKOnly, "About")
+        MsgBox("The Numbers" & vbNewLine & "Version 0.4.4" & vbNewLine & "2019 forcomputer" &
+               vbNewLine & "All rights reserved" & vbNewLine & "" & vbNewLine & "Coder: Wilbert Martinez" & vbNewLine & "Start date: 05-07-19" & vbNewLine & "" &
+               vbNewLine & "Images:" & vbNewLine & "Megaman and Zero: William Liu (Freelance Artist)" & vbNewLine & "http://pngimg.com/" & vbNewLine & "https://imgbin.com/" &
+               vbNewLine & "References:" & vbNewLine & "http://www.recursosvisualbasic.com.ar/" & vbNewLine & "https://www.homeandlearn.co.uk/NET/vbNet.html" &
+               vbNewLine & "https://www.tutorialspoint.com/vb.net/index.htm", vbOKOnly, "About")
     End Sub
 
     Private Sub ShowGiftTableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowGiftTableToolStripMenuItem.Click
@@ -623,12 +625,12 @@ Public Class frmMain
     End Sub
 
     Private Sub DedicationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DedicationToolStripMenuItem.Click
-        MsgBox("Este programa es basado en Los Números creado por mi en el 2008 para ayudar a mi hijo a aprender a sumar del 1 al 10." &
-            vbNewLine & "Dedico este programa a: Bryan Jayson", vbOKOnly, "Dedication")
+        MsgBox("Dedicado a mi hijo: Bryan Jayson" & vbNewLine &
+               "En el 2008 creé la primera versión llamada Los Números, para ayudar a mi hijo a aprender a sumar del 1 al 10.", vbOKOnly, "Dedication")
     End Sub
 
     'Procedimiento para agrandar los componentes segun tamaño de ventana
-    Private Sub frmLevel1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+    Private Sub frmMain_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         Dim RatioHeight As Double = (Me.Height - CuRHeight) / CuRHeight
         Dim RatioWidth As Double = (Me.Width - CuRWidth) / CuRWidth
 
