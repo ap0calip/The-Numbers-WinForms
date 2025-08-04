@@ -25,3 +25,11 @@ Version 0.6.2
 -Cambiar que la pantalla principal y Gift Table inicie Maximizada
 -Implementar base de datos
 -Default text in Gender = Boy
+
+Version 0.6.3
+-Cambiar frmLevel1 a frmMain y actualizar Properties.Application ***
+-Si user entra a Login pero no hace cambios pantalla solo se cierra sin ejecutar codigo ***
+-Corregir cbuser select text añadiendo linea "inc = cbUser.SelectedIndex" y borrando "FindUser()" ***
+-Update UserDataBaseDataSet
+-
+-

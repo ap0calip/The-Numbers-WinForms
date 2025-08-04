@@ -1,4 +1,4 @@
-﻿Public Class frmLevel1
+﻿Public Class frmMain
     'Programa basado en la aplicacion creada en el 2008
     'Fecha de comienzo 7 de mayo de 2019
 
@@ -11,7 +11,8 @@
     Public strOpt As String = "Addition"
     Public intLevel As Integer = 10
     Public strGender As String = "Boy"
-    Public strName As String
+    Public strName As String = "None123"
+    Public strLanguage As String = "English"
     'Variables para agrandar componentes segun tamaño de la ventana
     Dim CuRHeight As Integer = Me.Height
     Dim CuRWidth As Integer = Me.Width
@@ -420,11 +421,29 @@
         stbUser.Text = "User: " & strName
     End Sub
 
+    Private Sub LanguageSelect()
+        Dim linc, lMaxRows As Integer
+        linc = 0
+        lMaxRows = UserDataBaseDataSet.Tables("Language").Rows.Count
+        While linc < lMaxRows
+            If UserDataBaseDataSet.Tables("Language").Rows(linc).Item("Language") = strLanguage Then
+                Exit While
+            End If
+            linc += 1
+        End While
+
+
+
+        Me.Text = UserDataBaseDataSet.Tables("Language").Rows(linc).Item("Language")
+    End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'UserDataBaseDataSet.Language' table. You can move, or remove it, as needed.
+        Me.LanguageTableAdapter.Fill(Me.UserDataBaseDataSet.Language)
         'TODO: This line of code loads data into the 'UserDataBaseDataSet.UserTable' table. You can move, or remove it, as needed.
         Me.UserTableTableAdapter.Fill(Me.UserDataBaseDataSet.UserTable)
         FrmLogin.ShowDialog()
         RdmNumA()
+        LanguageSelect()
     End Sub
 
     Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click

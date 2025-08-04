@@ -32,6 +32,7 @@ Partial Class FrmLogin
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.UserTableTableAdapter = New TheNumbers.UserDataBaseDataSetTableAdapters.UserTableTableAdapter()
         Me.TableAdapterManager = New TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager()
+        Me.cbLanguage = New System.Windows.Forms.ComboBox()
         CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserDataBaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -39,7 +40,7 @@ Partial Class FrmLogin
         'btnUse
         '
         Me.btnUse.BackColor = System.Drawing.Color.DarkOrange
-        Me.btnUse.Location = New System.Drawing.Point(434, 9)
+        Me.btnUse.Location = New System.Drawing.Point(568, 9)
         Me.btnUse.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUse.Name = "btnUse"
         Me.btnUse.Size = New System.Drawing.Size(152, 32)
@@ -97,7 +98,7 @@ Partial Class FrmLogin
         'btnDelete
         '
         Me.btnDelete.BackColor = System.Drawing.Color.DarkOrange
-        Me.btnDelete.Location = New System.Drawing.Point(594, 9)
+        Me.btnDelete.Location = New System.Drawing.Point(728, 9)
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(152, 32)
@@ -112,8 +113,21 @@ Partial Class FrmLogin
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.LanguageTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UserTableTableAdapter = Me.UserTableTableAdapter
+        '
+        'cbLanguage
+        '
+        Me.cbLanguage.BackColor = System.Drawing.Color.DarkOrange
+        Me.cbLanguage.FormattingEnabled = True
+        Me.cbLanguage.Items.AddRange(New Object() {"English", "Español"})
+        Me.cbLanguage.Location = New System.Drawing.Point(434, 13)
+        Me.cbLanguage.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbLanguage.Name = "cbLanguage"
+        Me.cbLanguage.Size = New System.Drawing.Size(126, 26)
+        Me.cbLanguage.TabIndex = 9
+        Me.cbLanguage.Text = "English"
         '
         'FrmLogin
         '
@@ -121,7 +135,8 @@ Partial Class FrmLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(759, 56)
+        Me.ClientSize = New System.Drawing.Size(895, 56)
+        Me.Controls.Add(Me.cbLanguage)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.cbGender)
         Me.Controls.Add(Me.cbUser)
@@ -154,4 +169,5 @@ Partial Class FrmLogin
     Public WithEvents UserTableTableAdapter As UserDataBaseDataSetTableAdapters.UserTableTableAdapter
     Public WithEvents TableAdapterManager As UserDataBaseDataSetTableAdapters.TableAdapterManager
     Friend WithEvents btnDelete As Button
+    Friend WithEvents cbLanguage As ComboBox
 End Class

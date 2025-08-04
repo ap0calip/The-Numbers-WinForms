@@ -12,8 +12,8 @@
     End Sub
 
     Private Sub FrmWrongNumber_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        frmLevel1.picBk1.Visible = False
-        frmLevel1.picBk2.Visible = False
-        frmLevel1.picBkTotal.Visible = False
+        frmMain.picBk1.Visible = False
+        frmMain.picBk2.Visible = False
+        frmMain.picBkTotal.Visible = False
     End Sub
 End Class

@@ -7,7 +7,7 @@
         'TODO: This line of code loads data into the 'UserDataBaseDataSet.UserTable' table. You can move, or remove it, as needed.
         Me.UserTableTableAdapter.Fill(Me.UserDataBaseDataSet.UserTable)
         UserTableBindingSource.Position = FrmLogin.inc
-        If frmLevel1.strGender = "Boy" Then
+        If frmMain.strGender = "Boy" Then
             If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(2) <> 0 Then
                 imgBox1.Image = TheNumbers.My.Resources.boy1
             Else

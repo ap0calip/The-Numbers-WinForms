@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="The Numbers.exe" size="58526016">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="The Numbers.exe" size="57549120">
       <assemblyIdentity name="The Numbers" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2V6SmS9tErw/OwrreoawbtLq1y6vJWt/BwXO/wl3E90=</dsig:DigestValue>
+        <dsig:DigestValue>a5yoOfbWLR+Fl6GQJAb/S6BU6bFvW1Cl6CZFFpjz4nQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,7 +78,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WgxBNMm9NP76WAfgfVhjB0a7VArA+df8q6t5gMbXMFs=</dsig:DigestValue>
+      <dsig:DigestValue>BP3sL2KQEXbNW1F0gLmQGkT7wVzhn9/4Fo0ROcTYnZU=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

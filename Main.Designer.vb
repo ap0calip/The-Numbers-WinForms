@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmLevel1
+Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,7 +23,7 @@ Partial Class frmLevel1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLevel1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.btn0 = New System.Windows.Forms.Button()
         Me.btn1 = New System.Windows.Forms.Button()
         Me.btn2 = New System.Windows.Forms.Button()
@@ -70,9 +70,10 @@ Partial Class frmLevel1
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DedicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.stbBar = New System.Windows.Forms.StatusBar()
+        Me.stbUser = New System.Windows.Forms.StatusBarPanel()
+        Me.stbGender = New System.Windows.Forms.StatusBarPanel()
         Me.stbArithmetic = New System.Windows.Forms.StatusBarPanel()
         Me.stbLevel = New System.Windows.Forms.StatusBarPanel()
-        Me.stbGender = New System.Windows.Forms.StatusBarPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.star9 = New System.Windows.Forms.PictureBox()
@@ -94,11 +95,13 @@ Partial Class frmLevel1
         Me.UserTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.UserTableTableAdapter = New TheNumbers.UserDataBaseDataSetTableAdapters.UserTableTableAdapter()
         Me.TableAdapterManager = New TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager()
-        Me.stbUser = New System.Windows.Forms.StatusBarPanel()
+        Me.LanguageBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LanguageTableAdapter = New TheNumbers.UserDataBaseDataSetTableAdapters.LanguageTableAdapter()
         Me.StpMenu.SuspendLayout()
+        CType(Me.stbUser, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.stbGender, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.stbGender, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.star9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,7 +121,7 @@ Partial Class frmLevel1
         CType(Me.picTotal, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserDataBaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.stbUser, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LanguageBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn0
@@ -545,19 +548,12 @@ Partial Class frmLevel1
         Me.stbBar.TabIndex = 40
         Me.stbBar.Text = "StatusBar1"
         '
-        'stbArithmetic
+        'stbUser
         '
-        Me.stbArithmetic.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
-        Me.stbArithmetic.Name = "stbArithmetic"
-        Me.stbArithmetic.Text = "Arithmetic: Addition"
-        Me.stbArithmetic.Width = 404
-        '
-        'stbLevel
-        '
-        Me.stbLevel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
-        Me.stbLevel.Name = "stbLevel"
-        Me.stbLevel.Text = "Level: 10"
-        Me.stbLevel.Width = 404
+        Me.stbUser.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
+        Me.stbUser.Name = "stbUser"
+        Me.stbUser.Text = "User:"
+        Me.stbUser.Width = 328
         '
         'stbGender
         '
@@ -565,6 +561,20 @@ Partial Class frmLevel1
         Me.stbGender.Name = "stbGender"
         Me.stbGender.Text = "Child: Boy"
         Me.stbGender.Width = 328
+        '
+        'stbArithmetic
+        '
+        Me.stbArithmetic.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
+        Me.stbArithmetic.Name = "stbArithmetic"
+        Me.stbArithmetic.Text = "Arithmetic: Addition"
+        Me.stbArithmetic.Width = 328
+        '
+        'stbLevel
+        '
+        Me.stbLevel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
+        Me.stbLevel.Name = "stbLevel"
+        Me.stbLevel.Text = "Level: 10"
+        Me.stbLevel.Width = 328
         '
         'PictureBox2
         '
@@ -785,17 +795,20 @@ Partial Class frmLevel1
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.LanguageTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UserTableTableAdapter = Me.UserTableTableAdapter
         '
-        'stbUser
+        'LanguageBindingSource
         '
-        Me.stbUser.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
-        Me.stbUser.Name = "stbUser"
-        Me.stbUser.Text = "User:"
-        Me.stbUser.Width = 328
+        Me.LanguageBindingSource.DataMember = "Language"
+        Me.LanguageBindingSource.DataSource = Me.UserDataBaseDataSet
         '
-        'frmLevel1
+        'LanguageTableAdapter
+        '
+        Me.LanguageTableAdapter.ClearBeforeFill = True
+        '
+        'frmMain
         '
         Me.AcceptButton = Me.btnOk
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -845,15 +858,16 @@ Partial Class frmLevel1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.StpMenu
-        Me.Name = "frmLevel1"
+        Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "The Numbers"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.StpMenu.ResumeLayout(False)
         Me.StpMenu.PerformLayout()
+        CType(Me.stbUser, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.stbGender, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.stbGender, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.star9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -873,7 +887,7 @@ Partial Class frmLevel1
         CType(Me.picTotal, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UserDataBaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.stbUser, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LanguageBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -950,4 +964,6 @@ Partial Class frmLevel1
     Friend WithEvents UserTableTableAdapter As UserDataBaseDataSetTableAdapters.UserTableTableAdapter
     Friend WithEvents TableAdapterManager As UserDataBaseDataSetTableAdapters.TableAdapterManager
     Friend WithEvents stbUser As StatusBarPanel
+    Friend WithEvents LanguageBindingSource As BindingSource
+    Friend WithEvents LanguageTableAdapter As UserDataBaseDataSetTableAdapters.LanguageTableAdapter
 End Class

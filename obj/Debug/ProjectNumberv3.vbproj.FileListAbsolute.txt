@@ -32,7 +32,6 @@ C:\Users\ap0ca\source\repos\The Numbers\bin\Debug\The Numbers.pdb
 C:\Users\ap0ca\source\repos\The Numbers\bin\Debug\The Numbers.xml
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\ProjectNumberv3.vbprojAssemblyReference.cache
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\TheNumbers.frmWrongNumber.resources
-C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\TheNumbers.frmLevel1.resources
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\TheNumbers.frmGift.resources
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\TheNumbers.Resources.resources
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\ProjectNumberv3.vbproj.GenerateResource.cache
@@ -48,3 +47,4 @@ C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\The Numbers.application
 C:\Users\ap0ca\source\repos\The Numbers\bin\Debug\UserDataBase.mdb
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\TheNumbers.frmGiftTable.resources
 C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\TheNumbers.FrmLogin.resources
+C:\Users\ap0ca\source\repos\The Numbers\obj\Debug\TheNumbers.frmMain.resources
