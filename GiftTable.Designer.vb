@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmGiftTable
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,30 +20,13 @@ Partial Class frmGiftTable
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGiftTable))
-        Me.imgBox1 = New System.Windows.Forms.PictureBox()
-        Me.imgBox2 = New System.Windows.Forms.PictureBox()
-        Me.imgBox3 = New System.Windows.Forms.PictureBox()
-        Me.imgBox4 = New System.Windows.Forms.PictureBox()
-        Me.imgBox5 = New System.Windows.Forms.PictureBox()
-        Me.imgBox10 = New System.Windows.Forms.PictureBox()
-        Me.imgBox9 = New System.Windows.Forms.PictureBox()
-        Me.imgBox8 = New System.Windows.Forms.PictureBox()
-        Me.imgBox7 = New System.Windows.Forms.PictureBox()
-        Me.imgBox6 = New System.Windows.Forms.PictureBox()
-        Me.imgBox15 = New System.Windows.Forms.PictureBox()
-        Me.imgBox14 = New System.Windows.Forms.PictureBox()
-        Me.imgBox13 = New System.Windows.Forms.PictureBox()
-        Me.imgBox12 = New System.Windows.Forms.PictureBox()
-        Me.imgBox11 = New System.Windows.Forms.PictureBox()
-        Me.imgBox20 = New System.Windows.Forms.PictureBox()
-        Me.imgBox19 = New System.Windows.Forms.PictureBox()
-        Me.imgBox18 = New System.Windows.Forms.PictureBox()
-        Me.imgBox17 = New System.Windows.Forms.PictureBox()
-        Me.imgBox16 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.UserTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.UserDataBaseDataSet = New TheNumbers.UserDataBaseDataSet()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -63,245 +46,80 @@ Partial Class frmGiftTable
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
-        CType(Me.imgBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.imgBox20 = New System.Windows.Forms.PictureBox()
+        Me.imgBox19 = New System.Windows.Forms.PictureBox()
+        Me.imgBox18 = New System.Windows.Forms.PictureBox()
+        Me.imgBox17 = New System.Windows.Forms.PictureBox()
+        Me.imgBox16 = New System.Windows.Forms.PictureBox()
+        Me.imgBox15 = New System.Windows.Forms.PictureBox()
+        Me.imgBox14 = New System.Windows.Forms.PictureBox()
+        Me.imgBox13 = New System.Windows.Forms.PictureBox()
+        Me.imgBox12 = New System.Windows.Forms.PictureBox()
+        Me.imgBox11 = New System.Windows.Forms.PictureBox()
+        Me.imgBox10 = New System.Windows.Forms.PictureBox()
+        Me.imgBox9 = New System.Windows.Forms.PictureBox()
+        Me.imgBox8 = New System.Windows.Forms.PictureBox()
+        Me.imgBox7 = New System.Windows.Forms.PictureBox()
+        Me.imgBox6 = New System.Windows.Forms.PictureBox()
+        Me.imgBox5 = New System.Windows.Forms.PictureBox()
+        Me.imgBox4 = New System.Windows.Forms.PictureBox()
+        Me.imgBox3 = New System.Windows.Forms.PictureBox()
+        Me.imgBox2 = New System.Windows.Forms.PictureBox()
+        Me.imgBox1 = New System.Windows.Forms.PictureBox()
+        Me.UserTableTableAdapter = New TheNumbers.UserDataBaseDataSetTableAdapters.UserTableTableAdapter()
+        CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UserDataBaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'imgBox1
-        '
-        Me.imgBox1.Image = CType(resources.GetObject("imgBox1.Image"), System.Drawing.Image)
-        Me.imgBox1.Location = New System.Drawing.Point(12, 12)
-        Me.imgBox1.Name = "imgBox1"
-        Me.imgBox1.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox1.TabIndex = 0
-        Me.imgBox1.TabStop = False
-        '
-        'imgBox2
-        '
-        Me.imgBox2.Image = CType(resources.GetObject("imgBox2.Image"), System.Drawing.Image)
-        Me.imgBox2.Location = New System.Drawing.Point(299, 12)
-        Me.imgBox2.Name = "imgBox2"
-        Me.imgBox2.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox2.TabIndex = 1
-        Me.imgBox2.TabStop = False
-        '
-        'imgBox3
-        '
-        Me.imgBox3.Image = CType(resources.GetObject("imgBox3.Image"), System.Drawing.Image)
-        Me.imgBox3.Location = New System.Drawing.Point(586, 12)
-        Me.imgBox3.Name = "imgBox3"
-        Me.imgBox3.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox3.TabIndex = 2
-        Me.imgBox3.TabStop = False
-        '
-        'imgBox4
-        '
-        Me.imgBox4.Image = CType(resources.GetObject("imgBox4.Image"), System.Drawing.Image)
-        Me.imgBox4.Location = New System.Drawing.Point(873, 12)
-        Me.imgBox4.Name = "imgBox4"
-        Me.imgBox4.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox4.TabIndex = 3
-        Me.imgBox4.TabStop = False
-        '
-        'imgBox5
-        '
-        Me.imgBox5.Image = CType(resources.GetObject("imgBox5.Image"), System.Drawing.Image)
-        Me.imgBox5.Location = New System.Drawing.Point(1160, 12)
-        Me.imgBox5.Name = "imgBox5"
-        Me.imgBox5.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox5.TabIndex = 4
-        Me.imgBox5.TabStop = False
-        '
-        'imgBox10
-        '
-        Me.imgBox10.Image = CType(resources.GetObject("imgBox10.Image"), System.Drawing.Image)
-        Me.imgBox10.Location = New System.Drawing.Point(1160, 202)
-        Me.imgBox10.Name = "imgBox10"
-        Me.imgBox10.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox10.TabIndex = 9
-        Me.imgBox10.TabStop = False
-        '
-        'imgBox9
-        '
-        Me.imgBox9.Image = CType(resources.GetObject("imgBox9.Image"), System.Drawing.Image)
-        Me.imgBox9.Location = New System.Drawing.Point(873, 202)
-        Me.imgBox9.Name = "imgBox9"
-        Me.imgBox9.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox9.TabIndex = 8
-        Me.imgBox9.TabStop = False
-        '
-        'imgBox8
-        '
-        Me.imgBox8.Image = CType(resources.GetObject("imgBox8.Image"), System.Drawing.Image)
-        Me.imgBox8.Location = New System.Drawing.Point(586, 202)
-        Me.imgBox8.Name = "imgBox8"
-        Me.imgBox8.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox8.TabIndex = 7
-        Me.imgBox8.TabStop = False
-        '
-        'imgBox7
-        '
-        Me.imgBox7.Image = CType(resources.GetObject("imgBox7.Image"), System.Drawing.Image)
-        Me.imgBox7.Location = New System.Drawing.Point(299, 202)
-        Me.imgBox7.Name = "imgBox7"
-        Me.imgBox7.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox7.TabIndex = 6
-        Me.imgBox7.TabStop = False
-        '
-        'imgBox6
-        '
-        Me.imgBox6.Image = CType(resources.GetObject("imgBox6.Image"), System.Drawing.Image)
-        Me.imgBox6.Location = New System.Drawing.Point(12, 202)
-        Me.imgBox6.Name = "imgBox6"
-        Me.imgBox6.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox6.TabIndex = 5
-        Me.imgBox6.TabStop = False
-        '
-        'imgBox15
-        '
-        Me.imgBox15.Image = CType(resources.GetObject("imgBox15.Image"), System.Drawing.Image)
-        Me.imgBox15.Location = New System.Drawing.Point(1160, 392)
-        Me.imgBox15.Name = "imgBox15"
-        Me.imgBox15.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox15.TabIndex = 14
-        Me.imgBox15.TabStop = False
-        '
-        'imgBox14
-        '
-        Me.imgBox14.Image = CType(resources.GetObject("imgBox14.Image"), System.Drawing.Image)
-        Me.imgBox14.Location = New System.Drawing.Point(873, 392)
-        Me.imgBox14.Name = "imgBox14"
-        Me.imgBox14.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox14.TabIndex = 13
-        Me.imgBox14.TabStop = False
-        '
-        'imgBox13
-        '
-        Me.imgBox13.Image = CType(resources.GetObject("imgBox13.Image"), System.Drawing.Image)
-        Me.imgBox13.Location = New System.Drawing.Point(586, 392)
-        Me.imgBox13.Name = "imgBox13"
-        Me.imgBox13.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox13.TabIndex = 12
-        Me.imgBox13.TabStop = False
-        '
-        'imgBox12
-        '
-        Me.imgBox12.Image = CType(resources.GetObject("imgBox12.Image"), System.Drawing.Image)
-        Me.imgBox12.Location = New System.Drawing.Point(299, 392)
-        Me.imgBox12.Name = "imgBox12"
-        Me.imgBox12.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox12.TabIndex = 11
-        Me.imgBox12.TabStop = False
-        '
-        'imgBox11
-        '
-        Me.imgBox11.Image = CType(resources.GetObject("imgBox11.Image"), System.Drawing.Image)
-        Me.imgBox11.Location = New System.Drawing.Point(12, 392)
-        Me.imgBox11.Name = "imgBox11"
-        Me.imgBox11.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox11.TabIndex = 10
-        Me.imgBox11.TabStop = False
-        '
-        'imgBox20
-        '
-        Me.imgBox20.Image = CType(resources.GetObject("imgBox20.Image"), System.Drawing.Image)
-        Me.imgBox20.Location = New System.Drawing.Point(1160, 582)
-        Me.imgBox20.Name = "imgBox20"
-        Me.imgBox20.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox20.TabIndex = 19
-        Me.imgBox20.TabStop = False
-        '
-        'imgBox19
-        '
-        Me.imgBox19.Image = CType(resources.GetObject("imgBox19.Image"), System.Drawing.Image)
-        Me.imgBox19.Location = New System.Drawing.Point(873, 582)
-        Me.imgBox19.Name = "imgBox19"
-        Me.imgBox19.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox19.TabIndex = 18
-        Me.imgBox19.TabStop = False
-        '
-        'imgBox18
-        '
-        Me.imgBox18.Image = CType(resources.GetObject("imgBox18.Image"), System.Drawing.Image)
-        Me.imgBox18.Location = New System.Drawing.Point(586, 582)
-        Me.imgBox18.Name = "imgBox18"
-        Me.imgBox18.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox18.TabIndex = 17
-        Me.imgBox18.TabStop = False
-        '
-        'imgBox17
-        '
-        Me.imgBox17.Image = CType(resources.GetObject("imgBox17.Image"), System.Drawing.Image)
-        Me.imgBox17.Location = New System.Drawing.Point(299, 582)
-        Me.imgBox17.Name = "imgBox17"
-        Me.imgBox17.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox17.TabIndex = 16
-        Me.imgBox17.TabStop = False
-        '
-        'imgBox16
-        '
-        Me.imgBox16.Image = CType(resources.GetObject("imgBox16.Image"), System.Drawing.Image)
-        Me.imgBox16.Location = New System.Drawing.Point(12, 582)
-        Me.imgBox16.Name = "imgBox16"
-        Me.imgBox16.Size = New System.Drawing.Size(251, 184)
-        Me.imgBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.imgBox16.TabIndex = 15
-        Me.imgBox16.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift1", True))
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(233, 172)
+        Me.Label1.Location = New System.Drawing.Point(202, 144)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(30, 24)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "00"
         '
+        'UserTableBindingSource
+        '
+        Me.UserTableBindingSource.DataMember = "UserTable"
+        Me.UserTableBindingSource.DataSource = Me.UserDataBaseDataSet
+        '
+        'UserDataBaseDataSet
+        '
+        Me.UserDataBaseDataSet.DataSetName = "UserDataBaseDataSet"
+        Me.UserDataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift2", True))
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(520, 175)
+        Me.Label2.Location = New System.Drawing.Point(428, 144)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(30, 24)
         Me.Label2.TabIndex = 21
@@ -310,9 +128,10 @@ Partial Class frmGiftTable
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift3", True))
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(807, 175)
+        Me.Label3.Location = New System.Drawing.Point(654, 144)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(30, 24)
         Me.Label3.TabIndex = 22
@@ -321,9 +140,10 @@ Partial Class frmGiftTable
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift4", True))
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(1094, 172)
+        Me.Label4.Location = New System.Drawing.Point(880, 144)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(30, 24)
         Me.Label4.TabIndex = 23
@@ -332,9 +152,10 @@ Partial Class frmGiftTable
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift5", True))
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(1381, 172)
+        Me.Label5.Location = New System.Drawing.Point(1106, 144)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(30, 24)
         Me.Label5.TabIndex = 24
@@ -343,9 +164,10 @@ Partial Class frmGiftTable
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift6", True))
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(233, 362)
+        Me.Label6.Location = New System.Drawing.Point(202, 306)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(30, 24)
         Me.Label6.TabIndex = 25
@@ -354,9 +176,10 @@ Partial Class frmGiftTable
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift7", True))
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(520, 362)
+        Me.Label7.Location = New System.Drawing.Point(428, 306)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(30, 24)
         Me.Label7.TabIndex = 26
@@ -365,9 +188,10 @@ Partial Class frmGiftTable
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift8", True))
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(807, 362)
+        Me.Label8.Location = New System.Drawing.Point(654, 306)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(30, 24)
         Me.Label8.TabIndex = 27
@@ -376,9 +200,10 @@ Partial Class frmGiftTable
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift9", True))
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(1094, 362)
+        Me.Label9.Location = New System.Drawing.Point(880, 306)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(30, 24)
         Me.Label9.TabIndex = 28
@@ -387,9 +212,10 @@ Partial Class frmGiftTable
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift10", True))
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(1381, 362)
+        Me.Label10.Location = New System.Drawing.Point(1106, 306)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(30, 24)
         Me.Label10.TabIndex = 29
@@ -398,9 +224,10 @@ Partial Class frmGiftTable
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift11", True))
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(233, 552)
+        Me.Label11.Location = New System.Drawing.Point(202, 468)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(30, 24)
         Me.Label11.TabIndex = 30
@@ -409,9 +236,10 @@ Partial Class frmGiftTable
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift12", True))
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(520, 552)
+        Me.Label12.Location = New System.Drawing.Point(428, 468)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(30, 24)
         Me.Label12.TabIndex = 31
@@ -420,9 +248,10 @@ Partial Class frmGiftTable
         'Label13
         '
         Me.Label13.AutoSize = True
+        Me.Label13.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift13", True))
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(807, 552)
+        Me.Label13.Location = New System.Drawing.Point(654, 468)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(30, 24)
         Me.Label13.TabIndex = 32
@@ -431,9 +260,10 @@ Partial Class frmGiftTable
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift14", True))
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(1094, 552)
+        Me.Label14.Location = New System.Drawing.Point(880, 468)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(30, 24)
         Me.Label14.TabIndex = 33
@@ -442,9 +272,10 @@ Partial Class frmGiftTable
         'Label15
         '
         Me.Label15.AutoSize = True
+        Me.Label15.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift15", True))
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(1381, 552)
+        Me.Label15.Location = New System.Drawing.Point(1106, 468)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(30, 24)
         Me.Label15.TabIndex = 34
@@ -453,9 +284,10 @@ Partial Class frmGiftTable
         'Label16
         '
         Me.Label16.AutoSize = True
+        Me.Label16.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift16", True))
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(233, 738)
+        Me.Label16.Location = New System.Drawing.Point(202, 630)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(30, 24)
         Me.Label16.TabIndex = 35
@@ -464,9 +296,10 @@ Partial Class frmGiftTable
         'Label17
         '
         Me.Label17.AutoSize = True
+        Me.Label17.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift17", True))
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(520, 738)
+        Me.Label17.Location = New System.Drawing.Point(428, 630)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(30, 24)
         Me.Label17.TabIndex = 36
@@ -475,9 +308,10 @@ Partial Class frmGiftTable
         'Label18
         '
         Me.Label18.AutoSize = True
+        Me.Label18.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift18", True))
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(807, 738)
+        Me.Label18.Location = New System.Drawing.Point(654, 630)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(30, 24)
         Me.Label18.TabIndex = 37
@@ -486,9 +320,10 @@ Partial Class frmGiftTable
         'Label19
         '
         Me.Label19.AutoSize = True
+        Me.Label19.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift19", True))
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(1094, 738)
+        Me.Label19.Location = New System.Drawing.Point(880, 630)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(30, 24)
         Me.Label19.TabIndex = 38
@@ -497,21 +332,225 @@ Partial Class frmGiftTable
         'Label20
         '
         Me.Label20.AutoSize = True
+        Me.Label20.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UserTableBindingSource, "Gift20", True))
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(1381, 738)
+        Me.Label20.Location = New System.Drawing.Point(1106, 630)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(30, 24)
         Me.Label20.TabIndex = 39
         Me.Label20.Text = "00"
         '
+        'imgBox20
+        '
+        Me.imgBox20.Image = CType(resources.GetObject("imgBox20.Image"), System.Drawing.Image)
+        Me.imgBox20.Location = New System.Drawing.Point(916, 498)
+        Me.imgBox20.Name = "imgBox20"
+        Me.imgBox20.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox20.TabIndex = 19
+        Me.imgBox20.TabStop = False
+        '
+        'imgBox19
+        '
+        Me.imgBox19.Image = CType(resources.GetObject("imgBox19.Image"), System.Drawing.Image)
+        Me.imgBox19.Location = New System.Drawing.Point(690, 498)
+        Me.imgBox19.Name = "imgBox19"
+        Me.imgBox19.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox19.TabIndex = 18
+        Me.imgBox19.TabStop = False
+        '
+        'imgBox18
+        '
+        Me.imgBox18.Image = CType(resources.GetObject("imgBox18.Image"), System.Drawing.Image)
+        Me.imgBox18.Location = New System.Drawing.Point(464, 498)
+        Me.imgBox18.Name = "imgBox18"
+        Me.imgBox18.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox18.TabIndex = 17
+        Me.imgBox18.TabStop = False
+        '
+        'imgBox17
+        '
+        Me.imgBox17.Image = CType(resources.GetObject("imgBox17.Image"), System.Drawing.Image)
+        Me.imgBox17.Location = New System.Drawing.Point(238, 498)
+        Me.imgBox17.Name = "imgBox17"
+        Me.imgBox17.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox17.TabIndex = 16
+        Me.imgBox17.TabStop = False
+        '
+        'imgBox16
+        '
+        Me.imgBox16.Image = CType(resources.GetObject("imgBox16.Image"), System.Drawing.Image)
+        Me.imgBox16.Location = New System.Drawing.Point(12, 498)
+        Me.imgBox16.Name = "imgBox16"
+        Me.imgBox16.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox16.TabIndex = 15
+        Me.imgBox16.TabStop = False
+        '
+        'imgBox15
+        '
+        Me.imgBox15.Image = CType(resources.GetObject("imgBox15.Image"), System.Drawing.Image)
+        Me.imgBox15.Location = New System.Drawing.Point(916, 336)
+        Me.imgBox15.Name = "imgBox15"
+        Me.imgBox15.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox15.TabIndex = 14
+        Me.imgBox15.TabStop = False
+        '
+        'imgBox14
+        '
+        Me.imgBox14.Image = CType(resources.GetObject("imgBox14.Image"), System.Drawing.Image)
+        Me.imgBox14.Location = New System.Drawing.Point(690, 336)
+        Me.imgBox14.Name = "imgBox14"
+        Me.imgBox14.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox14.TabIndex = 13
+        Me.imgBox14.TabStop = False
+        '
+        'imgBox13
+        '
+        Me.imgBox13.Image = CType(resources.GetObject("imgBox13.Image"), System.Drawing.Image)
+        Me.imgBox13.Location = New System.Drawing.Point(464, 336)
+        Me.imgBox13.Name = "imgBox13"
+        Me.imgBox13.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox13.TabIndex = 12
+        Me.imgBox13.TabStop = False
+        '
+        'imgBox12
+        '
+        Me.imgBox12.Image = CType(resources.GetObject("imgBox12.Image"), System.Drawing.Image)
+        Me.imgBox12.Location = New System.Drawing.Point(238, 336)
+        Me.imgBox12.Name = "imgBox12"
+        Me.imgBox12.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox12.TabIndex = 11
+        Me.imgBox12.TabStop = False
+        '
+        'imgBox11
+        '
+        Me.imgBox11.Image = CType(resources.GetObject("imgBox11.Image"), System.Drawing.Image)
+        Me.imgBox11.Location = New System.Drawing.Point(12, 336)
+        Me.imgBox11.Name = "imgBox11"
+        Me.imgBox11.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox11.TabIndex = 10
+        Me.imgBox11.TabStop = False
+        '
+        'imgBox10
+        '
+        Me.imgBox10.Image = CType(resources.GetObject("imgBox10.Image"), System.Drawing.Image)
+        Me.imgBox10.Location = New System.Drawing.Point(916, 174)
+        Me.imgBox10.Name = "imgBox10"
+        Me.imgBox10.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox10.TabIndex = 9
+        Me.imgBox10.TabStop = False
+        '
+        'imgBox9
+        '
+        Me.imgBox9.Image = CType(resources.GetObject("imgBox9.Image"), System.Drawing.Image)
+        Me.imgBox9.Location = New System.Drawing.Point(690, 174)
+        Me.imgBox9.Name = "imgBox9"
+        Me.imgBox9.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox9.TabIndex = 8
+        Me.imgBox9.TabStop = False
+        '
+        'imgBox8
+        '
+        Me.imgBox8.Image = CType(resources.GetObject("imgBox8.Image"), System.Drawing.Image)
+        Me.imgBox8.Location = New System.Drawing.Point(464, 174)
+        Me.imgBox8.Name = "imgBox8"
+        Me.imgBox8.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox8.TabIndex = 7
+        Me.imgBox8.TabStop = False
+        '
+        'imgBox7
+        '
+        Me.imgBox7.Image = CType(resources.GetObject("imgBox7.Image"), System.Drawing.Image)
+        Me.imgBox7.Location = New System.Drawing.Point(238, 174)
+        Me.imgBox7.Name = "imgBox7"
+        Me.imgBox7.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox7.TabIndex = 6
+        Me.imgBox7.TabStop = False
+        '
+        'imgBox6
+        '
+        Me.imgBox6.Image = CType(resources.GetObject("imgBox6.Image"), System.Drawing.Image)
+        Me.imgBox6.Location = New System.Drawing.Point(12, 174)
+        Me.imgBox6.Name = "imgBox6"
+        Me.imgBox6.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox6.TabIndex = 5
+        Me.imgBox6.TabStop = False
+        '
+        'imgBox5
+        '
+        Me.imgBox5.Image = CType(resources.GetObject("imgBox5.Image"), System.Drawing.Image)
+        Me.imgBox5.Location = New System.Drawing.Point(916, 12)
+        Me.imgBox5.Name = "imgBox5"
+        Me.imgBox5.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox5.TabIndex = 4
+        Me.imgBox5.TabStop = False
+        '
+        'imgBox4
+        '
+        Me.imgBox4.Image = CType(resources.GetObject("imgBox4.Image"), System.Drawing.Image)
+        Me.imgBox4.Location = New System.Drawing.Point(690, 12)
+        Me.imgBox4.Name = "imgBox4"
+        Me.imgBox4.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox4.TabIndex = 3
+        Me.imgBox4.TabStop = False
+        '
+        'imgBox3
+        '
+        Me.imgBox3.Image = CType(resources.GetObject("imgBox3.Image"), System.Drawing.Image)
+        Me.imgBox3.Location = New System.Drawing.Point(464, 12)
+        Me.imgBox3.Name = "imgBox3"
+        Me.imgBox3.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox3.TabIndex = 2
+        Me.imgBox3.TabStop = False
+        '
+        'imgBox2
+        '
+        Me.imgBox2.Image = CType(resources.GetObject("imgBox2.Image"), System.Drawing.Image)
+        Me.imgBox2.Location = New System.Drawing.Point(238, 12)
+        Me.imgBox2.Name = "imgBox2"
+        Me.imgBox2.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox2.TabIndex = 1
+        Me.imgBox2.TabStop = False
+        '
+        'imgBox1
+        '
+        Me.imgBox1.Image = CType(resources.GetObject("imgBox1.Image"), System.Drawing.Image)
+        Me.imgBox1.Location = New System.Drawing.Point(12, 12)
+        Me.imgBox1.Name = "imgBox1"
+        Me.imgBox1.Size = New System.Drawing.Size(220, 156)
+        Me.imgBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgBox1.TabIndex = 0
+        Me.imgBox1.TabStop = False
+        '
+        'UserTableTableAdapter
+        '
+        Me.UserTableTableAdapter.ClearBeforeFill = True
+        '
         'frmGiftTable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(1424, 771)
+        Me.ClientSize = New System.Drawing.Size(1151, 671)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label18)
@@ -559,31 +598,34 @@ Partial Class frmGiftTable
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gift Table"
         Me.TopMost = True
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.imgBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserDataBaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBox20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBox19, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBox18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imgBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents imgBox1 As PictureBox
     Friend WithEvents imgBox2 As PictureBox
     Friend WithEvents imgBox3 As PictureBox
     Friend WithEvents imgBox4 As PictureBox
@@ -623,5 +665,7 @@ Partial Class frmGiftTable
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents imgBox1 As PictureBox
+    Friend WithEvents UserDataBaseDataSet As UserDataBaseDataSet
+    Friend WithEvents UserTableBindingSource As BindingSource
+    Friend WithEvents UserTableTableAdapter As UserDataBaseDataSetTableAdapters.UserTableTableAdapter
 End Class

@@ -47,6 +47,11 @@ The Numbers
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TheNumbers.My.Resources.Resources._13">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TheNumbers.My.Resources.Resources._2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -92,44 +97,209 @@ The Numbers
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:TheNumbers.My.Resources.Resources.fondo">
+<member name="P:TheNumbers.My.Resources.Resources.boy1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:TheNumbers.My.Resources.Resources.Gift">
-<summary>
-  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.kavel_smyloo">
+<member name="P:TheNumbers.My.Resources.Resources.boy10">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:TheNumbers.My.Resources.Resources.numeros">
+<member name="P:TheNumbers.My.Resources.Resources.boy11">
 <summary>
-  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy12">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy13">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy14">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy15">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy17">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy18">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy19">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy20">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy6">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy7">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy8">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.boy9">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl10">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl11">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl12">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl13">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl14">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl15">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl17">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl18">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl19">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl20">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl6">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl7">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl8">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TheNumbers.My.Resources.Resources.girl9">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:TheNumbers.My.Resources.Resources.star">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.Star1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.Stop_2">
-<summary>
-  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-</summary>
-</member>
-<member name="P:TheNumbers.My.Resources.Resources.UserDataBase">
-<summary>
-  Looks up a localized resource of type System.Byte[].
 </summary>
 </member>
 <member name="P:TheNumbers.My.Resources.Resources.william_liu_03122018megamanx_6_left">
@@ -145,6 +315,91 @@ The Numbers
 <member name="P:TheNumbers.My.Resources.Resources.x">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSet.UserTableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSet.LanguageDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSet.UserTableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSet.LanguageRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSet.UserTableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSet.LanguageRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSetTableAdapters.UserTableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSetTableAdapters.LanguageTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(TheNumbers.UserDataBaseDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(TheNumbers.UserDataBaseDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(TheNumbers.UserDataBaseDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.UpdateAll(TheNumbers.UserDataBaseDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
 </summary>
 </member>
 </members>

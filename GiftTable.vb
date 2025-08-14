@@ -1,131 +1,218 @@
 ﻿Public Class frmGiftTable
-    Dim CuRWidth As Integer = Me.Width
+    'Variables para agrandar componentes segun tamaño de la ventana
     Dim CuRHeight As Integer = Me.Height
+    Dim CuRWidth As Integer = Me.Width
 
     Private Sub FrmGiftTable_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(2)
-        Label2.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(3)
-        Label3.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(4)
-        Label4.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(5)
-        Label5.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(6)
-        Label6.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(7)
-        Label7.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(8)
-        Label8.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(9)
-        Label9.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(10)
-        Label10.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(11)
-        Label11.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(12)
-        Label12.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(13)
-        Label13.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(14)
-        Label14.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(15)
-        Label15.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(16)
-        Label16.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(17)
-        Label17.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(18)
-        Label18.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(19)
-        Label19.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(20)
-        Label20.Text = frmMain.ds.Tables("Users").Rows(frmMain.inc).Item(21)
-        If Label1.Text <> 0 Then
-            imgBox1.ImageLocation = frmMain.strGiftPath & "1.png"
+        'TODO: This line of code loads data into the 'UserDataBaseDataSet.UserTable' table. You can move, or remove it, as needed.
+        Me.UserTableTableAdapter.Fill(Me.UserDataBaseDataSet.UserTable)
+        UserTableBindingSource.Position = FrmLogin.inc
+        If frmMain.strGender = "Boy" Then
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(2) <> 0 Then
+                imgBox1.Image = TheNumbers.My.Resources.boy1
+            Else
+                imgBox1.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(3) <> 0 Then
+                imgBox2.Image = TheNumbers.My.Resources.boy2
+            Else
+                imgBox2.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(4) <> 0 Then
+                imgBox3.Image = TheNumbers.My.Resources.boy3
+            Else
+                imgBox3.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(5) <> 0 Then
+                imgBox4.Image = TheNumbers.My.Resources.boy4
+            Else
+                imgBox4.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(6) <> 0 Then
+                imgBox5.Image = TheNumbers.My.Resources.boy5
+            Else
+                imgBox5.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(7) <> 0 Then
+                imgBox6.Image = TheNumbers.My.Resources.boy6
+            Else
+                imgBox6.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(8) <> 0 Then
+                imgBox7.Image = TheNumbers.My.Resources.boy7
+            Else
+                imgBox7.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(9) <> 0 Then
+                imgBox8.Image = TheNumbers.My.Resources.boy8
+            Else
+                imgBox8.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(10) <> 0 Then
+                imgBox9.Image = TheNumbers.My.Resources.boy9
+            Else
+                imgBox9.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(11) <> 0 Then
+                imgBox10.Image = TheNumbers.My.Resources.boy10
+            Else
+                imgBox10.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(12) <> 0 Then
+                imgBox11.Image = TheNumbers.My.Resources.boy11
+            Else
+                imgBox11.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(13) <> 0 Then
+                imgBox12.Image = TheNumbers.My.Resources.boy12
+            Else
+                imgBox12.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(14) <> 0 Then
+                imgBox13.Image = TheNumbers.My.Resources.boy13
+            Else
+                imgBox13.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(15) <> 0 Then
+                imgBox14.Image = TheNumbers.My.Resources.boy14
+            Else
+                imgBox14.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(16) <> 0 Then
+                imgBox15.Image = TheNumbers.My.Resources.boy15
+            Else
+                imgBox15.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(17) <> 0 Then
+                imgBox16.Image = TheNumbers.My.Resources.boy16
+            Else
+                imgBox16.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(18) <> 0 Then
+                imgBox17.Image = TheNumbers.My.Resources.boy17
+            Else
+                imgBox17.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(19) <> 0 Then
+                imgBox18.Image = TheNumbers.My.Resources.boy18
+            Else
+                imgBox18.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(20) <> 0 Then
+                imgBox19.Image = TheNumbers.My.Resources.boy19
+            Else
+                imgBox19.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(21) <> 0 Then
+                imgBox20.Image = TheNumbers.My.Resources.boy20
+            Else
+                imgBox20.Image = TheNumbers.My.Resources.block
+            End If
         Else
-            imgBox1.ImageLocation = "image\block.png"
-        End If
-        If Label2.Text <> 0 Then
-            imgBox2.ImageLocation = frmMain.strGiftPath & "2.png"
-        Else
-            imgBox2.ImageLocation = "image\block.png"
-        End If
-        If Label3.Text <> 0 Then
-            imgBox3.ImageLocation = frmMain.strGiftPath & "3.png"
-        Else
-            imgBox3.ImageLocation = "image\block.png"
-        End If
-        If Label4.Text <> 0 Then
-            imgBox4.ImageLocation = frmMain.strGiftPath & "4.png"
-        Else
-            imgBox4.ImageLocation = "image\block.png"
-        End If
-        If Label5.Text <> 0 Then
-            imgBox5.ImageLocation = frmMain.strGiftPath & "5.png"
-        Else
-            imgBox5.ImageLocation = "image\block.png"
-        End If
-        If Label6.Text <> 0 Then
-            imgBox6.ImageLocation = frmMain.strGiftPath & "6.png"
-        Else
-            imgBox6.ImageLocation = "image\block.png"
-        End If
-        If Label7.Text <> 0 Then
-            imgBox7.ImageLocation = frmMain.strGiftPath & "7.png"
-        Else
-            imgBox7.ImageLocation = "image\block.png"
-        End If
-        If Label8.Text <> 0 Then
-            imgBox8.ImageLocation = frmMain.strGiftPath & "8.png"
-        Else
-            imgBox8.ImageLocation = "image\block.png"
-        End If
-        If Label9.Text <> 0 Then
-            imgBox9.ImageLocation = frmMain.strGiftPath & "9.png"
-        Else
-            imgBox9.ImageLocation = "image\block.png"
-        End If
-        If Label10.Text <> 0 Then
-            imgBox10.ImageLocation = frmMain.strGiftPath & "10.png"
-        Else
-            imgBox10.ImageLocation = "image\block.png"
-        End If
-        If Label11.Text <> 0 Then
-            imgBox11.ImageLocation = frmMain.strGiftPath & "11.png"
-        Else
-            imgBox11.ImageLocation = "image\block.png"
-        End If
-        If Label12.Text <> 0 Then
-            imgBox12.ImageLocation = frmMain.strGiftPath & "12.png"
-        Else
-            imgBox12.ImageLocation = "image\block.png"
-        End If
-        If Label13.Text <> 0 Then
-            imgBox13.ImageLocation = frmMain.strGiftPath & "13.png"
-        Else
-            imgBox13.ImageLocation = "image\block.png"
-        End If
-        If Label14.Text <> 0 Then
-            imgBox14.ImageLocation = frmMain.strGiftPath & "14.png"
-        Else
-            imgBox14.ImageLocation = "image\block.png"
-        End If
-        If Label15.Text <> 0 Then
-            imgBox15.ImageLocation = frmMain.strGiftPath & "15.png"
-        Else
-            imgBox15.ImageLocation = "image\block.png"
-        End If
-        If Label16.Text <> 0 Then
-            imgBox16.ImageLocation = frmMain.strGiftPath & "16.png"
-        Else
-            imgBox16.ImageLocation = "image\block.png"
-        End If
-        If Label17.Text <> 0 Then
-            imgBox17.ImageLocation = frmMain.strGiftPath & "17.png"
-        Else
-            imgBox17.ImageLocation = "image\block.png"
-        End If
-        If Label18.Text <> 0 Then
-            imgBox18.ImageLocation = frmMain.strGiftPath & "18.png"
-        Else
-            imgBox18.ImageLocation = "image\block.png"
-        End If
-        If Label19.Text <> 0 Then
-            imgBox19.ImageLocation = frmMain.strGiftPath & "19.png"
-        Else
-            imgBox19.ImageLocation = "image\block.png"
-        End If
-        If Label20.Text <> 0 Then
-            imgBox20.ImageLocation = frmMain.strGiftPath & "20.png"
-        Else
-            imgBox20.ImageLocation = "image\block.png"
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(2) <> 0 Then
+                imgBox1.Image = TheNumbers.My.Resources.girl1
+            Else
+                imgBox1.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(3) <> 0 Then
+                imgBox2.Image = TheNumbers.My.Resources.girl2
+            Else
+                imgBox2.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(4) <> 0 Then
+                imgBox3.Image = TheNumbers.My.Resources.girl3
+            Else
+                imgBox3.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(5) <> 0 Then
+                imgBox4.Image = TheNumbers.My.Resources.girl4
+            Else
+                imgBox4.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(6) <> 0 Then
+                imgBox5.Image = TheNumbers.My.Resources.girl5
+            Else
+                imgBox5.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(7) <> 0 Then
+                imgBox6.Image = TheNumbers.My.Resources.girl6
+            Else
+                imgBox6.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(8) <> 0 Then
+                imgBox7.Image = TheNumbers.My.Resources.girl7
+            Else
+                imgBox7.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(9) <> 0 Then
+                imgBox8.Image = TheNumbers.My.Resources.girl8
+            Else
+                imgBox8.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(10) <> 0 Then
+                imgBox9.Image = TheNumbers.My.Resources.girl9
+            Else
+                imgBox9.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(11) <> 0 Then
+                imgBox10.Image = TheNumbers.My.Resources.girl10
+            Else
+                imgBox10.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(12) <> 0 Then
+                imgBox11.Image = TheNumbers.My.Resources.girl11
+            Else
+                imgBox11.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(13) <> 0 Then
+                imgBox12.Image = TheNumbers.My.Resources.girl12
+            Else
+                imgBox12.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(14) <> 0 Then
+                imgBox13.Image = TheNumbers.My.Resources.girl13
+            Else
+                imgBox13.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(15) <> 0 Then
+                imgBox14.Image = TheNumbers.My.Resources.girl14
+            Else
+                imgBox14.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(16) <> 0 Then
+                imgBox15.Image = TheNumbers.My.Resources.girl15
+            Else
+                imgBox15.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(17) <> 0 Then
+                imgBox16.Image = TheNumbers.My.Resources.girl16
+            Else
+                imgBox16.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(18) <> 0 Then
+                imgBox17.Image = TheNumbers.My.Resources.girl17
+            Else
+                imgBox17.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(19) <> 0 Then
+                imgBox18.Image = TheNumbers.My.Resources.girl18
+            Else
+                imgBox18.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(20) <> 0 Then
+                imgBox19.Image = TheNumbers.My.Resources.girl19
+            Else
+                imgBox19.Image = TheNumbers.My.Resources.block
+            End If
+            If UserDataBaseDataSet.Tables("UserTable").Rows(FrmLogin.inc).Item(21) <> 0 Then
+                imgBox20.Image = TheNumbers.My.Resources.girl20
+            Else
+                imgBox20.Image = TheNumbers.My.Resources.block
+            End If
         End If
     End Sub
 
-    Private Sub frmGiftTable_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+    Private Sub FrmGiftTable_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
         Dim RatioHeight As Double = (Me.Height - CuRHeight) / CuRHeight
         Dim RatioWidth As Double = (Me.Width - CuRWidth) / CuRWidth
 
@@ -137,5 +224,9 @@
         Next
         CuRHeight = Me.Height
         CuRWidth = Me.Width
+    End Sub
+
+    Private Sub FrmGiftTable_Click(sender As Object, e As EventArgs) Handles MyBase.Click, Label9.Click, Label8.Click, Label7.Click, Label6.Click, Label5.Click, Label4.Click, Label3.Click, Label2.Click, Label19.Click, Label18.Click, Label17.Click, Label16.Click, Label15.Click, Label14.Click, Label13.Click, Label12.Click, Label11.Click, Label10.Click, Label1.Click, imgBox9.Click, imgBox8.Click, imgBox7.Click, imgBox6.Click, imgBox5.Click, imgBox4.Click, imgBox3.Click, imgBox2.Click, imgBox19.Click, imgBox18.Click, imgBox17.Click, imgBox16.Click, imgBox15.Click, imgBox14.Click, imgBox13.Click, imgBox12.Click, imgBox11.Click, imgBox10.Click, imgBox1.Click
+        Close()
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmMain
+Partial Class FrmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,6 +22,7 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.btn0 = New System.Windows.Forms.Button()
         Me.btn1 = New System.Windows.Forms.Button()
@@ -43,7 +44,7 @@ Partial Class frmMain
         Me.btnOk = New System.Windows.Forms.Button()
         Me.lblOperator2 = New System.Windows.Forms.Label()
         Me.lbligual2 = New System.Windows.Forms.Label()
-        Me.stpMenu = New System.Windows.Forms.MenuStrip()
+        Me.StpMenu = New System.Windows.Forms.MenuStrip()
         Me.mnFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowGiftTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -60,16 +61,17 @@ Partial Class frmMain
         Me.mn20Subtraction = New System.Windows.Forms.ToolStripMenuItem()
         Me.mn100Subtraction = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnMultiplication = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToTable10ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToTable12ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Up10M = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Up12M = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnDivision = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UpToTable10ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UpToTable12ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Up10D = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Up12D = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DedicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.stbBar = New System.Windows.Forms.StatusBar()
-        Me.stbName = New System.Windows.Forms.StatusBarPanel()
+        Me.stbUser = New System.Windows.Forms.StatusBarPanel()
+        Me.stbGender = New System.Windows.Forms.StatusBarPanel()
         Me.stbArithmetic = New System.Windows.Forms.StatusBarPanel()
         Me.stbLevel = New System.Windows.Forms.StatusBarPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -89,8 +91,15 @@ Partial Class frmMain
         Me.picNumber1 = New System.Windows.Forms.PictureBox()
         Me.picNumber2 = New System.Windows.Forms.PictureBox()
         Me.picTotal = New System.Windows.Forms.PictureBox()
-        Me.stpMenu.SuspendLayout()
-        CType(Me.stbName, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.UserDataBaseDataSet = New TheNumbers.UserDataBaseDataSet()
+        Me.UserTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.UserTableTableAdapter = New TheNumbers.UserDataBaseDataSetTableAdapters.UserTableTableAdapter()
+        Me.TableAdapterManager = New TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager()
+        Me.LanguageBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LanguageTableAdapter = New TheNumbers.UserDataBaseDataSetTableAdapters.LanguageTableAdapter()
+        Me.StpMenu.SuspendLayout()
+        CType(Me.stbUser, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.stbGender, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -110,6 +119,9 @@ Partial Class frmMain
         CType(Me.picNumber1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picNumber2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTotal, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UserDataBaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LanguageBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn0
@@ -366,14 +378,14 @@ Partial Class frmMain
         Me.lbligual2.Text = "="
         Me.lbligual2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'stpMenu
+        'StpMenu
         '
-        Me.stpMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic, Me.HelpToolStripMenuItem})
-        Me.stpMenu.Location = New System.Drawing.Point(0, 0)
-        Me.stpMenu.Name = "stpMenu"
-        Me.stpMenu.Size = New System.Drawing.Size(1331, 24)
-        Me.stpMenu.TabIndex = 39
-        Me.stpMenu.Text = "MenuStrip1"
+        Me.StpMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnFile, Me.mnArithmetic, Me.HelpToolStripMenuItem})
+        Me.StpMenu.Location = New System.Drawing.Point(0, 0)
+        Me.StpMenu.Name = "StpMenu"
+        Me.StpMenu.Size = New System.Drawing.Size(1331, 24)
+        Me.StpMenu.TabIndex = 39
+        Me.StpMenu.Text = "MenuStrip1"
         '
         'mnFile
         '
@@ -385,19 +397,19 @@ Partial Class frmMain
         'LoginToolStripMenuItem
         '
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
         Me.LoginToolStripMenuItem.Text = "Login"
         '
         'ShowGiftTableToolStripMenuItem
         '
         Me.ShowGiftTableToolStripMenuItem.Name = "ShowGiftTableToolStripMenuItem"
-        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.ShowGiftTableToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
         Me.ShowGiftTableToolStripMenuItem.Text = "Show Gift Table"
         '
         'mnExit
         '
         Me.mnExit.Name = "mnExit"
-        Me.mnExit.Size = New System.Drawing.Size(155, 22)
+        Me.mnExit.Size = New System.Drawing.Size(156, 22)
         Me.mnExit.Text = "Exit"
         '
         'mnArithmetic
@@ -471,41 +483,41 @@ Partial Class frmMain
         '
         'mnMultiplication
         '
-        Me.mnMultiplication.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToTable10ToolStripMenuItem, Me.ToTable12ToolStripMenuItem})
+        Me.mnMultiplication.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Up10M, Me.Up12M})
         Me.mnMultiplication.Name = "mnMultiplication"
         Me.mnMultiplication.Size = New System.Drawing.Size(148, 22)
         Me.mnMultiplication.Text = "Multiplication"
         '
-        'ToTable10ToolStripMenuItem
+        'Up10M
         '
-        Me.ToTable10ToolStripMenuItem.Name = "ToTable10ToolStripMenuItem"
-        Me.ToTable10ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
-        Me.ToTable10ToolStripMenuItem.Text = "Up to table 10"
+        Me.Up10M.Name = "Up10M"
+        Me.Up10M.Size = New System.Drawing.Size(147, 22)
+        Me.Up10M.Text = "Up to table 10"
         '
-        'ToTable12ToolStripMenuItem
+        'Up12M
         '
-        Me.ToTable12ToolStripMenuItem.Name = "ToTable12ToolStripMenuItem"
-        Me.ToTable12ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
-        Me.ToTable12ToolStripMenuItem.Text = "Up to table 12"
+        Me.Up12M.Name = "Up12M"
+        Me.Up12M.Size = New System.Drawing.Size(147, 22)
+        Me.Up12M.Text = "Up to table 12"
         '
         'mnDivision
         '
-        Me.mnDivision.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UpToTable10ToolStripMenuItem, Me.UpToTable12ToolStripMenuItem})
+        Me.mnDivision.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Up10D, Me.Up12D})
         Me.mnDivision.Name = "mnDivision"
         Me.mnDivision.Size = New System.Drawing.Size(148, 22)
         Me.mnDivision.Text = "Division"
         '
-        'UpToTable10ToolStripMenuItem
+        'Up10D
         '
-        Me.UpToTable10ToolStripMenuItem.Name = "UpToTable10ToolStripMenuItem"
-        Me.UpToTable10ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
-        Me.UpToTable10ToolStripMenuItem.Text = "Up to table 10"
+        Me.Up10D.Name = "Up10D"
+        Me.Up10D.Size = New System.Drawing.Size(147, 22)
+        Me.Up10D.Text = "Up to table 10"
         '
-        'UpToTable12ToolStripMenuItem
+        'Up12D
         '
-        Me.UpToTable12ToolStripMenuItem.Name = "UpToTable12ToolStripMenuItem"
-        Me.UpToTable12ToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
-        Me.UpToTable12ToolStripMenuItem.Text = "Up to table 12"
+        Me.Up12D.Name = "Up12D"
+        Me.Up12D.Size = New System.Drawing.Size(147, 22)
+        Me.Up12D.Text = "Up to table 12"
         '
         'HelpToolStripMenuItem
         '
@@ -530,36 +542,43 @@ Partial Class frmMain
         '
         Me.stbBar.Location = New System.Drawing.Point(0, 695)
         Me.stbBar.Name = "stbBar"
-        Me.stbBar.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.stbName, Me.stbArithmetic, Me.stbLevel})
+        Me.stbBar.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.stbUser, Me.stbGender, Me.stbArithmetic, Me.stbLevel})
         Me.stbBar.ShowPanels = True
         Me.stbBar.Size = New System.Drawing.Size(1331, 22)
         Me.stbBar.TabIndex = 40
         Me.stbBar.Text = "StatusBar1"
         '
-        'stbName
+        'stbUser
         '
-        Me.stbName.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
-        Me.stbName.Name = "stbName"
-        Me.stbName.Text = "User:"
-        Me.stbName.Width = 438
+        Me.stbUser.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
+        Me.stbUser.Name = "stbUser"
+        Me.stbUser.Text = "User:"
+        Me.stbUser.Width = 328
+        '
+        'stbGender
+        '
+        Me.stbGender.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
+        Me.stbGender.Name = "stbGender"
+        Me.stbGender.Text = "Child: Boy"
+        Me.stbGender.Width = 328
         '
         'stbArithmetic
         '
         Me.stbArithmetic.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
         Me.stbArithmetic.Name = "stbArithmetic"
         Me.stbArithmetic.Text = "Arithmetic: Addition"
-        Me.stbArithmetic.Width = 438
+        Me.stbArithmetic.Width = 328
         '
         'stbLevel
         '
         Me.stbLevel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring
         Me.stbLevel.Name = "stbLevel"
         Me.stbLevel.Text = "Level: 10"
-        Me.stbLevel.Width = 438
+        Me.stbLevel.Width = 328
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.TheNumbers.My.Resources.Resources.william_liu_03122018megamanx_6_left
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(3, 31)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(78, 658)
@@ -569,7 +588,7 @@ Partial Class frmMain
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.TheNumbers.My.Resources.Resources.william_liu_03122018megamanx_6_right
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(1246, 31)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(78, 658)
@@ -689,7 +708,7 @@ Partial Class frmMain
         '
         Me.picBkTotal.BackColor = System.Drawing.Color.Cyan
         Me.picBkTotal.ErrorImage = CType(resources.GetObject("picBkTotal.ErrorImage"), System.Drawing.Image)
-        Me.picBkTotal.Image = CType(resources.GetObject("picBkTotal.Image"), System.Drawing.Image)
+        Me.picBkTotal.Image = Global.TheNumbers.My.Resources.Resources.block
         Me.picBkTotal.InitialImage = CType(resources.GetObject("picBkTotal.InitialImage"), System.Drawing.Image)
         Me.picBkTotal.Location = New System.Drawing.Point(720, 254)
         Me.picBkTotal.Name = "picBkTotal"
@@ -759,6 +778,36 @@ Partial Class frmMain
         Me.picTotal.TabIndex = 23
         Me.picTotal.TabStop = False
         '
+        'UserDataBaseDataSet
+        '
+        Me.UserDataBaseDataSet.DataSetName = "UserDataBaseDataSet"
+        Me.UserDataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'UserTableBindingSource
+        '
+        Me.UserTableBindingSource.DataMember = "UserTable"
+        Me.UserTableBindingSource.DataSource = Me.UserDataBaseDataSet
+        '
+        'UserTableTableAdapter
+        '
+        Me.UserTableTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.LanguageTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = TheNumbers.UserDataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UserTableTableAdapter = Me.UserTableTableAdapter
+        '
+        'LanguageBindingSource
+        '
+        Me.LanguageBindingSource.DataMember = "Language"
+        Me.LanguageBindingSource.DataSource = Me.UserDataBaseDataSet
+        '
+        'LanguageTableAdapter
+        '
+        Me.LanguageTableAdapter.ClearBeforeFill = True
+        '
         'frmMain
         '
         Me.AcceptButton = Me.btnOk
@@ -801,21 +850,22 @@ Partial Class frmMain
         Me.Controls.Add(Me.btn2)
         Me.Controls.Add(Me.btn1)
         Me.Controls.Add(Me.btn0)
-        Me.Controls.Add(Me.stpMenu)
+        Me.Controls.Add(Me.StpMenu)
         Me.Controls.Add(Me.lbligual2)
         Me.Controls.Add(Me.lblOperator2)
         Me.Controls.Add(Me.lbligual1)
         Me.Controls.Add(Me.lblOperator1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.stpMenu
+        Me.MainMenuStrip = Me.StpMenu
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "The Numbers"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.stpMenu.ResumeLayout(False)
-        Me.stpMenu.PerformLayout()
-        CType(Me.stbName, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StpMenu.ResumeLayout(False)
+        Me.StpMenu.PerformLayout()
+        CType(Me.stbUser, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.stbGender, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.stbArithmetic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.stbLevel, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -835,6 +885,9 @@ Partial Class frmMain
         CType(Me.picNumber1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picNumber2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTotal, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserDataBaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LanguageBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -874,7 +927,7 @@ Partial Class frmMain
     Friend WithEvents star7 As PictureBox
     Friend WithEvents star8 As PictureBox
     Friend WithEvents star9 As PictureBox
-    Friend WithEvents stpMenu As MenuStrip
+    Friend WithEvents StpMenu As MenuStrip
     Friend WithEvents mnArithmetic As ToolStripMenuItem
     Friend WithEvents mnAddition As ToolStripMenuItem
     Friend WithEvents mnSubtraction As ToolStripMenuItem
@@ -890,14 +943,15 @@ Partial Class frmMain
     Friend WithEvents mn12Subtraction As ToolStripMenuItem
     Friend WithEvents mn20Subtraction As ToolStripMenuItem
     Friend WithEvents mn100Subtraction As ToolStripMenuItem
-    Friend WithEvents ToTable10ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToTable12ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UpToTable10ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UpToTable12ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Up10M As ToolStripMenuItem
+    Friend WithEvents Up12M As ToolStripMenuItem
+    Friend WithEvents Up10D As ToolStripMenuItem
+    Friend WithEvents Up12D As ToolStripMenuItem
     Public WithEvents txtTotal As TextBox
     Friend WithEvents stbBar As StatusBar
     Friend WithEvents stbArithmetic As StatusBarPanel
     Friend WithEvents stbLevel As StatusBarPanel
+    Friend WithEvents stbGender As StatusBarPanel
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
@@ -905,5 +959,11 @@ Partial Class frmMain
     Friend WithEvents DedicationToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ShowGiftTableToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LoginToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents stbName As StatusBarPanel
+    Friend WithEvents UserDataBaseDataSet As UserDataBaseDataSet
+    Friend WithEvents UserTableBindingSource As BindingSource
+    Friend WithEvents UserTableTableAdapter As UserDataBaseDataSetTableAdapters.UserTableTableAdapter
+    Friend WithEvents TableAdapterManager As UserDataBaseDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents stbUser As StatusBarPanel
+    Friend WithEvents LanguageBindingSource As BindingSource
+    Friend WithEvents LanguageTableAdapter As UserDataBaseDataSetTableAdapters.LanguageTableAdapter
 End Class
